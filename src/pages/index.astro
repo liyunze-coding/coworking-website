@@ -1,81 +1,405 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Get started with Coworking streams!">
+	<div
+		class="flex flex-col lg:flex-row justify-center items-center h-full text-gray-100 sm:flex-col"
+	>
+		<div
+			class="w-full lg:w-2/3 flex flex-col justify-center items-center mt-40 lg:mt-0 mb-10 lg:mb-0"
+		>
+			<div
+				class="flex flex-col justify-center items-center lg:items-start text-center lg:text-left"
+			>
+				<p class="text-xl mb-1">How to get started with</p>
+				<h1 class="text-2xl lg:text-4xl font-bold">
+					Coworking Streams
+				</h1>
+				<p class="text-lg lg:text-xl mt-2">
+					For coworking & study streamers on Twitch
+				</p>
+			</div>
+		</div>
+		<div
+			class="w-full lg:w-1/3 h-full flex flex-col justify-center items-center"
+		>
+			<a
+				href="/overlays"
+				class="preview w-full flex items-center justify-center"
+			>
+				<div
+					class="task-list w-5/6 flex flex-col rounded-md overflow-hidden border border-solid border-white hover:shadow-gray-200 hover:shadow-lg transition duration-300 ease-in-out"
+				>
+					<div
+						class="task-list-header text-2xl flex flex-row justify-between bg-gray-900 px-5 py-3 rounded-md z-10 border border-solid border-b-white"
+					>
+						<div class="font-bold">!taskhelp</div>
+						<div>0/32</div>
+					</div>
+					<div class="task-list-body px-1">
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-pink-400"
+							>
+								RyanPython
+							</div>
+							<div class="mr-1">:</div> build this website
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-blue-500"
+							>
+								MohFocus
+							</div>
+							<div class="mr-1">:</div> resolve merge conflicts
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-purple-400"
+							>
+								berryspace
+							</div>
+							<div class="mr-1">:</div> setup coworking stream
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-yellow-600"
+							>
+								CloudyDayzzz
+							</div>
+							<div class="mr-1">:</div> interpret sign language
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-yellow-600"
+							>
+								pcc_lanezzz
+							</div>
+							<div class="mr-1">:</div> torture Poco
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-pink-400"
+							>
+								lala_xitlali
+							</div>
+							<div class="mr-1">:</div> buy more fabric
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-green-600"
+							>
+								xeno_hiraeth
+							</div>
+							<div class="mr-1">:</div> diagnose patients
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-purple-400"
+							>
+								opoemperdernida
+							</div>
+							<div class="mr-1">:</div> rutina de la mañana
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-gray-200"
+							>
+								studywithjojo
+							</div>
+							<div class="mr-1">:</div> get into NHS
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-purple-400"
+							>
+								StudyPaws
+							</div>
+							<div class="mr-1">:</div> identify cow breeds
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-blue-500"
+							>
+								mikewhatwhere
+							</div>
+							<div class="mr-1">:</div> become a dietician
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-red-500"
+							>
+								AuspexOneGaming
+							</div>
+							<div class="mr-1">:</div> grade papers
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-green-300"
+							>
+								euphie___
+							</div>
+							<div class="mr-1">:</div> stay up late
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-purple-400"
+							>
+								charliosaurus
+							</div>
+							<div class="mr-1">:</div> praise the lord Jesus
+							Christ
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-orange-700"
+							>
+								unknownnie
+							</div>
+							<div class="mr-1">:</div> grow a sprout
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-blue-500"
+							>
+								itsbrandonut
+							</div>
+							<div class="mr-1">:</div> music stream
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-blue-500"
+							>
+								nihnesyo
+							</div>
+							<div class="mr-1">:</div> release new Lofi EP
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-gray-200"
+							>
+								shadygepril
+							</div>
+							<div class="mr-1">:</div> studying for A-Levels
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-yellow-300"
+							>
+								Extelso
+							</div>
+							<div class="mr-1">:</div> architecturing a new
+							project
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-blue-400"
+							>
+								Bubxmicn
+							</div>
+							<div class="mr-1">:</div> drive a truck
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-pink-400"
+							>
+								theyolotato
+							</div>
+							<div class="mr-1">:</div> read smut
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-orange-600"
+							>
+								pinsaregood
+							</div>
+							<div class="mr-1">:</div> be instagram influencer
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-blue-500"
+							>
+								wasmishtaken_
+							</div>
+							<div class="mr-1">:</div> simp for levi
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-yellow-300"
+							>
+								Jutstreams
+							</div>
+							<div class="mr-1">:</div> play geoguessr
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-purple-400"
+							>
+								j2modest
+							</div>
+							<div class="mr-1">:</div> penetration testing
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-yellow-200"
+							>
+								nachoburrit0
+							</div>
+							<div class="mr-1">:</div> play Apex for charity
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-yellow-500"
+							>
+								clarissawrites
+							</div>
+							<div class="mr-1">:</div> write
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-red-400"
+							>
+								Elly78456
+							</div>
+							<div class="mr-1">:</div> sell merch
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-blue-500"
+							>
+								arcaneXVIII
+							</div>
+							<div class="mr-1">:</div> babysit
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-purple-400"
+							>
+								OOPmarie
+							</div>
+							<div class="mr-1">:</div> React project
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-indigo-400"
+							>
+								Seijisoldier
+							</div>
+							<div class="mr-1">:</div> Be the tallest in the
+							room
+						</div>
+						<div
+							class="flex flex-row justify-start items-start bg-gray-700 px-5 py-2 rounded-md mt-1"
+						>
+							<div
+								class="font-bold max-w-[45%] overflow-hidden overflow-ellipsis text-purple-400"
+							>
+								wafflesdot025
+							</div>
+							<div class="mr-1">:</div> skip class
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
+	.task-list {
+		font-family: "Poppins", sans-serif;
+
+		height: 500px;
 	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
+
+	.task-list-header {
+		font-family: "Fredoka", sans-serif;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
+
+	/* scroll up and down automatically keyframes*/
+	@keyframes scroll {
+		0% {
+			transform: translateY(0);
+		}
+		10% {
+			transform: translateY(0);
+		}
+		90% {
+			transform: translateY(calc(-100% + 435px));
+		}
+		100% {
+			transform: translateY(calc(-100% + 435px));
+		}
 	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
+
+	.task-list-header {
+		height: 80px;
 	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+
+	.task-list-body {
+		animation: scroll 17s linear alternate infinite;
 	}
 </style>
