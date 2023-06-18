@@ -70,9 +70,9 @@ Do check beforehand the volumes for the alarms, as sometimes they may be startli
 
 ## Task list widget
 
-<div class="flex flex-row mb-5">
-    <img src="/assets/moh-task-list.webp" class="h-[300px] rounded-md mr-5">
-    <img src="/assets/ryanpython-task-list.webp" class="h-[300px] rounded-md">
+<div class="flex flex-col sm:flex-row mb-5">
+    <img src="/assets/moh-task-list.webp" class="rounded-md mr-5 w-56 h-56 mb-5 sm:mb-0">
+    <img src="/assets/ryanpython-task-list.webp" class="rounded-md w-60 h-56">
 </div>
 
 A task list widget is a great way to keep track of your tasks along with your viewers! For these overlays, you may only add 1 incomplete task at a time. You may only add another task once the previous task is completed.
@@ -92,7 +92,7 @@ A task list widget is a great way to keep track of your tasks along with your vi
     </li>
 </ul>
 
-<img src="/assets/multi-task.webp" class="h-[300px] rounded-md mb-5 mt-10">
+<img src="/assets/multi-task.webp" class="rounded-md mb-5 mt-10 w-68 h-56">
 
 If you're interested in a task list overlay that allows you to add multiple tasks at a time, check out <a href="https://www.twitch.tv/RyanPython" target="_blank" class="underline hover:text-blue-400">RyanPython's stream</a>!
 
