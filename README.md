@@ -1,55 +1,58 @@
-# Astro Starter Kit: Basics
+# Coworking Guide
 
-```
-npm create astro@latest -- --template basics
-```
+![Coworking website](public/assets/cowo.webp)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Table of Contents
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+- [Coworking Guide](#coworking-guide)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [How I made this website](#how-i-made-this-website)
+    - [Frameworks and Tools](#frameworks-and-tools)
+    - [Deployment](#deployment)
+  - [References and Credits](#references-and-credits)
 
+---
 
-## 🚀 Project Structure
+## Introduction
 
-Inside of your Astro project, you'll see the following folders and files:
+This guide is intended to help you get started with the coworking streams! Whether you're a new or existing coworking streamer, we hope you find this guide useful.
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+I am a coworking streamer myself and I also made several open source widgets for the coworking streams. 
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Please feel free to drop by my <a href="https://www.twitch.tv/RyanPython" target="_blank">stream</a>!
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+---
 
-Any static assets, like images, can be placed in the `public/` directory.
+## How I made this website
 
-## 🧞 Commands
+### Frameworks and Tools
 
-All commands are run from the root of the project, from a terminal:
+- Astro (https://astro.build)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+    Astro is a static site generator that supports server-side rendering. It supports Markdown which I used for most of the content on this website.
 
-## 👀 Want to learn more?
+- Tailwind CSS (https://tailwindcss.com)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+    Tailwind CSS is a utility-first CSS framework. It's very easy to use and it's very powerful. I used it to style this website on top of Astro, including the Markdown content!
+
+- Markdown (https://www.markdownguide.org)
+
+    Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. I used Markdown to write most of the content on this website.
+
+### Deployment
+
+This website is deployed on <a href="https://vercel.com/">Vercel</a>, which is a cloud platform for static sites and serverless functions. It automatically updates the website whenever I push changes to the GitHub repository.
+
+---
+
+## References and Credits
+
+<ul>
+  <li><a href="https://www.twitch.tv/team/coworkingcrew">Coworking Crew</a> for providing resources</li>
+  <li><a href="https://third-stinger-20a.notion.site/A-Coworking-Streamer-Cheat-Sheet-01ee1e5ff006410d84c339069ea6546c" target="_blank">A Coworking Streamer Cheat Sheet</a> as an amazing resource</li>
+  <li><a href="https://www.twitch.tv/MohFocus">MohFocus</a> for the resources (bots and widgets)</li> 
+  <li><a href="https://www.twitch.tv/ryanpython">RyanPython</a> for building the website</li> 
+</ul>
