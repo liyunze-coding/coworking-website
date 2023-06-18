@@ -76,3 +76,11 @@ There are some online calculators you can use to determine the ideal bitrate bas
 Check out this <a href="https://www.reddit.com/r/Twitch/comments/2dz7ru/bitrates_resolutions_and_quality/" target="_blank" class="underline hover:text-blue-400">in depth guide from Reddit</a> to learn more!
 
 </details>
+
+<details>
+
+<summary>Streaming software</summary>
+
+There are many streaming software options available, but the most popular one is <a href="https://obsproject.com/" target="_blank" class="underline">OBS Studio</a>, although some Apple users may prefer using <a href="https://www.twitch.tv/broadcast/studio/registration" target="_blank" class="underline">Twitch Studio</a>. Both are free to use!
+
+</details>
