@@ -1,6 +1,7 @@
 ---
 title: Widgets
 layout: "../layouts/Markdown.astro"
+description: Find out the widgets you can use to enhance your stream!
 ---
 
 # Widgets

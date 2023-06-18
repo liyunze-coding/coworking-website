@@ -1,6 +1,7 @@
 ---
 title: Bots
 layout: "../layouts/Markdown.astro"
+description: Find out the bots you can use for your stream!
 ---
 
 # Twitch Bots

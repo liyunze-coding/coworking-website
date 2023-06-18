@@ -3,19 +3,17 @@ import NavBar from "../components/navBar.astro";
 
 export interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="description"
-			content="Get started with Coworking streams!"
-		/>
+		<meta name="description" content={description} />
 		<meta name="keywords" content="coworking, study, streams" />
 		<meta name="author" content="RyanPython" />
 		<meta name="viewport" content="width=device-width" />

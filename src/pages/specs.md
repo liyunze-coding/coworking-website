@@ -1,6 +1,7 @@
 ---
 title: Specifications
 layout: "../layouts/Markdown.astro"
+description: Find out the minimum computer specification requirements for coworking streams!
 ---
 
 <!--

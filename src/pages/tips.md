@@ -1,17 +1,20 @@
 ---
 title: Tips
 layout: "../layouts/Markdown.astro"
+description: Tips for coworking streamers
 ---
 
 # Tips
 
 Here are some tips for coworking streamers!
 
--    [To mute or not to mute?](#to-mute-or-not-to-mute)
--    [Should I leave chat opened while working?](#should-i-leave-chat-opened-while-working)
--    [Fixed schedule](#fixed-schedule)
--    [Social media](#social-media)
--    [Chat commands for coworking streams](#chat-commands-for-coworking-streams)
+- [Tips](#tips)
+  - [To mute or not to mute?](#to-mute-or-not-to-mute)
+  - [Should I leave chat opened while working?](#should-i-leave-chat-opened-while-working)
+  - [Fixed schedule](#fixed-schedule)
+  - [Social media](#social-media)
+  - [Chat commands for coworking streams](#chat-commands-for-coworking-streams)
+- [References](#references)
 
 ---
 
