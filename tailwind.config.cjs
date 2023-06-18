@@ -25,11 +25,14 @@ module.exports = {
 				ul: {
 					listStyleType: "disc",
 					listStylePosition: "inside",
-				},
-				a: {
-					textDecoration: "underline",
+					marginBottom: theme("margin.2"),
 				},
 				p: {
+					marginBottom: theme("margin.6"),
+					lineHeight: theme("lineHeight.7"),
+				},
+				hr: {
+					marginTop: theme("margin.6"),
 					marginBottom: theme("margin.6"),
 				},
 			});

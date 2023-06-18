@@ -1,9 +1,13 @@
 ---
+import NavBar from "../components/navBar.astro";
+
 export interface Props {
-	title: string;
+	frontmatter: {
+		title: string;
+	};
 }
 
-const { title } = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -12,7 +16,7 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -28,47 +32,14 @@ const { title } = Astro.props;
 			rel="stylesheet"
 		/>
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{frontmatter.title}</title>
 	</head>
 	<body>
-		<nav
-			class="fixed w-full flex flex-row items-center justify-center pl-4 pr-8 py-2 bg-gray-800 shadow-md shadow-gray-900 h-12"
-		>
-			<ul class="flex flex-row justify-start items-center list-none">
-				<a href="/">
-					<li
-						class="text-lg text-gray-100 px-3 py-1 mx-3 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors duration-500 ease-in-out"
-					>
-						Home
-					</li>
-				</a>
-				<a href="/about">
-					<li
-						class="text-lg text-gray-100 px-3 py-1 mx-3 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors duration-500 ease-in-out"
-					>
-						About
-					</li>
-				</a>
-				<a href="/specs">
-					<li
-						class="text-lg text-gray-100 px-3 py-1 mx-3 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors duration-500 ease-in-out"
-					>
-						Specs
-					</li>
-				</a>
-				<a href="/overlays">
-					<li
-						class="text-lg text-gray-100 px-3 py-1 mx-3 hover:text-gray-600 hover:bg-gray-100 rounded transition-colors duration-500 ease-in-out"
-					>
-						Overlays
-					</li>
-				</a>
-			</ul>
-		</nav>
+		<NavBar />
 		<div class="pt-12 w-full flex flex-col justify-center items-center">
-			<div class="w-5/6 md:w-3/4 lg:w-2/3 py-10">
+			<article class="w-5/6 md:w-3/4 lg:w-2/3 py-10">
 				<slot />
-			</div>
+			</article>
 		</div>
 	</body>
 </html>
@@ -112,6 +83,28 @@ const { title } = Astro.props;
 	}
 
 	summary {
-		@apply font-bold text-xl;
+		@apply font-bold text-2xl py-2 cursor-pointer;
+
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Old versions of Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+	}
+
+	details {
+		@apply my-4;
+	}
+
+	ul li a {
+		@apply hover:underline underline-offset-2 hover:text-blue-400;
+	}
+
+	.hyperlink {
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+			Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+			sans-serif;
 	}
 </style>
