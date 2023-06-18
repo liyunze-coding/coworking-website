@@ -39,4 +39,4 @@ Twitch bots are a great way to increase engagement for your viewers and improve 
 
 ## Custom bots
 
-Interested in making your own bot? Want to look for a programming project to work on? Check out <a href="https://github.com/instafluff/comfyjs" target="_blank" class="underline">Comfy.JS</a> made by Instafluff!
+Interested in making your own bot? Want to look for a programming project to work on? Check out <a href="https://github.com/instafluff/comfyjs" target="_blank" class="underline">Comfy.JS</a> made by Instafluff! 
