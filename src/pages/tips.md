@@ -14,6 +14,7 @@ Here are some tips for coworking streamers!
   - [Fixed schedule](#fixed-schedule)
   - [Social media](#social-media)
   - [Chat commands for coworking streams](#chat-commands-for-coworking-streams)
+  - [Other tips](#other-tips)
 - [References](#references)
 
 ---
@@ -39,6 +40,14 @@ Speaking of social media, it's a great way to let your followers know when you'r
 ## Chat commands for coworking streams
 
 Chat commands are very useful since you won't be chatting much during the work timer. Some common chat commands you may see include ones that introduce your stream, provide a brief introduction to the pomodoro method (if you use it), or a muted command that may explain why you may be muted (e.g: !welcome !timer !pomo !muted). You may also like to add a command to tell your viewers what you're working on that day (!today !work !study) - this adds a nice personal touch and you can use it to encourage other's to talk about what they're working on too.
+
+## Other tips
+
+- Don't promote yourself in other people's channels without permission. It's rude and will likely get you banned.
+- Don't worry about view count, just focus on your work and the rest will follow.
+- Avoid spending money on your stream setup until you're sure you want to stick with it.
+- Avoid using Display/Screen Capture where you may accidentally leak personal information. It is recommended to keep the Display Capture window small enough, so that the text content is not readable.
+- Consider using Application Capture Audio instead of Desktop Audio. This will prevent your viewers from hearing your notifications.
 
 # References
 

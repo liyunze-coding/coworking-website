@@ -13,6 +13,8 @@ description: Find out the minimum computer specification requirements for cowork
 
 In this section, we will discuss the minimum computer specification requirements for coworking streams. The minimum specifications should be suffice for a comfortable streaming and viewing experience.
 
+Note: Some smaller study streamers use their smartphones to stream. This is a great option for those who are just starting out, but it is not recommended for long-term streaming, due to limited settings and limited interactivity with viewers.
+
 <details>
 <summary>CPU</summary>
 
@@ -65,6 +67,8 @@ The better the internet connection, the better the streaming experience. You can
 Peripherals are the components that connect to the computer to provide additional functionality.
 
 **The ideal peripherals for streaming**: A webcam, a microphone, and a headset.
+
+Note: A smartphone can be used as a webcam, however it is recommended to keep it charging while you stream.
 
 </details>
 
