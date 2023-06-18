@@ -44,7 +44,9 @@ import Layout from "../layouts/Layout.astro";
 					<div
 						class="task-list-header text-2xl flex flex-row justify-between bg-gray-900 px-5 py-3 rounded-md z-10 border border-solid border-b-white"
 					>
-						<div class="font-bold">!taskhelp</div>
+						<div id="widget-title" class="font-bold">
+							!taskhelp
+						</div>
 						<div>1/33</div>
 					</div>
 					<div class="task-list-body px-1">
@@ -425,4 +427,44 @@ import Layout from "../layouts/Layout.astro";
 	.task-list-body {
 		animation: scroll 17s linear alternate infinite;
 	}
+
+	#widget-title {
+		transition: all 1s ease-in-out;
+	}
+
+	.fade {
+		animation: fade 1s ease-in-out;
+	}
+
+	@keyframes fade {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 </style>
+
+<script defer is:inline>
+	const taskListTitles = ["Click here!", "!taskhelp"];
+
+	const widgetTitle = document.querySelector("#widget-title");
+
+	let index = 0;
+
+	setInterval(() => {
+		widgetTitle.classList.add("fade");
+		setTimeout(() => {
+			widgetTitle.classList.remove("fade");
+		}, 1000);
+
+		widgetTitle.textContent = taskListTitles[index];
+
+		index++;
+
+		if (index === taskListTitles.length) {
+			index = 0;
+		}
+	}, 5000);
+</script>
