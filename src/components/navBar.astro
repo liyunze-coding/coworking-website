@@ -206,6 +206,20 @@
 		}
 	});
 
+	// if clicked outside of the hamburger menu, close the sidebar
+	window.addEventListener("click", (e) => {
+		if (
+			e.target !== hamburger &&
+			e.target !== topBun &&
+			e.target !== bottomBun &&
+			e.target !== checkbox &&
+			e.target !== document.querySelector(".sidebar") &&
+			e.target !== document.querySelector(".sidebar nav")
+		) {
+			closeSideBar();
+		}
+	});
+
 	// if window is resized, check if it's less than 768px
 	window.addEventListener("resize", () => {
 		if (window.innerWidth < 768) {
