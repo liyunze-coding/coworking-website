@@ -15,7 +15,7 @@ Here are some tips for coworking streamers!
   - [Social media](#social-media)
   - [Chat commands for coworking streams](#chat-commands-for-coworking-streams)
   - [Other tips](#other-tips)
-- [References](#references)
+  - [References](#references)
 
 ---
 
@@ -49,6 +49,6 @@ Chat commands are very useful since you won't be chatting much during the work t
 - Avoid using Display/Screen Capture where you may accidentally leak personal information. It is recommended to keep the Display Capture window small enough, so that the text content is not readable.
 - Consider using Application Capture Audio instead of Desktop Audio. This will prevent your viewers from hearing your notifications.
 
-# References
+## References
 
 Please take a look at <a href="https://third-stinger-20a.notion.site/A-Coworking-Streamer-Cheat-Sheet-01ee1e5ff006410d84c339069ea6546c" target="_blank" class="underline underline-offset-2 hover:text-blue-400">A Coworking Streamer Cheat Sheet</a> for more information!

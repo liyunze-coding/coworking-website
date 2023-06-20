@@ -82,7 +82,12 @@ A task list widget is a great way to keep track of your tasks along with your vi
 <ul>
     <li>
         <a href="https://github.com/liyunze-coding/chat-task-tic-overlay" target="_blank" class="hyperlink">
-        https://github.com/liyunze-coding/chat-task-tic-overlay
+        https://github.com/liyunze-coding/Chat-Task-Tic-Overlay
+        </a>
+    </li>
+    <li>
+        <a href="https://github.com/liyunze-coding/Chat-Task-Tic-Overlay-Horizontal" target="_blank" class="hyperlink">
+        https://github.com/liyunze-coding/Chat-Task-Tic-Overlay-Horizontal
         </a>
     </li>
     <li>
@@ -121,6 +126,8 @@ A Spotify widget is a great way to let your viewers know what you're listening t
 ## General Purpose
 
 For alerts, chat, and other widgets, it is recommended to use <a href="https://streamelements.com/overlays" target="_blank" class="underline hover:text-blue-400">StreamElements</a>!
+
+Alternatively, you can also use Twitch Alerts that can be found in your <a href="https://dashboard.twitch.tv/" target="_blank" class="underline hover:text-blue-400">Twitch Dashboard</a>!
 
 #### Resources to get started with StreamElements:
 
