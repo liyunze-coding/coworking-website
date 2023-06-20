@@ -121,6 +121,12 @@ A Spotify widget is a great way to let your viewers know what you're listening t
 
 <img src="/assets/ryanpython_spotify.webp" width="500" class="mb-10">
 
+### Software:
+
+<a href="https://github.com/dlrudie/Snip/releases" target="_blank" class="font-bold underline hover:text-blue-400">Snip</a>: Captures music from iTunes or Spotify and saves the current song as a text and png file that you can add into your streaming software 
+
+<img src="/assets/snip.webp" width="500" class="mb-10">
+
 ---
 
 ## General Purpose
