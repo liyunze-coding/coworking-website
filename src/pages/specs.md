@@ -88,6 +88,8 @@ Check out this <a href="https://www.reddit.com/r/Twitch/comments/2dz7ru/bitrates
 
 There are many streaming software options available, but the most popular one is <a href="https://obsproject.com/" target="_blank" class="underline">OBS Studio</a>, although some Apple users may prefer using <a href="https://www.twitch.tv/broadcast/studio/registration" target="_blank" class="underline">Twitch Studio</a>. Both are free to use!
 
+Check out this <a href="https://youtu.be/9idPREZzWpE">YouTube video</a>on how to setup OBS, made by Hammer Dance!
+
 If you're streaming for mobile, the Twitch mobile app has a built-in streaming feature!
 
 </details>
