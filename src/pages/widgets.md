@@ -6,13 +6,13 @@ description: Find out the widgets you can use to enhance your stream!
 
 # Widgets
 
-These overlays can be useful for coworking streamers to increase engagement for their viewers!
+These widgets can be useful for coworking streamers to increase engagement for their viewers!
 
 ---
 
 ## Pomodoro timer
 
-A pomodoro timer is a great way to keep track of your work sessions. It's also a great way to let your viewers know when you're taking a break. You can use a pomodoro timer overlay to display the current work session and break time.
+A pomodoro timer is a great way to keep track of your work sessions. It's also a great way to let your viewers know when you're taking a break. You can use a pomodoro timer widget to display the current work session and break time.
 
 ### Browser Source
 
@@ -75,7 +75,7 @@ Do check beforehand the volumes for the alarms, as sometimes they may be startli
     <img src="/assets/ryanpython-task-list.webp" class="rounded-md w-60 h-56">
 </div>
 
-A task list widget is a great way to keep track of your tasks along with your viewers! For these overlays, you may only add 1 incomplete task at a time. You may only add another task once the previous task is completed.
+A task list widget is a great way to keep track of your tasks along with your viewers! For these widgets, you may only add 1 incomplete task at a time. You may only add another task once the previous task is completed.
 
 ### Browser Source
 
@@ -99,7 +99,7 @@ A task list widget is a great way to keep track of your tasks along with your vi
 
 <img src="/assets/multi-task.webp" class="rounded-md mb-5 mt-10 w-68 h-56">
 
-If you're interested in a task list overlay that allows you to add multiple tasks at a time, check out <a href="https://www.twitch.tv/RyanPython" target="_blank" class="underline hover:text-blue-400">RyanPython's stream</a>!
+If you're interested in a task list widget that allows you to add multiple tasks at a time, check out <a href="https://www.twitch.tv/RyanPython" target="_blank" class="underline hover:text-blue-400">RyanPython's stream</a>!
 
 ---
 
@@ -131,7 +131,7 @@ A Spotify widget is a great way to let your viewers know what you're listening t
 
 ## General Purpose
 
-For alerts, chat, and other widgets, it is recommended to use <a href="https://streamelements.com/overlays" target="_blank" class="underline hover:text-blue-400">StreamElements</a>!
+For alerts, chat, and other widgets/overlays, it is recommended to use <a href="https://streamelements.com/overlays" target="_blank" class="underline hover:text-blue-400">StreamElements</a>!
 
 Alternatively, you can also use Twitch Alerts that can be found in your <a href="https://dashboard.twitch.tv/" target="_blank" class="underline hover:text-blue-400">Twitch Dashboard</a>!
 
