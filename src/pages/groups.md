@@ -1,7 +1,7 @@
 ---
 title: Groups
 layout: "../layouts/Markdown.astro"
-description: Find communities that you can join to connect with!
+description: Find new communities to join!
 ---
 
 # Groups
