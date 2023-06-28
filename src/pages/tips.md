@@ -16,6 +16,7 @@ Here are some tips for coworking streamers!
   - [Fixed schedule](#fixed-schedule)
   - [Social media](#social-media)
   - [Chat commands for coworking streams](#chat-commands-for-coworking-streams)
+  - [How to listen to music without getting VOD muted?](#how-to-listen-to-music-without-getting-vod-muted)
   - [Emotes](#emotes)
     - [Channel emotes](#channel-emotes)
     - [Emote extensions](#emote-extensions)
@@ -46,6 +47,12 @@ Speaking of social media, it's a great way to let your followers know when you'r
 ## Chat commands for coworking streams
 
 Chat commands are very useful since you won't be chatting much during the work timer. Some common chat commands you may see include ones that introduce your stream, provide a brief introduction to the pomodoro method (if you use it), or a muted command that may explain why you may be muted (e.g: !welcome !timer !pomo !muted). You may also like to add a command to tell your viewers what you're working on that day (!today !work !study) - this adds a nice personal touch and you can use it to encourage other's to talk about what they're working on too.
+
+## How to listen to music without getting VOD muted?
+
+If you're streaming on Twitch using OBS, you can easily avoid getting your VODs muted by separating audio tracks into VOD audio tracks and stream audio tracks. This way, you can listen to music on your stream without worrying about getting muted. Here's a <a href="https://youtu.be/0Lj5rkqSp48/" target="_blank" class="underline hover:text-blue-400">video</a> that explains how to do it! (NO VOICEMEETER REQUIRED)
+
+<!-- https://youtu.be/0Lj5rkqSp48 -->
 
 ## Emotes
 
