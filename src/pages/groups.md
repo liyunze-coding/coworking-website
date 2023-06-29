@@ -8,11 +8,9 @@ description: Find new communities to join!
 
 I recommend the following communities to join! They provide a great way to connect with other streamers and viewers!
 
-(Click on the image to go to the community's website / socials)
-
 ---
 
-<a href="https://www.twitch.tv/team/coworkingcrew/" target="_blank" class="font-bold text-2xl hover:underline">Coworking Crew</a>
+<a href="https://www.twitch.tv/team/coworkingcrew/" target="_blank" class="font-bold text-2xl hover:underline">Coworking Crew 🔗</a>
 
 <a href="https://www.twitch.tv/team/coworkingcrew" target="_blank" class="inline-block mt-2 mb-5">
     <img src="/assets/coworkingcrew.webp" alt="coworking crew" width="300" class="rounded-md">
@@ -22,7 +20,7 @@ The Coworking Crew is a group of co-working streamers who aim to create supporti
 
 ---
 
-<a href="https://www.twitch.tv/team/coworkingcrew/" target="_blank" class="font-bold text-2xl hover:underline">Self.dev</a>
+<a href="https://www.twitch.tv/team/coworkingcrew/" target="_blank" class="font-bold text-2xl hover:underline">Self.dev 🔗</a>
 
 <a href="https://theselfdev.com/" target="_blank" class="inline-block mt-2 mb-5">
     <img src="/assets/selfdev_logo.webp" alt="self dev" width="300" class="rounded-md">
@@ -32,7 +30,7 @@ Self.dev is a community of various individuals from different fields come togeth
 
 ---
 
-<a href="https://www.youthversity.org/" target="_blank" class="font-bold text-2xl hover:underline">YOUthversity</a>
+<a href="https://www.youthversity.org/" target="_blank" class="font-bold text-2xl hover:underline">YOUthversity 🔗</a>
 
 <a href="https://www.youthversity.org/" target="_blank" class="inline-block mt-2 mb-5">
     <img src="/assets/youthversity.webp" alt="youthversity" width="300" class="rounded-md">
@@ -42,7 +40,7 @@ YOUthversity is not only an online space to study together but is dedicated to t
 
 ---
 
-<h2><a href="https://erudita.me/" target="_blank" class="font-bold text-2xl hover:underline">Erudita</a></h2>
+<a href="https://erudita.me/" target="_blank" class="font-bold text-2xl hover:underline">Erudita 🔗</a>
 
 <a href="https://erudita.me/" target="_blank" class="inline-block mt-2 mb-5">
     <img src="/assets/erudita.png" alt="erudita" width="300" class="rounded-md">
