@@ -20,7 +20,7 @@ The Coworking Crew is a group of co-working streamers who aim to create supporti
 
 ---
 
-<a href="https://www.twitch.tv/team/coworkingcrew/" target="_blank" class="font-bold text-2xl hover:underline">Self.dev 🔗</a>
+<a href="https://theselfdev.com/" target="_blank" class="font-bold text-2xl hover:underline">Self.dev 🔗</a>
 
 <a href="https://theselfdev.com/" target="_blank" class="inline-block mt-2 mb-5">
     <img src="/assets/selfdev_logo.webp" alt="self dev" width="300" class="rounded-md">
@@ -43,7 +43,17 @@ YOUthversity is not only an online space to study together but is dedicated to t
 <a href="https://erudita.me/" target="_blank" class="font-bold text-2xl hover:underline">Erudita 🔗</a>
 
 <a href="https://erudita.me/" target="_blank" class="inline-block mt-2 mb-5">
-    <img src="/assets/erudita.png" alt="erudita" width="300" class="rounded-md">
+    <img src="/assets/erudita.webp" alt="erudita" width="300" class="rounded-md">
 </a>
 
 An educational platform suitable for those seeking knowledge. In the community, you have the opportunity to learn alongside others or apply for Erudita membership and share your expertise and passions.
+
+<a href="https://studytme.com/" target="_blank" class="font-bold text-2xl hover:underline">CEO Gang 🔗</a>
+
+<a href="https://studytme.com/" target="_blank" class="inline-block mt-2 mb-5">
+    <img src="/assets/ceogang.webp" alt="ceo gang" width="300" class="rounded-md">
+</a>
+
+The right place for ambitious people working together and supporting each other! Make friends, learn and work remote!
+
+---

@@ -104,7 +104,7 @@ A task list widget is a great way to keep track of your tasks along with your vi
 
 <img src="/assets/multi-task.webp" class="rounded-md mb-5 mt-10 w-68 h-56">
 
-If you're interested in a task list widget that allows you to add multiple tasks at a time, check out <a href="https://www.twitch.tv/RyanPython" target="_blank" class="underline hover:text-blue-400">RyanPython's stream</a>!
+If you're interested in a task list widget that allows you to add multiple tasks at a time, check out <a href="https://www.twitch.tv/RyanPython" target="_blank" class="underline hover:text-blue-400">RyanPython's stream</a> and learn more about the multi-task widget <a href="https://github.com/liyunze-coding/Chat-Task-Tic-Overlay/blob/main/MultiTask.md" target="_blank" class="underline hover:text-blue-400">here</a>!
 
 ---
 
@@ -128,7 +128,7 @@ A Spotify widget is a great way to let your viewers know what you're listening t
 
 ### Software:
 
-<a href="https://github.com/dlrudie/Snip/releases" target="_blank" class="font-bold underline hover:text-blue-400">Snip</a>: Captures music from iTunes or Spotify and saves the current song as a text and png file that you can add into your streaming software 
+<a href="https://github.com/dlrudie/Snip/releases" target="_blank" class="font-bold underline hover:text-blue-400">Snip</a>: Captures music from iTunes or Spotify and saves the current song as a text and png file that you can add into your streaming software
 
 <img src="/assets/snip.webp" width="500" class="mb-10">
 
@@ -142,9 +142,9 @@ Alternatively, you can also use Twitch Alerts that can be found in your <a href=
 
 #### Resources to get started with StreamElements:
 
--    <a href="https://support.streamelements.com/en/articles/31-quick-start-guide" target="_blank" class="font-bold underline hover:text-blue-400">Quick-Start Guide</a>
--    <a href="https://www.youtube.com/watch?v=YctwM_51i44" target="_blank" class="font-bold underline hover:text-blue-400">10min setup guide by Hammer Dance</a>
--    <a href="https://streamersquare.com/getting-started-with-streamelements/" target="_blank" class="hyperlink font-bold underline hover:text-blue-400">Getting started with StreamElements</a>
+-   <a href="https://support.streamelements.com/en/articles/31-quick-start-guide" target="_blank" class="font-bold underline hover:text-blue-400">Quick-Start Guide</a>
+-   <a href="https://www.youtube.com/watch?v=YctwM_51i44" target="_blank" class="font-bold underline hover:text-blue-400">10min setup guide by Hammer Dance</a>
+-   <a href="https://streamersquare.com/getting-started-with-streamelements/" target="_blank" class="hyperlink font-bold underline hover:text-blue-400">Getting started with StreamElements</a>
 
 ---
 
