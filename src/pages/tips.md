@@ -9,22 +9,28 @@ description: Tips for coworking streamers
 Here are some tips for coworking streamers!
 
 ## Table of Contents
-- [Tips](#tips)
-  - [Table of Contents](#table-of-contents)
-  - [To mute or not to mute?](#to-mute-or-not-to-mute)
-  - [Should I leave chat opened while working?](#should-i-leave-chat-opened-while-working)
-  - [Fixed schedule](#fixed-schedule)
-  - [Social media](#social-media)
-  - [Chat commands for coworking streams](#chat-commands-for-coworking-streams)
-  - [How to listen to music without getting VOD muted?](#how-to-listen-to-music-without-getting-vod-muted)
-  - [Emotes](#emotes)
-    - [Channel emotes](#channel-emotes)
-    - [Emote extensions](#emote-extensions)
-    - [Browser Extensions](#browser-extensions)
-  - [Other tips](#other-tips)
-  - [References](#references)
+
+-   [Tips](#tips)
+    -   [Table of Contents](#table-of-contents)
+    -   [How to get noticed as a new streamer?](#how-to-get-noticed-as-a-new-streamer)
+    -   [To mute or not to mute?](#to-mute-or-not-to-mute)
+    -   [Should I leave chat opened while working?](#should-i-leave-chat-opened-while-working)
+    -   [Fixed schedule](#fixed-schedule)
+    -   [Social media](#social-media)
+    -   [Chat commands for coworking streams](#chat-commands-for-coworking-streams)
+    -   [How to listen to music without getting VOD muted?](#how-to-listen-to-music-without-getting-vod-muted)
+    -   [Emotes](#emotes)
+        -   [Channel emotes](#channel-emotes)
+        -   [Emote extensions](#emote-extensions)
+        -   [Browser Extensions](#browser-extensions)
+    -   [Other tips](#other-tips)
+    -   [References](#references)
 
 ---
+
+## How to get noticed as a new streamer?
+
+The most common way to get noticed is if you set a "coworking" tag into your stream tags. Other variations include "study" and "studywithme". The community has been struggling to discover new streamers through this method due to the variety of "coworking" tags, hence it has been suggested to Twitch that the <a href="https://twitch.uservoice.com/forums/310210-discover/suggestions/46004791-coworking" target="_blank" class="underline font-bold hover:text-blue-400">Coworking and Study category</a> should be built into Twitch's list of categories. Please leave a vote to support this suggestion!
 
 ## To mute or not to mute?
 
@@ -52,8 +58,6 @@ Chat commands are very useful since you won't be chatting much during the work t
 
 If you're streaming on Twitch using OBS, you can easily avoid getting your VODs muted by separating audio tracks into VOD audio tracks and stream audio tracks. This way, you can listen to music on your stream without worrying about getting muted. Here's a <a href="https://youtu.be/0Lj5rkqSp48/" target="_blank" class="underline hover:text-blue-400">video</a> that explains how to do it! (NO VOICEMEETER REQUIRED)
 
-<!-- https://youtu.be/0Lj5rkqSp48 -->
-
 ## Emotes
 
 ### Channel emotes
@@ -78,11 +82,11 @@ Only want to use one extension? <a href="https://www.frankerfacez.com/" target="
 
 ## Other tips
 
--    Don't promote yourself in other people's channels without permission. It's rude and will likely get you banned.
--    Don't worry about view count, just focus on your work and the rest will follow.
--    Avoid spending money on your stream setup until you're sure you want to stick with it.
--    Avoid using Display/Screen Capture where you may accidentally leak personal information. It is recommended to keep the Display Capture window small enough, so that the text content is not readable.
--    Consider using Application Capture Audio instead of Desktop Audio. This will prevent your viewers from hearing your notifications.
+-   Don't promote yourself in other people's channels without permission. It's rude and will likely get you banned.
+-   Don't worry about view count, just focus on your work and the rest will follow.
+-   Avoid spending money on your stream setup until you're sure you want to stick with it.
+-   Avoid using Display/Screen Capture where you may accidentally leak personal information. It is recommended to keep the Display Capture window small enough, so that the text content is not readable.
+-   Consider using Application Capture Audio instead of Desktop Audio. This will prevent your viewers from hearing your notifications.
 
 ## References
 
