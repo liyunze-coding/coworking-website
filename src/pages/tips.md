@@ -13,6 +13,10 @@ Here are some tips for coworking streamers!
 -   [Tips](#tips)
     -   [Table of Contents](#table-of-contents)
     -   [How to get noticed as a new streamer?](#how-to-get-noticed-as-a-new-streamer)
+        -   [Use stream tags to its full potential](#use-stream-tags-to-its-full-potential)
+        -   [Post to other social media such as YouTube or Instagram](#post-to-other-social-media-such-as-youtube-or-instagram)
+        -   [Use stream layouts that make your stream stand out](#use-stream-layouts-that-make-your-stream-stand-out)
+        -   [Disable pre-roll advertisements](#disable-pre-roll-advertisements)
     -   [To mute or not to mute?](#to-mute-or-not-to-mute)
     -   [Should I leave chat opened while working?](#should-i-leave-chat-opened-while-working)
     -   [Fixed schedule](#fixed-schedule)
@@ -30,7 +34,29 @@ Here are some tips for coworking streamers!
 
 ## How to get noticed as a new streamer?
 
+### Use stream tags to its full potential
+
 The most common way to get noticed is if you set a "coworking" tag into your stream tags. Other variations include "study" and "studywithme". The community has been struggling to discover new streamers through this method due to the variety of "coworking" tags, hence it has been suggested to Twitch that the <a href="https://twitch.uservoice.com/forums/310210-discover/suggestions/46004791-coworking" target="_blank" class="underline font-bold hover:text-blue-400">Coworking and Study category</a> should be built into Twitch's list of categories. Please leave a vote to support this suggestion!
+
+### Post to other social media such as YouTube or Instagram
+
+Twitch's discovery system doesn't cater towards those with low viewer count. YouTube, Instagram and other social medias have better discovery systems that allow users to better understand who you are.
+
+Short videos are generally recommended, as it allows users to get a glimpse of who you are.
+
+### Use stream layouts that make your stream stand out
+
+On Twitch, people would go through the browse section with a frame of your stream as the thumbnail. If you want to increase the chances of people taking a look at your stream.
+
+### Disable pre-roll advertisements
+
+After hitting affiliate, your streams will have advertisements. If you disable mid-roll ads, pre-roll ads will be given to your viewers when they hop on your stream.
+
+It is recommended to add Ads Manager to your OBS deck:
+
+`https://dashboard.twitch.tv/popout/u/{{channel}}/stream-manager/streamer-ads-manager-panel`
+
+With the OBS deck, you can manually control when the advertisements start and be notified when the stream advertisement is in progress.
 
 ## To mute or not to mute?
 
@@ -85,7 +111,7 @@ Only want to use one extension? <a href="https://www.frankerfacez.com/" target="
 -   Don't promote yourself in other people's channels without permission. It's rude and will likely get you banned.
 -   Don't worry about view count, just focus on your work and the rest will follow.
 -   Avoid spending money on your stream setup until you're sure you want to stick with it.
--   Avoid using Display/Screen Capture where you may accidentally leak personal information. It is recommended to keep the Display Capture window small enough, so that the text content is not readable.
+-   Avoid using Display/Screen Capture where you may accidentally leak personal information. It is recommended to keep the Display Capture window small enough or to blur it, so that the text content is not readable.
 -   Consider using Application Capture Audio instead of Desktop Audio. This will prevent your viewers from hearing your notifications.
 
 ## References
