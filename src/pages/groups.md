@@ -48,6 +48,8 @@ YOUthversity is not only an online space to study together but is dedicated to t
 
 An educational platform suitable for those seeking knowledge. In the community, you have the opportunity to learn alongside others or apply for Erudita membership and share your expertise and passions.
 
+---
+
 <a href="https://studytme.com/" target="_blank" class="font-bold text-2xl hover:underline">CEO Gang 🔗</a>
 
 <a href="https://studytme.com/" target="_blank" class="inline-block mt-2 mb-5">

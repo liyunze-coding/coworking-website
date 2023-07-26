@@ -14,9 +14,12 @@ Here are some tips for coworking streamers!
     -   [Table of Contents](#table-of-contents)
     -   [How to get noticed as a new streamer?](#how-to-get-noticed-as-a-new-streamer)
         -   [Use stream tags to its full potential](#use-stream-tags-to-its-full-potential)
-        -   [Post to other social media such as YouTube or Instagram](#post-to-other-social-media-such-as-youtube-or-instagram)
+        -   [Social Media Marketing](#social-media-marketing)
         -   [Use stream layouts that make your stream stand out](#use-stream-layouts-that-make-your-stream-stand-out)
         -   [Disable pre-roll advertisements](#disable-pre-roll-advertisements)
+        -   [Interact with chat](#interact-with-chat)
+        -   [Networking](#networking)
+        -   [Other notes](#other-notes)
     -   [To mute or not to mute?](#to-mute-or-not-to-mute)
     -   [Should I leave chat opened while working?](#should-i-leave-chat-opened-while-working)
     -   [Fixed schedule](#fixed-schedule)
@@ -38,11 +41,9 @@ Here are some tips for coworking streamers!
 
 The most common way to get noticed is if you set a "coworking" tag into your stream tags. Other variations include "study" and "studywithme". The community has been struggling to discover new streamers through this method due to the variety of "coworking" tags, hence it has been suggested to Twitch that the <a href="https://twitch.uservoice.com/forums/310210-discover/suggestions/46004791-coworking" target="_blank" class="underline font-bold hover:text-blue-400">Coworking and Study category</a> should be built into Twitch's list of categories. Please leave a vote to support this suggestion!
 
-### Post to other social media such as YouTube or Instagram
+### Social Media Marketing
 
-Twitch's discovery system doesn't cater towards those with low viewer count. YouTube, Instagram and other social medias have better discovery systems that allow users to better understand who you are.
-
-Short videos are generally recommended, as it allows users to get a glimpse of who you are.
+Having good social media marketing allows you to reach a broader audience beyond your live streams. Utilizing platforms like Twitter, Instagram and YouTube enables you to promote your content, engage with potential viewers and build a loyal following, increasing visibility and attracting new members to your community.
 
 ### Use stream layouts that make your stream stand out
 
@@ -57,6 +58,20 @@ It is recommended to add Ads Manager to your OBS deck:
 `https://dashboard.twitch.tv/popout/u/{{channel}}/stream-manager/streamer-ads-manager-panel`
 
 With the OBS deck, you can manually control when the advertisements start and be notified when the stream advertisement is in progress.
+
+### Interact with chat
+
+Interacting with your chat is crucial to grow your community because it fosters a sense of engagement and connection with your audience. By acknowledging and responding to viewers, you create a welcoming and inclusive atmosphere, encouraging viewers to stay, become regulars, and invite others, ultimately leading to organic community growth.
+
+### Networking
+
+Having good networking opens up collaboration opportunities, cross-promotion, and exposure to each other's audiences. By forming connections within the streaming community, you can tap into a larger pool of viewers, gain credibility, and foster a supportive environment that encourages mutual growth and success.
+
+### Other notes
+
+Even if you follow these tips, it is not a 100% guarantee that you will become a successful streamer.
+
+There are other factors that you have little to no control over, such as luck and entertaining personality.
 
 ## To mute or not to mute?
 
