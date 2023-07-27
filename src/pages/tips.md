@@ -47,7 +47,7 @@ Having good social media marketing allows you to reach a broader audience beyond
 
 ### Use stream layouts that make your stream stand out
 
-On Twitch, people would go through the browse section with a frame of your stream as the thumbnail. If you want to increase the chances of people taking a look at your stream.
+On Twitch, people would go through the browse section with a frame of your stream as the thumbnail. If you want to increase the chances of people clicking onto your stream, you should make your overall stream aesthetic.
 
 ### Disable pre-roll advertisements
 
