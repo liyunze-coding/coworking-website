@@ -83,7 +83,10 @@ const { title, description } = Astro.props;
 		text-decoration: none;
 	}
 
-	code {
-		max-width: 100%;
+	p code {
+		word-break: break-all; /* This will allow the URL to break at any character */
+		display: block; /* Ensures the entire URL is on its own line */
+		width: 100%; /* Make sure the code element takes up the full width of its container */
+		overflow-x: auto;
 	}
 </style>
