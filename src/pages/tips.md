@@ -73,9 +73,13 @@ Even if you follow these tips, it is not a 100% guarantee that you will become a
 
 There are other factors that you have little to no control over, such as luck and entertaining personality.
 
+---
+
 ## To mute or not to mute?
 
 Most streamers mute themselves during the work sessions because it makes it easier for the viewers to focus. However it's also possible to leave the mic on for keyboard asmr and general "office noise" which many people enjoy - ask your community what they prefer!
+
+---
 
 ## Should I leave chat opened while working?
 
@@ -83,21 +87,31 @@ Many new coworking streamers often worry about neglecting chat. It's a tough bal
 
 Having commands such as "!muted" or "!speak" can come in handy. It lets newcomers know that you're currently focused and will catch up with them later. Trust me, as time goes by, you'll attract viewers who are also there to work, so the pressure to chat constantly during work hours will naturally ease up. So hang in there!
 
+---
+
 ## Fixed schedule
 
 It is often recommended that streamers in general stick to a regular schedule because it allows your community to know when to join your channel. While it's definitely beneficial, it's not a requirement and it's totally fine to be flexible with your streams. If you do have irregular stream times, you might want to think about posting on social media to let your followers know you're live.
+
+---
 
 ## Social media
 
 Speaking of social media, it's a great way to let your followers know when you're live! You can also use it to post about your upcoming streams, share your work, and interact with your community. It's a good idea to have a Discord server for your community as well. It's a great way to keep in touch with your viewers and get to know them better!
 
+---
+
 ## Chat commands for coworking streams
 
 Chat commands are very useful since you won't be chatting much during the work timer. Some common chat commands you may see include ones that introduce your stream, provide a brief introduction to the pomodoro method (if you use it), or a muted command that may explain why you may be muted (e.g: !welcome !timer !pomo !muted). You may also like to add a command to tell your viewers what you're working on that day (!today !work !study) - this adds a nice personal touch and you can use it to encourage other's to talk about what they're working on too.
 
+---
+
 ## How to listen to music without getting VOD muted?
 
 If you're streaming on Twitch using OBS, you can easily avoid getting your VODs muted by separating audio tracks into VOD audio tracks and stream audio tracks. This way, you can listen to music on your stream without worrying about getting muted. Here's a <a href="https://youtu.be/0Lj5rkqSp48/" target="_blank" class="underline hover:text-blue-400">video</a> that explains how to do it! (NO VOICEMEETER REQUIRED)
+
+---
 
 ## Emotes
 
@@ -121,6 +135,8 @@ You won't run into any issues using all three extensions at once!
 
 Only want to use one extension? <a href="https://www.frankerfacez.com/" target="_blank" class="underline hover:text-blue-400">FrankerFaceZ</a> is probably the best one to go for! It is stable, has special addons through the extension itself for BTTV and 7TV emotes, and has the best customization for twitch as a site!
 
+---
+
 ## Other tips
 
 -   Don't promote yourself in other people's channels without permission. It's rude and will likely get you banned.
@@ -128,6 +144,8 @@ Only want to use one extension? <a href="https://www.frankerfacez.com/" target="
 -   Avoid spending money on your stream setup until you're sure you want to stick with it.
 -   Avoid using Display/Screen Capture where you may accidentally leak personal information. It is recommended to keep the Display Capture window small enough or to blur it, so that the text content is not readable.
 -   Consider using Application Capture Audio instead of Desktop Audio. This will prevent your viewers from hearing your notifications.
+
+---
 
 ## References
 
