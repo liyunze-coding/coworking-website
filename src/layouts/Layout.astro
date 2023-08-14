@@ -1,5 +1,6 @@
 ---
 import NavBar from "../components/navBar.astro";
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
 	title: string;
@@ -40,6 +41,7 @@ const { title, description } = Astro.props;
 	<body>
 		<NavBar />
 		<slot />
+		<ViewTransitions />
 	</body>
 </html>
 
