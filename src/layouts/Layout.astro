@@ -35,60 +35,59 @@ const { title, description } = Astro.props;
 			rel="stylesheet"
 		/>
 		<script defer src="/_vercel/insights/script.js"></script>
+		<ViewTransitions />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
 		<NavBar />
 		<slot />
-		<ViewTransitions />
-	</body>
+	</body><style is:global>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		html {
+			font-family: "Montserrat", system-ui, sans-serif;
+			background-color: #29233f;
+		}
+
+		html,
+		body {
+			min-height: 100%;
+		}
+
+		body {
+			height: 100vh;
+			font-family: "Montserrat", system-ui, sans-serif;
+		}
+
+		code {
+			font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+				DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+				monospace;
+		}
+
+		nav {
+			font-family: "Montserrat", system-ui, sans-serif;
+			font-weight: 500;
+		}
+
+		nav ul a {
+			text-decoration: none;
+		}
+
+		a.preview {
+			text-decoration: none;
+		}
+
+		p code {
+			word-break: break-all; /* This will allow the URL to break at any character */
+			display: block; /* Ensures the entire URL is on its own line */
+			width: 100%; /* Make sure the code element takes up the full width of its container */
+			overflow-x: auto;
+		}
+	</style>
 </html>
-
-<style is:global>
-	* {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
-	}
-
-	html {
-		font-family: "Montserrat", system-ui, sans-serif;
-		background-color: #29233f;
-	}
-
-	html,
-	body {
-		min-height: 100%;
-	}
-
-	body {
-		height: 100vh;
-		font-family: "Montserrat", system-ui, sans-serif;
-	}
-
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-
-	nav {
-		font-family: "Montserrat", system-ui, sans-serif;
-		font-weight: 500;
-	}
-
-	nav ul a {
-		text-decoration: none;
-	}
-
-	a.preview {
-		text-decoration: none;
-	}
-
-	p code {
-		word-break: break-all; /* This will allow the URL to break at any character */
-		display: block; /* Ensures the entire URL is on its own line */
-		width: 100%; /* Make sure the code element takes up the full width of its container */
-		overflow-x: auto;
-	}
-</style>
