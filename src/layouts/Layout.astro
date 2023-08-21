@@ -20,20 +20,6 @@ const { title, description } = Astro.props;
 		<meta name="theme-color" content="#2B2D31" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;700&display=swap"
-			rel="stylesheet"
-		/>
 		<script defer src="/_vercel/insights/script.js"></script>
 		<ViewTransitions />
 		<meta name="generator" content={Astro.generator} />
@@ -42,52 +28,138 @@ const { title, description } = Astro.props;
 	<body>
 		<NavBar />
 		<slot />
-	</body><style is:global>
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
 
-		html {
-			font-family: "Montserrat", system-ui, sans-serif;
-			background-color: #29233f;
-		}
+		<style is:global>
+			@font-face {
+				font-family: "Fredoka";
+				src: url("/fonts/Fredoka-Bold.ttf") format("truetype");
+				font-weight: bold;
+				font-style: normal;
+			}
 
-		html,
-		body {
-			min-height: 100%;
-		}
+			@font-face {
+				font-family: "Fredoka";
+				src: url("/fonts/Fredoka-Light.ttf") format("truetype");
+				font-weight: normal;
+				font-style: normal;
+			}
 
-		body {
-			height: 100vh;
-			font-family: "Montserrat", system-ui, sans-serif;
-		}
+			@font-face {
+				font-family: "Fredoka";
+				src: url("/fonts/Fredoka-Medium.ttf") format("truetype");
+				font-weight: 500;
+				font-style: normal;
+			}
 
-		code {
-			font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-				DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
-				monospace;
-		}
+			@font-face {
+				font-family: "Fredoka";
+				src: url("/fonts/Fredoka-Regular.ttf") format("truetype");
+				font-weight: normal;
+				font-style: normal;
+			}
 
-		nav {
-			font-family: "Montserrat", system-ui, sans-serif;
-			font-weight: 500;
-		}
+			@font-face {
+				font-family: "Montserrat";
+				src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+				font-weight: bold;
+				font-style: normal;
+			}
 
-		nav ul a {
-			text-decoration: none;
-		}
+			@font-face {
+				font-family: "Montserrat";
+				src: url("/fonts/Montserrat-Light.ttf") format("truetype");
+				font-weight: 300;
+				font-style: normal;
+			}
 
-		a.preview {
-			text-decoration: none;
-		}
+			@font-face {
+				font-family: "Montserrat";
+				src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+				font-weight: 500;
+				font-style: normal;
+			}
 
-		p code {
-			word-break: break-all; /* This will allow the URL to break at any character */
-			display: block; /* Ensures the entire URL is on its own line */
-			width: 100%; /* Make sure the code element takes up the full width of its container */
-			overflow-x: auto;
-		}
-	</style>
+			@font-face {
+				font-family: "Montserrat";
+				src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: "Montserrat";
+				src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
+				font-weight: 600;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: "Poppins";
+				src: url("/fonts/Poppins-Light.ttf") format("truetype");
+				font-weight: 300;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: "Poppins";
+				src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+				font-weight: 500;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: "Poppins";
+				src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			html {
+				font-family: "Montserrat", system-ui, sans-serif;
+				background-color: #29233f;
+			}
+
+			html,
+			body {
+				min-height: 100%;
+			}
+
+			body {
+				height: 100vh;
+				font-family: "Montserrat", system-ui, sans-serif;
+			}
+
+			code {
+				font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+					DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+					monospace;
+			}
+
+			nav {
+				font-family: "Montserrat", system-ui, sans-serif;
+				font-weight: 500;
+			}
+
+			nav ul a {
+				text-decoration: none;
+			}
+
+			a.preview {
+				text-decoration: none;
+			}
+
+			p code {
+				word-break: break-all; /* This will allow the URL to break at any character */
+				display: block; /* Ensures the entire URL is on its own line */
+				width: 100%; /* Make sure the code element takes up the full width of its container */
+				overflow-x: auto;
+			}
+		</style>
+	</body>
 </html>
