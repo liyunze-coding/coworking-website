@@ -1,36 +1,43 @@
 <div transition:persist class="w-full">
 	<label
 		class="fixed flex hamburger-menu bg-primary border-2 border-solid border-gray-100 p-2 rounded-lg"
+		aria-label="Menu"
 	>
 		<span class="top-bun"></span>
-		<input type="checkbox" />
+		<input type="checkbox" aria-label="Toggle menu" />
 		<span class="bottom-bun"></span>
 	</label>
 	<aside class="sidebar flex z-20">
-		<nav class="flex flex-col capitalize">
+		<nav class="flex flex-col capitalize" role="navigation">
 			<a
 				class="sidebar-url px-5 py-2 mt-10 text-center rounded-md hover:text-gray-600 hover:bg-gray-100 transition-colors duration-500"
-				href="/">home</a
+				href="/"
+				title="Go to the home page">home</a
 			>
 			<a
 				class="sidebar-url px-5 py-2 mt-2 text-center rounded-md hover:text-gray-600 hover:bg-gray-100 transition-colors duration-500"
-				href="/about">about</a
+				href="/about"
+				title="Go to the about page">about</a
 			>
 			<a
 				class="sidebar-url px-5 py-2 mt-2 text-center rounded-md hover:text-gray-600 hover:bg-gray-100 transition-colors duration-500"
-				href="/tips">tips</a
+				href="/tips"
+				title="Go to the tips page">tips</a
 			>
 			<a
 				class="sidebar-url px-5 py-2 mt-2 text-center rounded-md hover:text-gray-600 hover:bg-gray-100 transition-colors duration-500"
-				href="/specs">specs</a
+				href="/specs"
+				title="Go to the specs page">specs</a
 			>
 			<a
 				class="sidebar-url px-5 py-2 mt-2 text-center rounded-md hover:text-gray-600 hover:bg-gray-100 transition-colors duration-500"
-				href="/bots">bots</a
+				href="/bots"
+				title="Go to the bots page">bots</a
 			>
 			<a
 				class="sidebar-url px-5 py-2 mt-2 text-center rounded-md hover:text-gray-600 hover:bg-gray-100 transition-colors duration-500"
-				href="/widgets">widgets</a
+				href="/widgets"
+				title="Go to the widgets page">widgets</a
 			>
 		</nav>
 	</aside>
