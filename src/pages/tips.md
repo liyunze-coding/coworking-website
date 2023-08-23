@@ -13,6 +13,7 @@ Here are some tips for coworking streamers!
 -   [Tips](#tips)
     -   [Table of Contents](#table-of-contents)
     -   [How to get noticed as a new streamer?](#how-to-get-noticed-as-a-new-streamer)
+        -   [Have a consistent stream schedule](#have-a-consistent-stream-schedule)
         -   [Use stream tags to its full potential](#use-stream-tags-to-its-full-potential)
         -   [Social Media Marketing](#social-media-marketing)
         -   [Use stream layouts that make your stream stand out](#use-stream-layouts-that-make-your-stream-stand-out)
@@ -37,6 +38,12 @@ Here are some tips for coworking streamers!
 
 ## How to get noticed as a new streamer?
 
+### Have a consistent stream schedule
+
+A regular stream schedule lets your viewers know exactly when to expect you to go live. When viewers can anticipate your streams, they are more likely to make time to watch, increasing the chances of them tuning in and engaging with your content.
+
+Regularly scheduled streams also help you attract and retain viewers. When new viewers find your stream, they are more likely to follow if they see a consistent schedule. Additionally, existing followers are more likely to continue watching if they know when to catch your streams.
+
 ### Use stream tags to its full potential
 
 The most common way to get noticed is if you set a "coworking" tag into your stream tags. Other variations include "study" and "studywithme". The community has been struggling to discover new streamers through this method due to the variety of "coworking" tags, hence it has been suggested to Twitch that the <a href="https://twitch.uservoice.com/forums/310210-discover/suggestions/46004791-coworking" target="_blank" class="underline font-bold hover:text-blue-400">Coworking and Study category</a> should be built into Twitch's list of categories. Please leave a vote to support this suggestion!
@@ -51,7 +58,11 @@ On Twitch, people would go through the browse section with a frame of your strea
 
 ### Disable pre-roll advertisements
 
-After hitting affiliate, your streams will have advertisements. If you disable mid-roll ads, pre-roll ads will be given to your viewers when they hop on your stream.
+It's annoying that when you want to check out a streamer you never watched before and you're greeted with an advertisement lasting 30 seconds long.
+
+After being a Twitch affiliate, your streams will have advertisements. If you disable mid-roll ads, pre-roll ads will be given to your viewers when they hop on your stream at all times.
+
+However if you have mid-roll ads enabled, your viewers may only get pre-roll ads near when the mid-roll ads are about to happen.
 
 It is recommended to add Ads Manager to your OBS deck:
 
