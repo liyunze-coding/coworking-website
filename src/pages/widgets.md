@@ -104,7 +104,7 @@ A task list widget is a great way to keep track of your tasks along with your vi
 
 <img src="/assets/multi-task.webp" class="rounded-md mb-5 mt-10 w-68 h-56">
 
-If you're interested in a task list widget that allows you to add multiple tasks at a time, check out <a href="https://www.twitch.tv/RyanPython" target="_blank" class="underline hover:text-blue-400">RyanPython's stream</a> and learn more about the multi-task widget <a href="https://github.com/liyunze-coding/Chat-Task-Tic-Overlay/blob/main/MultiTask.md" target="_blank" class="underline hover:text-blue-400">here</a>!
+If you're interested in a task list widget that allows you to add multiple tasks at a time, check out <a href="https://www.twitch.tv/RyanPython" target="_blank" class="underline hover:text-blue-400">RyanPython's stream</a> and learn more about the multi-task widget <a href="https://github.com/liyunze-coding/Chat-Task-Tic-Overlay/blob/main/MultiTask.md" target="_blank" class="underline hover:text-blue-400">here</a>! Note: This widget is behind a paywall.
 
 ---
 
@@ -122,13 +122,13 @@ A Spotify widget is a great way to let your viewers know what you're listening t
 
 <img src="/assets/aidenwallis.webp" width="500" class="mb-10">
 
-<a href="https://github.com/liyunze-coding/spotify-widget-for-obs" target="_blank" class="font-bold underline hover:text-blue-400">RyanPython</a>: A widget that shows what you're playing via Spotify. You can customize the widget to your liking using CSS.
+<a href="https://github.com/liyunze-coding/spotify-widget-for-obs" target="_blank" class="font-bold underline hover:text-blue-400">RyanPython</a>: A widget that shows what you're playing via Spotify. You can customize the widget to your liking using CSS, built using NodeJS.
 
 <img src="/assets/ryanpython_spotify.webp" width="500" class="mb-10">
 
 ### Software:
 
-<a href="https://github.com/dlrudie/Snip/releases" target="_blank" class="font-bold underline hover:text-blue-400">Snip</a>: Captures music from iTunes or Spotify and saves the current song as a text and png file that you can add into your streaming software
+<a href="https://github.com/dlrudie/Snip/releases" target="_blank" class="font-bold underline hover:text-blue-400">Snip</a>: Captures music from iTunes or Spotify and saves the current song as a text and png file that you can add into your streaming software.
 
 <img src="/assets/snip.webp" width="500" class="mb-10">
 
