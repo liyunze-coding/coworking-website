@@ -155,6 +155,7 @@ Only want to use one extension? <a href="https://www.frankerfacez.com/" target="
 -   Avoid spending money on your stream setup until you're sure you want to stick with it.
 -   Avoid using Display/Screen Capture where you may accidentally leak personal information. It is recommended to keep the Display Capture window small enough or to blur it, so that the text content is not readable.
 -   Consider using Application Capture Audio instead of Desktop Audio. This will prevent your viewers from hearing your notifications or other unwanted noise.
+-   For macOS users, if you are struggling with Desktop Audio issues on OBS, consider watching this <a href="https://www.youtube.com/watch?v=H4VPbMvBuLg" target="_blank" class="underline hover:text-blue-400">video</a> on how to setup BlackHole Audio!
 
 ---
 
