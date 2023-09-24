@@ -86,8 +86,8 @@ A task list widget is a great way to keep track of your tasks along with your vi
         </a>
     </li>
     <li>
-        <a href="https://github.com/liyunze-coding/chat-task-tic-overlay" target="_blank" class="hyperlink">
-        https://github.com/liyunze-coding/Chat-Task-Tic-Overlay
+        <a href="https://github.com/liyunze-coding/chat-task-tic-overlay-infinity" target="_blank" class="hyperlink">
+        https://github.com/liyunze-coding/Chat-Task-Tic-Overlay-Infinity
         </a>
     </li>
     <li>

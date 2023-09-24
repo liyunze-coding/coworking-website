@@ -50,7 +50,7 @@ The most common way to get noticed is if you set a "coworking" tag into your str
 
 ### Social Media Marketing
 
-Having good social media marketing allows you to reach a broader audience beyond your live streams. Utilizing platforms like Twitter, Instagram and YouTube enables you to promote your content, engage with potential viewers and build a loyal following, increasing visibility and attracting new members to your community.
+Having good social media marketing allows you to reach a broader audience beyond your live streams. Utilizing platforms like Instagram and YouTube (even YouTube Shorts!) enables you to promote your content, engage with potential viewers and build a loyal following, increasing visibility and attracting new members to your community.
 
 ### Use stream layouts that make your stream stand out
 
