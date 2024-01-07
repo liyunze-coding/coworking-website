@@ -33,9 +33,6 @@ A pomodoro timer is a great way to keep track of your work sessions. It's also a
         <a href="https://pixelchat.tv/" target="_blank" class="hyperlink">https://pixelchat.tv/</a> *
     </li>
     <li>
-        <a href="https://obstutorials.com/countdown-timer-for-twitch-and-streamelements/" target="_blank" class="hyperlink">https://obstutorials.com/countdown-timer-for-twitch-and-streamelements/</a> *
-    </li>
-    <li>
         <a href="https://github.com/liyunze-coding/streamodoro" target="_blank" class="hyperlink">https://github.com/liyunze-coding/streamodoro</a> *
     </li>
 </ul>
@@ -118,7 +115,7 @@ A Spotify widget is a great way to let your viewers know what you're listening t
 
 <img src="/assets/pixelchat.webp" width="500" class="mb-10">
 
-<a href="https://spotify.aidenwallis.co.uk/" target="_blank" class="font-bold underline hover:text-blue-400">Aiden Wallis</a>: A widget that shows what you're playing via Spotify. Bonus: you can add a command like !song to your bot (Nightbot, StreamElements, etc.) that outputs the current song.
+<a href="https://spotify.aidenwallis.co.uk/" target="_blank" class="font-bold underline hover:text-blue-400">Aiden Wallis</a>: A widget that shows what you're playing via Spotify. Bonus: you can add a command like !song to your bot (Nightbot) that outputs the current song.
 
 <img src="/assets/aidenwallis.webp" width="500" class="mb-10">
 
@@ -134,21 +131,9 @@ A Spotify widget is a great way to let your viewers know what you're listening t
 
 ---
 
-## General Purpose
+## Other
 
-For alerts, chat, and other widgets/overlays, it is recommended to use <a href="https://streamelements.com/overlays" target="_blank" class="underline hover:text-blue-400">StreamElements</a>!
-
-Alternatively, you can also use Twitch Alerts that can be found in your <a href="https://dashboard.twitch.tv/" target="_blank" class="underline hover:text-blue-400">Twitch Dashboard</a>!
-
-#### Resources to get started with StreamElements:
-
--   <a href="https://support.streamelements.com/en/articles/31-quick-start-guide" target="_blank" class="font-bold underline hover:text-blue-400">Quick-Start Guide</a>
--   <a href="https://www.youtube.com/watch?v=YctwM_51i44" target="_blank" class="font-bold underline hover:text-blue-400">10min setup guide by Hammer Dance</a>
--   <a href="https://streamersquare.com/getting-started-with-streamelements/" target="_blank" class="hyperlink font-bold underline hover:text-blue-400">Getting started with StreamElements</a>
-
----
-
-## Custom widget
+You can use Twitch Alerts that can be found in your <a href="https://dashboard.twitch.tv/" target="_blank" class="underline hover:text-blue-400">Twitch Dashboard</a>!
 
 Want to make your own widget? Check out <a href="https://github.com/instafluff/comfyjs" target="_blank" class="underline">Comfy.JS</a> made by Instafluff!
 
