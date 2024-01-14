@@ -111,23 +111,24 @@ A Spotify widget is a great way to let your viewers know what you're listening t
 
 ### Browser Source:
 
+<a href="https://6klabs.com/" target="_blank" class="font-bold underline hover:text-blue-400">6K Labs</a>: A widget that shows what you're playing via Spotify or YouTube music. Many customization options provided for free. 
+
+<a href="https://6klabs.com/" target="_blank" class="block w-fit"><img src="/assets/6kLabs.webp" width="300" class="mb-10"></a>
+
+
 <a href="https://pixelchat.tv/" target="_blank" class="font-bold underline hover:text-blue-400">Pixel Chat</a>: An easy-to-implement widget that shows what you're playing via Spotify, Apple Music, etc. Bonus: includes other widgets like one for shout outs, captions, and counters.
 
-<img src="/assets/pixelchat.webp" width="500" class="mb-10">
+<a href="https://pixelchat.tv/" target="_blank" class="block w-fit"><img src="/assets/pixelchat.webp" width="500" class="mb-10"></a>
 
 <a href="https://spotify.aidenwallis.co.uk/" target="_blank" class="font-bold underline hover:text-blue-400">Aiden Wallis</a>: A widget that shows what you're playing via Spotify. Bonus: you can add a command like !song to your bot (Nightbot) that outputs the current song.
 
-<img src="/assets/aidenwallis.webp" width="500" class="mb-10">
-
-<a href="https://github.com/liyunze-coding/spotify-widget-for-obs" target="_blank" class="font-bold underline hover:text-blue-400">RythonDev</a>: A widget that shows what you're playing via Spotify. You can customize the widget to your liking using CSS, built using NodeJS.
-
-<img src="/assets/ryanpython_spotify.webp" width="500" class="mb-10">
+<a href="https://pixelchat.tv/" target="_blank" class="block w-fit"><img src="/assets/aidenwallis.webp" width="500" class="mb-10"></a>
 
 ### Software:
 
 <a href="https://github.com/dlrudie/Snip/releases" target="_blank" class="font-bold underline hover:text-blue-400">Snip</a>: Captures music from iTunes or Spotify and saves the current song as a text and png file that you can add into your streaming software.
 
-<img src="/assets/snip.webp" width="500" class="mb-10">
+<a href="https://github.com/dlrudie/Snip/releases" target="_blank" class="block w-fit"><img src="/assets/snip.webp" width="500" class="mb-10"></a>
 
 ---
 
