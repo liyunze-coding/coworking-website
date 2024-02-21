@@ -12,9 +12,9 @@ Twitch bots are a great way to increase engagement for your viewers and improve 
 
 ---
 
-<a href="https://serycodes.carrd.co/" target="_blank" class="font-bold text-2xl hover:underline">Nightbot 🔗</a>
+<a href="https://nightbot.tv/" target="_blank" class="font-bold text-2xl hover:underline">Nightbot 🔗</a>
 
-<a href="https://serycodes.carrd.co/" target="_blank" class="hover:underline">Nightbot</a> is a chatbot that you can use to manage your chat. It has a lot of features and is easy to use. You can also use it to create custom commands for your stream.
+<a href="https://nightbot.tv/" target="_blank" class="hover:underline">Nightbot</a> is a chatbot that you can use to manage your chat. It has a lot of features and is easy to use. You can also use it to create custom commands for your stream.
 
 ---
 
