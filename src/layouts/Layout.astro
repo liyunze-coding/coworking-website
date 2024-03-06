@@ -3,163 +3,210 @@ import NavBar from "../components/navBar.astro";
 import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
-	title: string;
-	description: string;
+    title: string;
+    description: string;
 }
 
 const { title, description } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
-		<meta name="keywords" content="coworking, study, streams" />
-		<meta name="author" content="RyanPython" />
-		<meta name="theme-color" content="#2B2D31" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<script defer src="/_vercel/insights/script.js"></script>
-		<ViewTransitions />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<NavBar />
-		<slot />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content={description} />
+        <meta name="keywords" content="coworking, study, streams" />
+        <meta name="author" content="RyanPython" />
+        <meta name="theme-color" content="#2B2D31" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <script defer src="/_vercel/insights/script.js"></script>
+        <ViewTransitions />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body>
+        <NavBar />
+        <slot />
 
-		<style is:global>
-			@font-face {
-				font-family: "Fredoka";
-				src: url("/fonts/Fredoka-Bold.ttf") format("truetype");
-				font-weight: bold;
-				font-style: normal;
-			}
+        <style is:global>
+            @font-face {
+                font-family: "Fredoka";
+                src: url("/fonts/Fredoka-Bold.ttf") format("truetype");
+                font-weight: bold;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Fredoka";
-				src: url("/fonts/Fredoka-Light.ttf") format("truetype");
-				font-weight: normal;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Fredoka";
+                src: url("/fonts/Fredoka-Light.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Fredoka";
-				src: url("/fonts/Fredoka-Medium.ttf") format("truetype");
-				font-weight: 500;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Fredoka";
+                src: url("/fonts/Fredoka-Medium.ttf") format("truetype");
+                font-weight: 500;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Fredoka";
-				src: url("/fonts/Fredoka-Regular.ttf") format("truetype");
-				font-weight: normal;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Fredoka";
+                src: url("/fonts/Fredoka-Regular.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
-				font-weight: bold;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Montserrat";
+                src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+                font-weight: bold;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-Light.ttf") format("truetype");
-				font-weight: 300;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Montserrat";
+                src: url("/fonts/Montserrat-Light.ttf") format("truetype");
+                font-weight: 300;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
-				font-weight: 500;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Montserrat";
+                src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
+                font-weight: 500;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
-				font-weight: normal;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Montserrat";
+                src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
-				font-weight: 600;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Montserrat";
+                src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
+                font-weight: 600;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Poppins";
-				src: url("/fonts/Poppins-Light.ttf") format("truetype");
-				font-weight: 300;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Poppins";
+                src: url("/fonts/Poppins-Light.ttf") format("truetype");
+                font-weight: 300;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Poppins";
-				src: url("/fonts/Poppins-Medium.ttf") format("truetype");
-				font-weight: 500;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Poppins";
+                src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+                font-weight: 500;
+                font-style: normal;
+            }
 
-			@font-face {
-				font-family: "Poppins";
-				src: url("/fonts/Poppins-Regular.ttf") format("truetype");
-				font-weight: normal;
-				font-style: normal;
-			}
+            @font-face {
+                font-family: "Poppins";
+                src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
 
-			* {
-				box-sizing: border-box;
-				margin: 0;
-				padding: 0;
-			}
+            @font-face {
+                font-family: "Inter";
+                src: url("/fonts/Inter-Regular.ttf") format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
 
-			html {
-				font-family: "Montserrat", system-ui, sans-serif;
-				background-color: #29233f;
-			}
+            @font-face {
+                font-family: "Inter";
+                src: url("/fonts/Inter-Medium.ttf") format("truetype");
+                font-weight: 500;
+                font-style: normal;
+            }
 
-			html,
-			body {
-				min-height: 100%;
-			}
+            :root {
+                --header-height: 3.5rem;
+            }
 
-			body {
-				height: 100vh;
-				font-family: "Montserrat", system-ui, sans-serif;
-			}
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
 
-			code {
-				font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-					DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
-					monospace;
-			}
+            html {
+                font-family: system-ui, sans-serif;
+                background-color: #171717;
+                color: rgb(255 255 255);
+            }
 
-			nav {
-				font-family: "Montserrat", system-ui, sans-serif;
-				font-weight: 500;
-			}
+            html,
+            body {
+                min-height: 100%;
+                /* smooth scroll */
+                scroll-behavior: smooth;
+            }
 
-			nav ul a {
-				text-decoration: none;
-			}
+            body {
+                height: 100vh;
+            }
 
-			a.preview {
-				text-decoration: none;
-			}
+            code {
+                font-family:
+                    Menlo,
+                    Monaco,
+                    Lucida Console,
+                    Liberation Mono,
+                    DejaVu Sans Mono,
+                    Bitstream Vera Sans Mono,
+                    Courier New,
+                    monospace;
+            }
 
-			p code {
-				word-break: break-all; /* This will allow the URL to break at any character */
-				display: block; /* Ensures the entire URL is on its own line */
-				width: 100%; /* Make sure the code element takes up the full width of its container */
-				overflow-x: auto;
-			}
-		</style>
-	</body>
+            nav {
+                font-family: system-ui, sans-serif;
+                font-weight: 500;
+            }
+
+            nav ul a {
+                text-decoration: none;
+            }
+
+            a.preview {
+                text-decoration: none;
+            }
+
+            p code {
+                word-break: break-all; /* This will allow the URL to break at any character */
+                display: block; /* Ensures the entire URL is on its own line */
+                width: 100%; /* Make sure the code element takes up the full width of its container */
+                overflow-x: auto;
+            }
+        </style>
+        <script is:inline>
+            const theme = (() => {
+                if (
+                    typeof localStorage !== "undefined" &&
+                    localStorage.getItem("theme")
+                ) {
+                    return localStorage.getItem("theme");
+                }
+                if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                    return "dark";
+                }
+                return "light";
+            })();
+
+            if (theme === "light") {
+                document.documentElement.classList.remove("dark");
+            } else {
+                document.documentElement.classList.add("dark");
+            }
+            window.localStorage.setItem("theme", theme);
+        </script>
+    </body>
 </html>
