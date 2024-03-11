@@ -1,6 +1,5 @@
 ---
 import Layout from "./Layout.astro";
-import TableOfContent from "../components/TableOfContent.astro";
 import VerticalNav from "../components/verticalNav.astro";
 
 type Navigation = Record<
@@ -54,29 +53,28 @@ export async function setup() {
         navigation: sortedNavigation,
     };
 }
-const { frontmatter, headings } = Astro.props;
 const { navigation } = await setup();
 ---
 
-<Layout title={frontmatter.title} description={frontmatter.description}>
+<Layout title={Astro.props.title} description={Astro.props.description}>
     <div class="pt-14 mx-auto px-4 sm:px-6 max-w-7xl">
         <div class="flex flex-col lg:grid lg:grid-cols-10">
             <!-- vertical navbar -->
             <div class="lg:col-span-2" transition:name="vertical-navbar">
                 <VerticalNav navigation={navigation} />
             </div>
-            <div class="lg:col-span-8">
-                <div class="flex flex-col lg:grid lg:grid-cols-10">
+            <div class="lg:col-span-8 pt-8">
+                <!-- <div class="flex flex-col lg:grid lg:grid-cols-10">
                     <div class="col-span-8 pr-10 pb-10 pt-8">
                         <slot />
                     </div>
                     <div
-                        class="hidden col-span-2 pt-8 lg:block lg:sticky lg:px-4 lg:-mx-4 lg:max-h-[calc(100vh-var(--header-height))] lg:top-[--header-height]"
+                        class="col-span-2 pt-8 lg:block lg:sticky lg:px-4 lg:-mx-4 lg:max-h-[calc(100vh-var(--header-height))] lg:top-[--header-height]"
                     >
-                        <!-- TOC -->
                         <TableOfContent headings={headings} />
                     </div>
-                </div>
+                </div> -->
+                <slot />
             </div>
         </div>
     </div>
@@ -114,10 +112,6 @@ const { navigation } = await setup();
             @apply my-4 border-l-4 border-gray-500 pl-4;
         }
 
-        a {
-            @apply inline-block text-blue-400 hover:underline;
-        }
-
         ul ul {
             @apply mb-2 ml-5 list-[circle];
         }
@@ -138,11 +132,4 @@ const { navigation } = await setup();
             @apply h-[100px] max-w-full;
         } */
     </style>
-
-    <script is:inline>
-        // make all <a> attributes have target="_blank" except for Table of Contents
-        document.querySelectorAll("a:not(.no-target-blank)").forEach((el) => {
-            el.setAttribute("target", "_blank");
-        });
-    </script>
 </Layout>

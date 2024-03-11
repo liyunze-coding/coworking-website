@@ -1,0 +1,61 @@
+---
+title: Moderation and Trolls
+layout: "../../layouts/GuideLayout.astro"
+description: Learn how to moderate your coworking streams!
+order: 5
+---
+
+# Moderation and Trolls
+
+---
+
+## Moderation
+
+Having a good moderation team is important for coworking streamers, since most of the time we are focused on our own work and not chat! This is why it's particularly important to have a good moderation team to help you out so you don't get distracted. 
+
+Consider these three main things when choosing your mods:
+
+- How well do they all get along with each other?
+- What is their availability?
+- Are they good at staying calm and being reasonable?
+
+As well as this, it is ideal if mods are welcoming and active in your community - you can't always be there to say hi to everyone while your working so it's great to have a friendly mod team to welcome new people and answer questions!
+
+> How you invite your mods is a personal choice! And don't feel bad if you ask someone and they say no - not everyone is up for the job! If you know someone you'd like as a mod you could DM them with a personal invite, otherwise you could create an application form if that suits you and your community better!
+
+---
+
+## Bots and trolls
+
+As with any social media platform, you may encounter trolls and bots while you stream. If this happens, it is best to stay calm and work with your mods to resolve the situation; most of the time it is just annoying and won't result in anything serious. The following section is not an exhaustive list and this only meant as friendly advice. Please make sure you have read twitch TOS and only do what makes you feel comfortable and safe.
+
+- ### Generic Trolls
+
+    For trolls that enter your chat and immediately send very inappropriate messages (e.g. hateful/sexual content) it is best to ignore them, ban them straightaway and move on. Giving them attention may create a negative atmosphere in your stream and make others feel unsafe. Try not to take these comments personally - it is unlikely to be targeted and they probably just want to get a reaction out of you. 
+
+- ### Promotional bots
+
+    This is when several bot accounts post in your chat with the same message, usually advertising a "get famous quick" scam. To stop this, you can put your chat in follower only mode by typing <span class="code-highlight">/followers</span> in your chat. Usually they will go away quickly and you can type <span class="code-highlight">/followersoff</span> to change it back.
+
+    You can also make use of the AutoMod feature by banning phrases like "bigfollow", so their messages get automatically removed. You can find this in your Dashboard Settings → Moderation. If you would like, you can also block hyperlinks in the same page or a stream bot (NightBot, StreamElements, etc.)
+
+- ### Follow bots/raids
+
+    This is when several bot accounts follow your channel all at the same time. It can be anywhere from 10-10k. If this happens, stay calm, and turn off follower alerts to stop the alert spam. Sometimes the bots will also send messages all at once so you put your chat in subscriber mode to prevent this if you wish (type <span class="code-highlight">/subscribers</span> in your chat).
+
+    To get rid of bots, you can use [CommanderRoot's follower removal tool](https://twitch-tools.rootonline.de/follower_remover.php). Follow the instructions on his home page to remove accounts between a certain timeframe (you'll need to know what time the bots followed to avoid removing real people). Alternatively, you can just wait and Twitch will delete the accounts after a few days. Your follower count will drop suddenly but this is good - you don't want bots following you!
+
+- ### Donation trolls
+
+    These are particularly nasty trolls. They donate money, anywhere from $10-$200 or more, maybe repeatedly, and will not talk very much in the chat, aside from making some request in exchange for the money they just donated. They then will ask for a chargeback (if youre using paypal). You can try and fight the case but there is a good change you will not win, and if you lose you have to pay $14 chargeback fee each time. This can add up over time. If you suspect someone is a Dono troll, you can block them from donating:
+
+    Go to your [donation page](https://streamlabs.com/dashboard#/donations). There should be a list of names and donations:
+
+    <img src="/images/moderation-and-trolls/donation-troll.webp" alt="Donation troll" loading="lazy" />
+
+    <br> 
+    Also in Settings > Donation settings, make sure you've ticked "Login Required":
+
+    <img src="/images/moderation-and-trolls/donation-settings.webp" alt="Donation settings" loading="lazy" />
+
+---

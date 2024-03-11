@@ -1,0 +1,72 @@
+---
+type Navigation = Record<
+    string,
+    { title: string; url: string; order: number }[]
+>;
+
+const navigation = Astro.props.navigation as Navigation;
+const currentUrl = Astro.request.url;
+
+const isCurrentUrl = (url: string) => currentUrl.includes(url);
+---
+
+<aside
+    id="vertical-nav"
+    class="hidden -translate-x-full lg:translate-x-0 overflow-y-auto lg:block lg:sticky py-8 lg:px-4 lg:-mx-4 lg:max-h-[calc(100vh-var(--header-height))] lg:top-[--header-height]"
+>
+    <div class="relative">
+        <nav class="flex flex-col">
+            {
+                Object.entries(navigation).map(([category, links]) => (
+                    <div class="mb-2">
+                        <a
+                            class="no-target-blank text-lg font-bold mb-1 mt-0 text-white"
+                            href={links[0].url}
+                        >
+                            {category}
+                        </a>
+                        <ul class="list-disc list-outside font-normal">
+                            {links.map((link) => (
+                                <li class="mb-1 pl-0">
+                                    <a
+                                        href={link.url}
+                                        class={`no-target-blank  hover:underline ${isCurrentUrl(link.url) ? "text-blue-400" : "text-white"}`}
+                                    >
+                                        {link.title}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))
+            }
+            <div class="mb-2">
+                <a
+                    href="/groups"
+                    class={`no-target-blank hover:underline text-lg font-bold mt-0
+                    ${isCurrentUrl("/groups") ? "text-blue-400" : "text-white"}`}
+                >
+                    Groups
+                </a>
+            </div>
+            <div class="mb-2">
+                <a
+                    href="/blog"
+                    class={`no-target-blank hover:underline text-lg font-bold mt-0
+                    ${isCurrentUrl("/blog") ? "text-blue-400" : "text-white"}`}
+                >
+                    Blog
+                </a>
+            </div>
+            <div class="mb-2">
+                <a
+                    href="/credits"
+                    class={`no-target-blank hover:underline text-lg font-bold mt-0
+                    ${isCurrentUrl("/credits") ? "text-blue-400" : "text-white"}`}
+                >
+                    Credits
+                </a>
+            </div>
+        </nav>
+    </div>
+</aside>

@@ -2,6 +2,7 @@
 title: Pre-requisites
 layout: "../../layouts/GuideLayout.astro"
 description: Pre-requisites for coworking streams!
+order: 1
 ---
 
 # Pre-requisites
@@ -49,3 +50,5 @@ Usually, streamers who stream from their phone would use their laptop device to 
 
 - **Twitch / YouTube app**
   - Depending on which platform you intend to stream on.
+
+---

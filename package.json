@@ -3,14 +3,16 @@
     "type": "module",
     "version": "2.0.0",
     "scripts": {
-        "dev": "astro dev",
+        "dev": "astro dev --open",
         "start": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
         "astro": "astro"
     },
     "dependencies": {
+        "@astrojs/mdx": "^2.1.1",
         "@astrojs/tailwind": "^5.1.0",
+        "@astrojs/ts-plugin": "^1.5.3",
         "@vercel/analytics": "^1.0.1",
         "astro": "^4.4.1",
         "tailwindcss": "^3.4.1"

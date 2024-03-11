@@ -2,6 +2,7 @@
 title: General Tips
 layout: "../../layouts/GuideLayout.astro"
 description: General tips for your coworking streams!
+order: 0
 ---
 
 # General Tips
@@ -18,6 +19,12 @@ Most streamers mute themselves during the work sessions because it makes it easi
 
 Chat commands are very useful since you won't be chatting much during the work timer. Some common chat commands you may see include ones that introduce your stream, provide a brief introduction to the pomodoro method (if you use it), or a muted command that may explain why you may be muted (e.g: !welcome !timer !pomo !muted). You may also like to add a command to tell your viewers what you're working on that day (!today !work !study) - this adds a nice personal touch and you can use it to encourage other's to talk about what they're working on too. 
 
+## Closed Captions
+
+[MAXIMIZE Your Reach on Twitch with Live Captions](https://youtu.be/cQzJL9uoIbg)
+
+Closed captions open your stream to a wider audience by including viewers who are deaf or hard of hearing, and can even benefit viewers in noisy environments who might miss some dialogue.
+
 ---
 
 ## Do's
@@ -26,7 +33,7 @@ Chat commands are very useful since you won't be chatting much during the work t
 
 `https://dashboard.twitch.tv/popout/u/{{channel}}/stream-manager/streamer-ads-manager-panel`
 
-If you're using OBS, you can add the link above as a dock to your OBS (remember to replace "{{channel}}" with your actual channel name). This way, you can easily run ads without having to go to the Twitch dashboard. 
+If you're using OBS, you can add the link above as a dock to your OBS (remember to replace "{{channel}}" with your actual channel name). This way, you can easily run ads and view when your next ad break is without having to go to the Twitch dashboard.
 
 - ### Have a consistent stream schedule
 
@@ -64,7 +71,7 @@ Hopping on chat and mention anything about your own stream is considered self-pr
 
 - ### Don't worry about view count
 
-Just focus on your work
+Just focus on your work.
 
 - ### Avoid using Display Capture
 
@@ -72,3 +79,4 @@ Some coworking streamers may have Display Capture source on their primary pomodo
 
 It is recommended to blur it, or make your Display Capture source very small until no text content is readable.
 
+---

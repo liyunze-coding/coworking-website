@@ -58,7 +58,7 @@ const { frontmatter, headings } = Astro.props;
 const { navigation } = await setup();
 ---
 
-<Layout title={frontmatter.title} description={frontmatter.description}>
+<Layout title={frontmatter.heading} description={frontmatter.subheading}>
     <div class="pt-14 mx-auto px-4 sm:px-6 max-w-7xl">
         <div class="flex flex-col lg:grid lg:grid-cols-10">
             <!-- vertical navbar -->
@@ -67,11 +67,11 @@ const { navigation } = await setup();
             </div>
             <div class="lg:col-span-8">
                 <div class="flex flex-col lg:grid lg:grid-cols-10">
-                    <div class="col-span-8 pr-10 pb-10 pt-8">
+                    <div class="col-span-8 pr-10 pb-20 pt-8">
                         <slot />
                     </div>
                     <div
-                        class="hidden col-span-2 pt-8 lg:block lg:sticky lg:px-4 lg:-mx-4 lg:max-h-[calc(100vh-var(--header-height))] lg:top-[--header-height]"
+                        class="col-span-2 pt-8 lg:block lg:sticky lg:px-4 lg:-mx-4 lg:max-h-[calc(100vh-var(--header-height))] lg:top-[--header-height]"
                     >
                         <!-- TOC -->
                         <TableOfContent headings={headings} />
@@ -123,6 +123,14 @@ const { navigation } = await setup();
         }
 
         ul li {
+            @apply mb-1 ml-5;
+        }
+
+        ol {
+            @apply list-outside list-decimal leading-7;
+        }
+
+        ol li {
             @apply mb-1 ml-5;
         }
 

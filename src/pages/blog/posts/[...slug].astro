@@ -1,0 +1,70 @@
+---
+import { getCollection } from "astro:content";
+import BlogPostLayout from "../../../layouts/BlogPostLayout.astro";
+import { Image } from "astro:assets";
+
+function timeAgo(date: Date) {
+    const dateObject = new Date(date);
+    const seconds = Math.floor(
+        (new Date().getTime() - dateObject.getTime()) / 1000,
+    );
+    let interval = Math.floor(seconds / 31536000);
+
+    if (interval >= 1) {
+        return interval + (interval === 1 ? " year ago" : " years ago");
+    }
+    interval = Math.floor(seconds / 2592000);
+    if (interval >= 1) {
+        return interval + (interval === 1 ? " month ago" : " months ago");
+    }
+    interval = Math.floor(seconds / 86400);
+    if (interval >= 1) {
+        return interval + (interval === 1 ? " day ago" : " days ago");
+    }
+    interval = Math.floor(seconds / 3600);
+    if (interval >= 1) {
+        return interval + (interval === 1 ? " hour ago" : " hours ago");
+    }
+    interval = Math.floor(seconds / 60);
+    if (interval > 1) {
+        return interval + (interval === 1 ? " minute ago" : " minutes ago");
+    }
+    return (
+        Math.floor(seconds) + (seconds === 1 ? " second ago" : " seconds ago")
+    );
+}
+
+export async function getStaticPaths() {
+    const blogEntries = await getCollection("posts");
+    return blogEntries.map((entry) => ({
+        params: { slug: entry.slug },
+        props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await entry.render();
+---
+
+<BlogPostLayout frontmatter={entry.data} headings={headings}>
+    <h1>{entry.data.heading}</h1>
+    <h2 class="font-normal text-lg">{entry.data.subheading}</h2>
+    <p class="text-base font-normal text-gray-400">by {entry.data.author}</p>
+    <p class="text-base font-normal text-gray-400">
+        Published {timeAgo(new Date(entry.data.pubDate))}
+    </p>
+
+    {
+        entry.data.image && (
+            <Image
+                src={entry.data.image.url}
+                alt={entry.data.image.alt}
+                class="mt-5 mb-5"
+                width="700"
+                height="400"
+                loading="eager"
+            />
+        )
+    }
+    <Content />
+</BlogPostLayout>
