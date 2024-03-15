@@ -1,70 +1,21 @@
 ---
 import Layout from "./Layout.astro";
-import VerticalNav from "../components/verticalNav.astro";
-
-type Navigation = Record<
-    string,
-    { title: string; url: string; order: number }[]
->;
-
-export function formatTitle(title: string): string {
-    return title
-        .split("-")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
-}
-
-export async function setup() {
-    // setup navigation
-    const getStartedFiles = await Astro.glob("../pages/get-started/*.md");
-    const guideFiles = await Astro.glob("../pages/guide/*.md");
-    const markdownFiles = [...getStartedFiles, ...guideFiles];
-    const navigation: Navigation = {};
-
-    for (const file of markdownFiles) {
-        const filePath = file.url;
-        const [_, category] = filePath!.split("/");
-        const formattedCategory = formatTitle(category);
-        const formattedTitle = file.frontmatter.title;
-        const order = file.frontmatter.order ?? 0;
-
-        if (!navigation[formattedCategory]) {
-            navigation[formattedCategory] = [];
-        }
-
-        navigation[formattedCategory].push({
-            title: formattedTitle,
-            url: filePath || "",
-            order,
-        });
-    }
-
-    // sort by "order"
-    const sortedNavigation: Navigation = {};
-    Object.keys(navigation)
-        .sort()
-        .forEach((key) => {
-            sortedNavigation[key] = navigation[key].sort(
-                (a, b) => a.order - b.order,
-            );
-        });
-
-    return {
-        navigation: sortedNavigation,
-    };
-}
-const { navigation } = await setup();
+import VerticalNav from "../components/blocks/verticalNav.astro";
 ---
 
 <Layout title={Astro.props.title} description={Astro.props.description}>
-    <div class="pt-14 mx-auto px-4 sm:px-6 max-w-7xl">
-        <div class="flex flex-col lg:grid lg:grid-cols-10">
-            <!-- vertical navbar -->
-            <div class="lg:col-span-2" transition:name="vertical-navbar">
-                <VerticalNav navigation={navigation} />
-            </div>
-            <div class="lg:col-span-8 pt-8">
-                <!-- <div class="flex flex-col lg:grid lg:grid-cols-10">
+	<div class="mx-auto px-6 max-w-7xl">
+		<div class="flex flex-col lg:grid lg:grid-cols-10">
+			<!-- vertical navbar -->
+			<div class="lg:col-span-2" transition:name="vertical-navbar">
+				<aside
+					class="hidden lg:translate-x-0 overflow-y-auto z-30 lg:block lg:sticky py-8 lg:px-4 lg:-mx-4 lg:max-h-[calc(100vh-var(--header-height))] lg:top-[--header-height]"
+				>
+					<VerticalNav />
+				</aside>
+			</div>
+			<div class="lg:col-span-8 pt-8">
+				<!-- <div class="flex flex-col lg:grid lg:grid-cols-10">
                     <div class="col-span-8 pr-10 pb-10 pt-8">
                         <slot />
                     </div>
@@ -74,62 +25,22 @@ const { navigation } = await setup();
                         <TableOfContent headings={headings} />
                     </div>
                 </div> -->
-                <slot />
-            </div>
-        </div>
-    </div>
+				<slot />
+			</div>
+		</div>
+	</div>
 
-    <style is:global>
-        h1 {
-            @apply text-4xl font-bold;
-        }
+	<style is:global>
+		span.code-highlight {
+			@apply rounded-md bg-[#323232] px-1 py-1 font-["Lucida_Console",monospace,courier-new] text-sm;
+		}
 
-        h2 {
-            @apply mt-5 scroll-mt-[calc(20px+var(--header-height))] text-3xl font-bold;
-        }
+		code {
+			@apply rounded-md bg-[#323232] px-3 py-3;
+		}
 
-        h3 {
-            @apply mt-5 scroll-mt-[calc(17px+var(--header-height))] text-2xl font-bold;
-        }
-
-        h4 {
-            @apply mt-5 scroll-mt-[calc(14px+var(--header-height))] text-xl font-bold;
-        }
-
-        p {
-            @apply mb-2 mt-2 font-[system-ui] leading-6;
-        }
-
-        hr {
-            @apply my-10 border-gray-500;
-        }
-
-        ul {
-            @apply list-outside list-disc leading-7;
-        }
-
-        blockquote {
-            @apply my-4 border-l-4 border-gray-500 pl-4;
-        }
-
-        ul ul {
-            @apply mb-2 ml-5 list-[circle];
-        }
-
-        ul li {
-            @apply mb-1 ml-5;
-        }
-
-        span.code-highlight {
-            @apply rounded-md bg-[#323232] px-1 py-1 font-["Lucida_Console",monospace,courier-new] text-sm;
-        }
-
-        code {
-            @apply rounded-md bg-[#323232] px-3 py-3;
-        }
-
-        /* img {
+		/* img {
             @apply h-[100px] max-w-full;
         } */
-    </style>
+	</style>
 </Layout>

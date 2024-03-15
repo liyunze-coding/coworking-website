@@ -1,0 +1,47 @@
+---
+function timeAgo(date: Date) {
+	const dateObject = new Date(date);
+	const seconds = Math.floor(
+		(new Date().getTime() - dateObject.getTime()) / 1000
+	);
+	let interval = Math.floor(seconds / 31536000);
+
+	if (interval >= 1) {
+		return interval + (interval === 1 ? " year ago" : " years ago");
+	}
+	interval = Math.floor(seconds / 2592000);
+	if (interval >= 1) {
+		return interval + (interval === 1 ? " month ago" : " months ago");
+	}
+	interval = Math.floor(seconds / 86400);
+	if (interval >= 1) {
+		return interval + (interval === 1 ? " day ago" : " days ago");
+	}
+	interval = Math.floor(seconds / 3600);
+	if (interval >= 1) {
+		return interval + (interval === 1 ? " hour ago" : " hours ago");
+	}
+	interval = Math.floor(seconds / 60);
+	if (interval > 1) {
+		return interval + (interval === 1 ? " minute ago" : " minutes ago");
+	}
+	return (
+		Math.floor(seconds) + (seconds === 1 ? " second ago" : " seconds ago")
+	);
+}
+
+const { title, tagline, pubDate, url } = Astro.props;
+---
+
+<a
+	href={url}
+	class="hover:no-underline hover:-translate-y-1 shadow-xl transition-all duration-300"
+>
+	<div class="bg-[#303338] text-white
+    px-5 py-3
+    rounded-xl">
+		<h1 class="text-2xl font-bold">{title}</h1>
+		<p class="text-base">{tagline}</p>
+		<p class="text-sm text-gray-400">{timeAgo(new Date(pubDate))}</p>
+	</div>
+</a>

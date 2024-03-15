@@ -7,7 +7,7 @@ order: 1
 
 # Music and Audio
 
-Every Coworking & Study stream has their vibe based on their stream audio!
+The vibe of a coworking stream is determined by the background music or audio!
 
 ---
 
@@ -116,12 +116,17 @@ There you can have your different outputs for different programmes. For example,
 
 ### Complicated ways
 
-- #### [VoicemeeterBanana](https://vb-audio.com/Voicemeeter/banana.htm) (Windows only!)
+- #### [VoicemeeterBanana](https://vb-audio.com/Voicemeeter/banana.htm) 
+  ![Windows Badge](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=fff&style=for-the-badge)
 
   - Download Voicemeeter Banana (software to route audio sources) and set all the audio sources/inputs you don't want to include on stream into a Voicemeeter input/output source separate from the main routing. 
   - The outputs will show up separately in your Audio Mixer, which you can adjust/mute 
   - Tutorial: [Separate Game Audio, Discord, Music in OBS! (A Voicemeeter Tutorial for Beginners)](https://www.youtube.com/watch?v=XD9sWOjITYU&t=376s)
-- #### [BlackHole audio](https://obsproject.com/forum/resources/mac-desktop-audio-using-blackhole.1191/) (Mac only!)
+
+- #### [BlackHole audio](https://obsproject.com/forum/resources/mac-desktop-audio-using-blackhole.1191/)
+  ![macOS Badge](https://img.shields.io/badge/macOS-fff?logo=macos&logoColor=000&style=for-the-badge)
   - Free! Integrates with OBS
-- #### [GroundControl Caster](https://gingeraudio.com/groundcontrol-caster/) (Mac only!)
+
+- #### [GroundControl Caster](https://gingeraudio.com/groundcontrol-caster/)
+  ![macOS Badge](https://img.shields.io/badge/macOS-fff?logo=macos&logoColor=000&style=for-the-badge)
   - Free! Integrates with Twitch, OBS, StreamLabs, Zoom, FaceTime etc.

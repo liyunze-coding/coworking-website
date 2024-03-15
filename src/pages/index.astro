@@ -1,62 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/blocks/Hero.astro";
+import BlurBackground from "../components/ui/BlurBackground.astro";
 ---
 
 <Layout
-    title="Get started with Coworking streams"
-    description="A guide for new and existing coworking streamers!"
+	title="Get started with Coworking streams"
+	description="A guide for new and existing coworking streamers!"
 >
-    <div class="relative flex justify-center items-center h-screen">
-        <div class="flex flex-col">
-            <div
-                class="text-center text-4xl font-bold font-['Inter'] leading-10"
-            >
-                <span class="mb-2">Getting started with</span>
-                <div
-                    class="bg-clip-text text-transparent bg-gradient-pink-cyan py-2"
-                >
-                    Coworking streams
-                </div>
-            </div>
-            <div class="flex mt-5 items-center gap-10">
-                <a
-                    href="/get-started/introduction"
-                    class="bg-cowo-pink text-white
-					text-lg
-					px-5 py-2
-					rounded-md font-medium
-                    duration-150
-					hover:text-cowo-pink hover:bg-white"
-                >
-                    Get started
-                </a>
-                <a
-                    href="/guide/general-tips"
-                    class="font-medium flex items-center text-lg
-                    hover:underline
-                    duration-150"
-                >
-                    Check out our guide <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-4 h-4"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <!-- <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-        >
-        </div> -->
-    </div>
+	<div class="relative overflow-hidden">
+		<BlurBackground />
+		<div class="flex justify-center items-start pb-10">
+			<Hero />
+		</div>
+	</div>
 </Layout>
-
-<style></style>

@@ -22,7 +22,7 @@ This guide is intended to help you get started with the coworking streams! Wheth
 
 I am a coworking streamer myself and I also made several open source widgets for the coworking streams. 
 
-Please feel free to drop by my <a href="https://www.twitch.tv/RyanPython" target="_blank">stream</a>!
+Please feel free to drop by my <a href="https://www.twitch.tv/RythonDev" target="_blank">stream</a>!
 
 ---
 

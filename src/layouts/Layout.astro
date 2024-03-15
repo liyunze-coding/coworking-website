@@ -1,10 +1,10 @@
 ---
-import NavBar from "../components/navBar.astro";
+import NavBar from "../components/blocks/navBar.astro";
 import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
-    title: string;
-    description: string;
+	title: string;
+	description: string;
 }
 
 const { title, description } = Astro.props;
@@ -12,201 +12,144 @@ const { title, description } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content={description} />
-        <meta name="keywords" content="coworking, study, streams" />
-        <meta name="author" content="RyanPython" />
-        <meta name="theme-color" content="#2B2D31" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <script defer src="/_vercel/insights/script.js"></script>
-        <ViewTransitions />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-    </head>
-    <body>
-        <NavBar />
-        <slot />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="keywords" content="coworking, study, streams" />
+		<meta name="author" content="RythonDev" />
+		<meta name="theme-color" content="#2B2D31" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<script is:inline src="/_vercel/insights/script.js"></script>
+		<ViewTransitions />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="pt-[var(--header-height)]">
+			<NavBar />
+			<slot />
+		</div>
 
-        <style is:global>
-            @font-face {
-                font-family: "Fredoka";
-                src: url("/fonts/Fredoka-Bold.ttf") format("truetype");
-                font-weight: bold;
-                font-style: normal;
-            }
+		<style is:global>
+			:root {
+				--header-height: 3.5rem;
+			}
 
-            @font-face {
-                font-family: "Fredoka";
-                src: url("/fonts/Fredoka-Light.ttf") format("truetype");
-                font-weight: normal;
-                font-style: normal;
-            }
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
 
-            @font-face {
-                font-family: "Fredoka";
-                src: url("/fonts/Fredoka-Medium.ttf") format("truetype");
-                font-weight: 500;
-                font-style: normal;
-            }
+			html {
+				font-family: system-ui, sans-serif;
+				background-color: #171717;
+				color: rgb(255 255 255);
+			}
 
-            @font-face {
-                font-family: "Fredoka";
-                src: url("/fonts/Fredoka-Regular.ttf") format("truetype");
-                font-weight: normal;
-                font-style: normal;
-            }
+			html,
+			body {
+				min-height: 100%;
+				/* smooth scroll */
+				scroll-behavior: smooth;
+				font-family: system-ui;
+			}
 
-            @font-face {
-                font-family: "Montserrat";
-                src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
-                font-weight: bold;
-                font-style: normal;
-            }
+			body {
+				height: 100vh;
+			}
 
-            @font-face {
-                font-family: "Montserrat";
-                src: url("/fonts/Montserrat-Light.ttf") format("truetype");
-                font-weight: 300;
-                font-style: normal;
-            }
+			code {
+				font-family:
+					Menlo,
+					Monaco,
+					Lucida Console,
+					Liberation Mono,
+					DejaVu Sans Mono,
+					Bitstream Vera Sans Mono,
+					Courier New,
+					monospace;
+			}
 
-            @font-face {
-                font-family: "Montserrat";
-                src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
-                font-weight: 500;
-                font-style: normal;
-            }
+			nav {
+				font-family: system-ui, sans-serif;
+				font-weight: 500;
+			}
 
-            @font-face {
-                font-family: "Montserrat";
-                src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
-                font-weight: normal;
-                font-style: normal;
-            }
+			nav ul a {
+				text-decoration: none;
+			}
 
-            @font-face {
-                font-family: "Montserrat";
-                src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
-                font-weight: 600;
-                font-style: normal;
-            }
+			a.preview {
+				text-decoration: none;
+			}
 
-            @font-face {
-                font-family: "Poppins";
-                src: url("/fonts/Poppins-Light.ttf") format("truetype");
-                font-weight: 300;
-                font-style: normal;
-            }
+			p code {
+				word-break: break-all; /* This will allow the URL to break at any character */
+				display: block; /* Ensures the entire URL is on its own line */
+				width: 100%; /* Make sure the code element takes up the full width of its container */
+				overflow-x: auto;
+			}
 
-            @font-face {
-                font-family: "Poppins";
-                src: url("/fonts/Poppins-Medium.ttf") format("truetype");
-                font-weight: 500;
-                font-style: normal;
-            }
+			blockquote {
+				@apply my-4 border-l-4 border-gray-500 pl-4;
+			}
 
-            @font-face {
-                font-family: "Poppins";
-                src: url("/fonts/Poppins-Regular.ttf") format("truetype");
-                font-weight: normal;
-                font-style: normal;
-            }
+			a {
+				@apply inline-block text-blue-400 hover:underline;
+			}
 
-            @font-face {
-                font-family: "Inter";
-                src: url("/fonts/Inter-Regular.ttf") format("truetype");
-                font-weight: normal;
-                font-style: normal;
-            }
+			ul,
+			ol {
+				@apply list-outside  leading-7;
+			}
 
-            @font-face {
-                font-family: "Inter";
-                src: url("/fonts/Inter-Medium.ttf") format("truetype");
-                font-weight: 500;
-                font-style: normal;
-            }
+			ul {
+				@apply list-disc;
+			}
 
-            :root {
-                --header-height: 3.5rem;
-            }
+			ul ul,
+			ol ul {
+				@apply mb-2 ml-5 list-[circle];
+			}
 
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
+			ul li,
+			ol li {
+				@apply mb-1 ml-5;
+			}
 
-            html {
-                font-family: system-ui, sans-serif;
-                background-color: #171717;
-                color: rgb(255 255 255);
-            }
+			ol {
+				@apply ml-5 list-outside list-decimal leading-7;
+			}
+		</style>
+		<script is:inline>
+			const theme = (() => {
+				if (
+					typeof localStorage !== "undefined" &&
+					localStorage.getItem("theme")
+				) {
+					return localStorage.getItem("theme");
+				}
+				if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+					return "dark";
+				}
+				return "light";
+			})();
 
-            html,
-            body {
-                min-height: 100%;
-                /* smooth scroll */
-                scroll-behavior: smooth;
-            }
+			if (theme === "light") {
+				document.documentElement.classList.remove("dark");
+			} else {
+				document.documentElement.classList.add("dark");
+			}
+			window.localStorage.setItem("theme", theme);
 
-            body {
-                height: 100vh;
-            }
-
-            code {
-                font-family:
-                    Menlo,
-                    Monaco,
-                    Lucida Console,
-                    Liberation Mono,
-                    DejaVu Sans Mono,
-                    Bitstream Vera Sans Mono,
-                    Courier New,
-                    monospace;
-            }
-
-            nav {
-                font-family: system-ui, sans-serif;
-                font-weight: 500;
-            }
-
-            nav ul a {
-                text-decoration: none;
-            }
-
-            a.preview {
-                text-decoration: none;
-            }
-
-            p code {
-                word-break: break-all; /* This will allow the URL to break at any character */
-                display: block; /* Ensures the entire URL is on its own line */
-                width: 100%; /* Make sure the code element takes up the full width of its container */
-                overflow-x: auto;
-            }
-        </style>
-        <script is:inline>
-            const theme = (() => {
-                if (
-                    typeof localStorage !== "undefined" &&
-                    localStorage.getItem("theme")
-                ) {
-                    return localStorage.getItem("theme");
-                }
-                if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                    return "dark";
-                }
-                return "light";
-            })();
-
-            if (theme === "light") {
-                document.documentElement.classList.remove("dark");
-            } else {
-                document.documentElement.classList.add("dark");
-            }
-            window.localStorage.setItem("theme", theme);
-        </script>
-    </body>
+			// make all <a> attributes have target="_blank" except for Table of Contents
+			document
+				.querySelectorAll("a:not(.no-target-blank)")
+				.forEach((el) => {
+					el.setAttribute("target", "_blank");
+				});
+		</script>
+	</body>
 </html>

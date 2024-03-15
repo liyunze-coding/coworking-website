@@ -104,6 +104,10 @@ Here are the listed pros and cons of using the "Coworking" category, which may o
 
 The purpose of this post is not to persuade people to "pick a side", rather it is meant to inform and show the bigger picture of this "Coworking" category. Please do not pressure nor target any streamers regarding this topic, and don't forget to [VOTE for an official Coworking and Study category](https://twitch.uservoice.com/forums/310210-discover/suggestions/46004791-coworking).
 
+## Edit:
+
+As of 15th March 2024, the "Coworking" game category has been removed from IGDB and Twitch.
+
 ---
 
 by [RythonDev](https://twitch.tv/RythonDev)

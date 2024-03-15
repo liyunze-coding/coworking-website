@@ -4,10 +4,8 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: (theme) => ({
-                "gradient-blob":
-                    "linear-gradient(to right, #FF7782, rgba(0,0,0,0))",
                 "gradient-pink-cyan":
-                    "linear-gradient(to right, #FF7782, #8CC0DE)",
+                    "linear-gradient(to right, #FF7782, aquamarine)",
             }),
             keyframes: {
                 rotate: {
@@ -15,14 +13,26 @@ module.exports = {
                     "50%": { scale: "1 1.5" },
                     "100%": { transform: "rotate(360deg)" },
                 },
+                gradient: {
+                    "0%": {
+                        "background-position": "0% 50%",
+                    },
+                    "50%": {
+                        "background-position": "100% 50%",
+                    },
+                    "100%": {
+                        "background-position": "0% 50%",
+                    },
+                },
             },
             animation: {
-                "spin-slow": "rotate 5s linear infinite",
+                "spin-slow": "rotate 15s linear infinite",
+                gradient: "gradient 15s ease infinite",
             },
             colors: {
                 "cowo-pink": "#FF7782",
-                "secondary": "#171717",
-                "primary": "#fafafa",
+                secondary: "#171717",
+                primary: "#fafafa",
             },
         },
     },

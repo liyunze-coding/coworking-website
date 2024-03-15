@@ -1,0 +1,154 @@
+---
+type Navigation = Record<
+	string,
+	{ title: string; url: string; order: number }[]
+>;
+
+const currentUrl = Astro.request.url;
+
+const isCurrentUrl = (url: string) => currentUrl.includes(url);
+
+export function formatTitle(title: string): string {
+	return title
+		.split("-")
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+		.join(" ");
+}
+
+export async function setup() {
+	// setup navigation
+	const getStartedFiles = await Astro.glob("../../pages/get-started/*.md");
+	const guideFiles = await Astro.glob("../../pages/guide/*.md");
+	const markdownFiles = [...getStartedFiles, ...guideFiles];
+	const navigation: Navigation = {};
+
+	for (const file of markdownFiles) {
+		const filePath = file.url;
+		const [_, category] = filePath!.split("/");
+		const formattedCategory = formatTitle(category);
+		const formattedTitle = file.frontmatter.title;
+		const order = file.frontmatter.order ?? 0;
+
+		if (!navigation[formattedCategory]) {
+			navigation[formattedCategory] = [];
+		}
+
+		navigation[formattedCategory].push({
+			title: formattedTitle,
+			url: filePath || "",
+			order,
+		});
+	}
+
+	// sort by "order"
+	const sortedNavigation: Navigation = {};
+	Object.keys(navigation)
+		.sort()
+		.forEach((key) => {
+			sortedNavigation[key] = navigation[key].sort(
+				(a, b) => a.order - b.order
+			);
+		});
+
+	return {
+		navigation: sortedNavigation,
+	};
+}
+
+interface Props {
+	showHome?: boolean | null;
+}
+
+const { navigation } = await setup();
+const { showHome } = Astro.props;
+---
+
+<div class="relative">
+	<nav id="vertical-nav-component" class="flex flex-col">
+		{
+			showHome && (
+				<div class="mb-2">
+					<a
+						href="/"
+						class={`no-target-blank hover:no-underline hover:text-white text-lg mt-0
+                                ${isCurrentUrl("/") ? "text-white" : "text-gray-400"}`}
+					>
+						Home
+					</a>
+				</div>
+			)
+		}
+
+		{
+			Object.entries(navigation).map(([category, links]) => (
+				<div class="mb-2">
+					<div class="category no-target-blank text-lg font-bold mb-1 mt-0 text-white">
+						{category}
+					</div>
+					<ul class="list-disc list-outside font-normal">
+						{links.map((link) => (
+							<li class="mb-1 pl-0">
+								<a
+									href={link.url}
+									class={`no-target-blank transition-colors duration-150 hover:no-underline hover:text-white ${isCurrentUrl(link.url) ? "text-white" : "text-gray-400"}`}
+								>
+									{link.title}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			))
+		}
+		<div class="mb-2">
+			<a
+				href="/groups"
+				class={`no-target-blank transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
+                    ${isCurrentUrl("/groups") ? "text-white" : "text-gray-400"}`}
+			>
+				Groups
+			</a>
+		</div>
+		<div class="mb-2">
+			<a
+				href="/blog"
+				class={`no-target-blank transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
+                    ${isCurrentUrl("/blog") ? "text-white" : "text-gray-400"}`}
+			>
+				Blog
+			</a>
+		</div>
+		<div class="mb-2">
+			<a
+				href="/credits"
+				class={`no-target-blank transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
+                    ${isCurrentUrl("/credits") ? "text-white" : "text-gray-400"}`}
+			>
+				Credits
+			</a>
+		</div>
+	</nav>
+</div>
+
+<script>
+	document.addEventListener("astro:page-load", () => {
+		const currentUrl = window.location.pathname;
+
+		const isCurrentUrl = (url: string) => currentUrl === url;
+
+		const links = document.querySelectorAll(
+			"#vertical-nav-component a:not(.category), #vertical-nav-component a > a:not(.category)"
+		);
+
+		// add active class to current url
+		links.forEach((link) => {
+			if (isCurrentUrl(link.getAttribute("href")!)) {
+				link.classList.add("text-white");
+				link.classList.remove("text-gray-400");
+			} else {
+				link.classList.remove("text-white");
+				link.classList.add("text-gray-400");
+			}
+		});
+	});
+</script>
