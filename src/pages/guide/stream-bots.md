@@ -2,7 +2,7 @@
 title: Stream Bots
 layout: "../../layouts/GuideLayout.astro"
 description: Stream bots for your coworking streams!
-order: 2
+order: 3
 ---
 
 # Stream Bots

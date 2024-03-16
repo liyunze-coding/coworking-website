@@ -5,7 +5,7 @@ module.exports = {
         extend: {
             backgroundImage: (theme) => ({
                 "gradient-pink-cyan":
-                    "linear-gradient(to right, #FF7782, aquamarine)",
+                    "linear-gradient(to right, #F7418F,#FF7782 , aquamarine)",
             }),
             keyframes: {
                 rotate: {

@@ -2,7 +2,7 @@
 title: Moderation and Trolls
 layout: "../../layouts/GuideLayout.astro"
 description: Learn how to moderate your coworking streams!
-order: 5
+order: 6
 ---
 
 # Moderation and Trolls

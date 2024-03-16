@@ -2,7 +2,7 @@
 title: Emotes
 layout: "../../layouts/GuideLayout.astro"
 description: Learn how to add emotes to your streams!
-order: 4
+order: 5
 ---
 
 # Emotes

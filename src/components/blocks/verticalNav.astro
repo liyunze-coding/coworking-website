@@ -17,8 +17,10 @@ export function formatTitle(title: string): string {
 
 export async function setup() {
 	// setup navigation
-	const getStartedFiles = await Astro.glob("../../pages/get-started/*.md");
-	const guideFiles = await Astro.glob("../../pages/guide/*.md");
+	// MD files
+	const getStartedFiles = await Astro.glob("../../pages/get-started/*");
+	const guideFiles = await Astro.glob("../../pages/guide/*");
+
 	const markdownFiles = [...getStartedFiles, ...guideFiles];
 	const navigation: Navigation = {};
 

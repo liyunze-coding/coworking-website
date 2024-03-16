@@ -2,7 +2,7 @@
 title: Stream Widgets
 layout: "../../layouts/GuideLayout.astro"
 description: Stream widgets for your coworking streams!
-order: 3
+order: 4
 ---
 
 # Stream widgets
