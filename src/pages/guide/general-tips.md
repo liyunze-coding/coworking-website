@@ -31,9 +31,11 @@ Closed captions open your stream to a wider audience by including viewers who ar
 
 - ### Have control of your ad timings
 
-`https://dashboard.twitch.tv/popout/u/{{channel}}/stream-manager/streamer-ads-manager-panel`
+```
+https://dashboard.twitch.tv/popout/u/{{channel}}/stream-manager/streamer-ads-manager-panel
+```
 
-If you're using OBS, you can add the link above as a dock to your OBS (remember to replace "{{channel}}" with your actual channel name). This way, you can easily run ads and view when your next ad break is without having to go to the Twitch dashboard.
+If you're using OBS, you can add the link above as a dock to your OBS (remember to replace "\{\{channel\}\}" with your actual channel name). This way, you can easily run ads and view when your next ad break is without having to go to the Twitch dashboard.
 
 - ### Have a consistent stream schedule
 

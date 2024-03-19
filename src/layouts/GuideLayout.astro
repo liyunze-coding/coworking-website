@@ -32,65 +32,6 @@ const { frontmatter, headings } = Astro.props;
 			</div>
 		</div>
 	</div>
-
-	<style is:global>
-		h1 {
-			@apply mb-2 text-4xl font-bold;
-		}
-
-		h2 {
-			@apply mb-2 mt-5 scroll-mt-[calc(20px+var(--header-height))] text-3xl font-bold;
-		}
-
-		h3 {
-			@apply mb-2 mt-5 scroll-mt-[calc(17px+var(--header-height))] text-2xl font-bold;
-		}
-
-		h4 {
-			@apply mb-2 mt-5 scroll-mt-[calc(14px+var(--header-height))] text-xl font-bold;
-		}
-
-		p {
-			@apply mb-2 mt-2 font-[system-ui] leading-6;
-		}
-
-		hr {
-			@apply my-10 border-gray-500;
-		}
-
-		ul {
-			@apply list-outside list-disc leading-7;
-		}
-
-		blockquote {
-			@apply my-4 border-l-4 border-gray-500 pl-4;
-		}
-
-		a {
-			@apply inline-block text-blue-400 hover:underline;
-		}
-
-		ul ul {
-			@apply mb-2 ml-5 list-[circle];
-		}
-
-		ul li {
-			@apply mb-1 ml-5;
-		}
-
-		span.code-highlight {
-			@apply rounded-md bg-[#323232] px-1 py-1 font-["Lucida_Console",monospace,courier-new] text-sm;
-		}
-
-		code {
-			@apply rounded-md bg-[#323232] px-3 py-3;
-		}
-
-		/* img {
-            @apply h-[100px] max-w-full;
-        } */
-	</style>
-
 	<script is:inline>
 		// make all <a> attributes have target="_blank" except for Table of Contents
 		document.querySelectorAll("a:not(.no-target-blank)").forEach((el) => {

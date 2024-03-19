@@ -35,7 +35,7 @@ As with any social media platform, you may encounter trolls and bots while you s
 
 - ### Promotional bots
 
-    This is when several bot accounts post in your chat with the same message, usually advertising a "get famous quick" scam. To stop this, you can put your chat in follower only mode by typing <span class="code-highlight">/followers</span> in your chat. Usually they will go away quickly and you can type <span class="code-highlight">/followersoff</span> to change it back.
+    This is when several bot accounts post in your chat with the same message, usually advertising a "get famous quick" scam. To stop this, you can put your chat in follower only mode by typing `/followers` in your chat. Usually they will go away quickly and you can type `/followersoff` to change it back.
 
     You can also make use of the AutoMod feature by banning phrases like "bigfollow", so their messages get automatically removed. You can find this in your Dashboard Settings → Moderation. If you would like, you can also block hyperlinks in the same page or a stream bot (NightBot, StreamElements, etc.)
 

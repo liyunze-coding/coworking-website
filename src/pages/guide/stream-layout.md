@@ -37,14 +37,15 @@ The Noun Project is a website that aggregates and catalogs symbols that are crea
 
 ## Fonts
 
-### [DaFont](https://www.dafont.com/)
+### [DaFont 🔗](https://www.dafont.com/)
 
 DaFont is a popular online platform where you can download fonts for various purposes. Whether you’re working on a design project, creating digital art, or just want to add a unique touch to your documents.
 
-### [Google Fonts](https://fonts.google.com/)
+### [Google Fonts 🔗](https://fonts.google.com/)
 
 Google Fonts is a service provided by Google that offers a wide selection of high-quality web fonts for use in web projects.
 
+---
 
 ## Principles of Grouping
 
@@ -64,3 +65,12 @@ There are five main principles of grouping:
 
 These principles are used extensively in various fields like design, art, and advertising. By understanding how we group things visually, designers can create layouts that are clear, organized, and engaging.
 
+---
+
+## Videos 
+
+Some cool YouTube videos on this topic if you want some inspiration! 
+
+- [How-to: Easy "Graphic Design" on Google Slides (for VTubers and Streamers)](https://youtu.be/VoF-Qk_tWgU)
+- [How to Make an Overlay for Streaming! Tips for Artists and Gamers!](https://youtu.be/OBXK9qi4j8E)
+- [Create Minimal Stream Overlays From Scratch! (Without Photoshop!)](https://youtu.be/Rs75ovA7Fvo)

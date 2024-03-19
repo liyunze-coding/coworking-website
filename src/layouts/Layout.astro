@@ -85,19 +85,44 @@ const { title, description } = Astro.props;
 				text-decoration: none;
 			}
 
-			p code {
-				word-break: break-all; /* This will allow the URL to break at any character */
-				display: block; /* Ensures the entire URL is on its own line */
-				width: 100%; /* Make sure the code element takes up the full width of its container */
-				overflow-x: auto;
-			}
-
 			blockquote {
 				@apply my-4 border-l-4 border-gray-500 pl-4;
 			}
 
 			a {
 				@apply inline-block text-blue-400 hover:underline;
+			}
+
+			h1 {
+				@apply mb-2 text-4xl font-bold;
+			}
+
+			h2 {
+				@apply mb-2 mt-5 scroll-mt-[calc(20px+var(--header-height))] text-3xl font-bold;
+			}
+
+			h3 {
+				@apply mb-2 mt-5 scroll-mt-[calc(17px+var(--header-height))] text-2xl font-bold;
+			}
+
+			h4 {
+				@apply mb-2 mt-5 scroll-mt-[calc(14px+var(--header-height))] text-xl font-bold;
+			}
+
+			p {
+				@apply mb-2 mt-2 font-[system-ui] leading-6;
+			}
+
+			hr {
+				@apply my-10 border-gray-500;
+			}
+
+			ul {
+				@apply list-outside list-disc leading-7;
+			}
+
+			code {
+				@apply rounded-md bg-[#323232] px-1 py-1 font-["Lucida_Console",monospace,courier-new] text-sm;
 			}
 
 			ul,
