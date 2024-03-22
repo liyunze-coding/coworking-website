@@ -54,5 +54,5 @@ This website is deployed on <a href="https://vercel.com/">Vercel</a>, which is a
   <li><a href="https://www.twitch.tv/team/coworkingcrew">Coworking Crew</a> for providing resources</li>
   <li><a href="https://third-stinger-20a.notion.site/A-Coworking-Streamer-Cheat-Sheet-01ee1e5ff006410d84c339069ea6546c" target="_blank">A Coworking Streamer Cheat Sheet</a> as an amazing resource</li>
   <li><a href="https://www.twitch.tv/MohFocus">MohFocus</a> for the resources (bots and widgets)</li> 
-  <li><a href="https://www.twitch.tv/ryanpython">RyanPython</a> for building the website</li> 
+  <li><a href="https://www.twitch.tv/rythondev">RythonDev</a> for building the website</li> 
 </ul>

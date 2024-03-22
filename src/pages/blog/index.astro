@@ -15,7 +15,7 @@ const allPosts = await getCollection("posts");
 		{
 			allPosts.map((post) => (
 				<BlogPost
-					url={`blog/posts/${post.slug}/`}
+					url={`/blog/posts/${post.slug}/`}
 					title={post.data.heading}
 					tagline={post.data.subheading}
 					pubDate={post.data.pubDate}

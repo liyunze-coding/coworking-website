@@ -20,6 +20,8 @@ const { title, description } = Astro.props;
 		<meta name="theme-color" content="#2B2D31" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+		<script src="/pagefind/pagefind-ui.js" is:inline></script>
 		<script is:inline src="/_vercel/insights/script.js"></script>
 		<ViewTransitions />
 		<meta name="generator" content={Astro.generator} />
@@ -30,6 +32,14 @@ const { title, description } = Astro.props;
 			<NavBar />
 			<slot />
 		</div>
+		<script>
+			// make all <a> attributes have target="_blank" except for Table of Contents
+			document
+				.querySelectorAll("a:not(.no-target-blank)")
+				.forEach((el) => {
+					el.setAttribute("target", "_blank");
+				});
+		</script>
 
 		<style is:global>
 			:root {
@@ -54,10 +64,6 @@ const { title, description } = Astro.props;
 				/* smooth scroll */
 				scroll-behavior: smooth;
 				font-family: system-ui;
-			}
-
-			body {
-				height: 100vh;
 			}
 
 			code {
@@ -148,33 +154,5 @@ const { title, description } = Astro.props;
 				@apply ml-5 list-outside list-decimal leading-7;
 			}
 		</style>
-		<script is:inline>
-			const theme = (() => {
-				if (
-					typeof localStorage !== "undefined" &&
-					localStorage.getItem("theme")
-				) {
-					return localStorage.getItem("theme");
-				}
-				if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-					return "dark";
-				}
-				return "light";
-			})();
-
-			if (theme === "light") {
-				document.documentElement.classList.remove("dark");
-			} else {
-				document.documentElement.classList.add("dark");
-			}
-			window.localStorage.setItem("theme", theme);
-
-			// make all <a> attributes have target="_blank" except for Table of Contents
-			document
-				.querySelectorAll("a:not(.no-target-blank)")
-				.forEach((el) => {
-					el.setAttribute("target", "_blank");
-				});
-		</script>
 	</body>
 </html>

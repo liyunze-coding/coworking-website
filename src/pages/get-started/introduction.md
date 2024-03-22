@@ -77,9 +77,9 @@ Ultimately, co-working streams cater to a specific need for some viewers. They o
 
 ## What is a task widget?
 
-<a href="../guide/widgets#task-widgets" class="no-target-blank"><img src="/images/widgets/multitask.webp" alt="Multi Task Widget" loading="lazy"></a>
+<a href="../guide/stream-widgets#task-widgets" class="no-target-blank"><img src="/images/widgets/multitask.webp" alt="Multi Task Widget" loading="lazy"></a>
 
-If you want to add a task widget to your own stream, check it out in the <a href="../guide/widgets#task-widgets" class="no-target-blank">Widgets section</a>!
+If you want to add a task widget to your own stream, check it out in the <a href="../guide/stream-widgets#task-widgets" class="no-target-blank">Widgets section</a>!
 
 A task widget is a widget where users can use commands such as:
 - !task [current task]
