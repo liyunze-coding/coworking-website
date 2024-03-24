@@ -4,9 +4,9 @@ type Navigation = Record<
 	{ title: string; url: string; order: number }[]
 >;
 
-const currentUrl = Astro.request.url;
+const currentUrl = Astro.url.pathname;
 
-const isCurrentUrl = (url: string) => currentUrl.includes(url);
+const isCurrentUrl = (url: string) => currentUrl === url;
 
 export function formatTitle(title: string): string {
 	return title
@@ -17,7 +17,6 @@ export function formatTitle(title: string): string {
 
 export async function setup() {
 	// setup navigation
-	// MD files
 	const getStartedFiles = await Astro.glob("../../pages/get-started/*");
 	const guideFiles = await Astro.glob("../../pages/guide/*");
 
@@ -61,7 +60,10 @@ interface Props {
 	showHome?: boolean | null;
 }
 
+// setup navigation
 const { navigation } = await setup();
+
+// show Home link in vertical navbar only on mobile
 const { showHome } = Astro.props;
 ---
 

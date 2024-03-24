@@ -1,4 +1,6 @@
 ---
+import CommunityLinks from "./CommunityLinks.astro";
+
 type Heading = {
 	depth: number;
 	text: string;
@@ -11,13 +13,13 @@ const { headings } = Astro.props;
 <h3 class="text-lg font-bold mb-2 mt-0" transition:name="Table of Content">
 	Table of Contents
 </h3>
-<div class="text-sm">
+<ul class="text-sm list-none">
 	{
 		headings.map((heading: Heading, index: number) => {
 			if (heading.depth === 1) return;
 			const margin = `${heading.depth - 1.5}rem`;
 			return (
-				<div
+				<li
 					style={{ marginLeft: margin }}
 					class="mb-2 pl-0"
 					data-pagefind-ignore
@@ -28,8 +30,10 @@ const { headings } = Astro.props;
 					>
 						{heading.text.replace("🔗", "")}
 					</a>
-				</div>
+				</li>
 			);
 		})
 	}
-</div>
+</ul>
+<hr class="my-4" />
+<CommunityLinks />

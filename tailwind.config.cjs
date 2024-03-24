@@ -24,10 +24,19 @@ module.exports = {
                         "background-position": "0% 50%",
                     },
                 },
+                fadeIn: {
+                    from: {
+                        opacity: "0",
+                    },
+                    to: {
+                        opacity: "1",
+                    },
+                },
             },
             animation: {
                 "spin-slow": "rotate 15s linear infinite",
                 gradient: "gradient 15s ease infinite",
+                fadeIn: "fadeIn 0.3s ease-in-out forwards",
             },
             colors: {
                 "cowo-pink": "#FF7782",
