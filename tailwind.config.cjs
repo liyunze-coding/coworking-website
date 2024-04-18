@@ -4,8 +4,8 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: (theme) => ({
-                "gradient-pink-cyan":
-                    "linear-gradient(to right, #F7418F,#FF7782 , aquamarine)",
+                "hero-gradient":
+                    "linear-gradient(to right, #3F84D8, aquamarine, #C65BCF)",
             }),
             keyframes: {
                 rotate: {
@@ -32,16 +32,27 @@ module.exports = {
                         opacity: "1",
                     },
                 },
+                scaleIn: {
+                    from: {
+                        transform: "scale(0)",
+                    },
+                    to: {
+                        transform: "scale(1)",
+                    },
+                },
             },
             animation: {
                 "spin-slow": "rotate 15s linear infinite",
                 gradient: "gradient 15s ease infinite",
                 fadeIn: "fadeIn 0.3s ease-in-out forwards",
+                scaleIn: "scaleIn 0.3s ease-in-out forwards",
             },
             colors: {
                 "cowo-pink": "#FF7782",
                 secondary: "#171717",
                 primary: "#fafafa",
+                "primary-green": "#88D47D",
+                "primary-blue": "#3F84D8",
             },
         },
     },

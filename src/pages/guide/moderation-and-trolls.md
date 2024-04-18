@@ -21,7 +21,10 @@ Consider these three main things when choosing your mods:
 
 As well as this, it is ideal if mods are welcoming and active in your community - you can't always be there to say hi to everyone while your working so it's great to have a friendly mod team to welcome new people and answer questions!
 
-> How you invite your mods is a personal choice! And don't feel bad if you ask someone and they say no - not everyone is up for the job! If you know someone you'd like as a mod you could DM them with a personal invite, otherwise you could create an application form if that suits you and your community better!
+:::note
+How you invite your mods is a personal choice! And don't feel bad if you ask someone and they say no - not everyone is up for the job! If you know someone you'd like as a mod you could DM them with a personal invite, otherwise you could create an application form if that suits you and your community better!
+:::
+
 
 ---
 

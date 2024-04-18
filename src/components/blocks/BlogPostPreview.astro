@@ -35,10 +35,11 @@ const { title, tagline, pubDate, url } = Astro.props;
 
 <a
 	href={url}
-	class="no-target-blank hover:no-underline hover:-translate-y-1 shadow-xl transition-all duration-300"
+	class="no-target-blank hover:no-underline hover:-translate-y-1 shadow-xl transition-all duration-300 w-full"
 >
 	<div class="bg-[#303338] text-white
     px-5 py-3
+	w-full
     rounded-xl">
 		<h1 class="text-2xl font-bold">{title}</h1>
 		<p class="text-base">{tagline}</p>

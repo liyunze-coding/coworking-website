@@ -22,3 +22,5 @@ pnpm-debug.log*
 
 # PageFind
 public/pagefind
+
+md-to-html.exe

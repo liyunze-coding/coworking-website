@@ -10,7 +10,7 @@ Credits to the wonderful team of people behind this guide!
 
 ---
 
-<img src="/images/credits/rythondev.webp" alt="RythonDev" class="rounded-lg" width="300">
+<img src="/images/credits/rythondev.webp" alt="RythonDev" class="rounded-lg" width="300" />
 
 ## RythonDev
 
