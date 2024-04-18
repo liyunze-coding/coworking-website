@@ -4,7 +4,7 @@
 
 [![Coworking website](public/assets/coworking-website-preview.webp)](https://coworking-guide.vercel.app/)
 
-<div style="display:flex; gap: 0 0.3em;justify-content:center;margin-top:1em;">
+<div style="display:flex; gap: 0 0.3em;justify-content:center;align-items:center;flex-direction:row;margin-top:1em;">
 
 ![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=for-the-badge)
 
@@ -27,7 +27,7 @@
 - [Coworking Guide](#coworking-guide)
   - [Table of Contents](#table-of-contents)
   - [Contributing](#contributing)
-  - [Directives](#directives)
+  - [Directive Components](#directive-components)
   - [Frontmatter](#frontmatter)
     - [Guide Content](#guide-content)
     - [Independent Pages](#independent-pages)
@@ -41,7 +41,7 @@ Guidelines: TBA
 
 ---
 
-## Directives
+## Directive Components
 
 ```
 :::warn
@@ -54,7 +54,7 @@ Note this down
 
 :::success
 this was successful! 
-::
+:::
 
 :::danger
 It could go very wrong
