@@ -1,0 +1,113 @@
+---
+title: Introduction
+layout: "../../layouts/GuideLayout.astro"
+description: Introduction to coworking streams!
+order: 0
+---
+
+# Introduction
+
+A brief introduction to coworking streams! Let's keep each other accountable ^^
+
+---
+
+## What are coworking streams?
+
+![RythonDev](/images/introduction/rythondev.webp)
+
+Image source: [RythonDev (Twitch)](https://twitch.tv/RythonDev)
+
+> Coworking (or study) streaming is an opportunity to share a virtual, productive, space with others and to connect based on interests and studies - in some ways replicating the in-person office, library, or cafe. Often, study streaming follows a pomodoro counter so that streamers can focus on working for a set amount of time and then converse with chat during another set amount of time for break.
+
+Many viewers like to watch coworking streams because it provides motivation and accountability, which is especially hard if you're trying to focus at home. In the light of Covid, where working from home is becoming more common, it can nice to find an environment with like-minded people. Plus, the sense of community attracts many people - often coworking streams are very welcoming and supportive!
+
+---
+
+## What is a "pomodoro"?
+
+<img src="/images/introduction/ellyskey.webp" alt="Ellyskey" loading="lazy" />
+
+Image source: [Ellyskey (Twitch)](https://twitch.tv/Ellyskey)
+
+The Pomodoro Technique is a time management method where you work in focused intervals called pomodoros separated by short breaks. This helps you stay concentrated, avoid burnout, and tackle big tasks by breaking them into manageable chunks.
+
+Coworking streamers tend to use 50 minutes of work and 10 minutes of break (50/10) for their streams for optimal balance of being able to get work done and be able to chat with viewers.
+
+---
+
+## How do people enjoy these streams?
+
+<img src="/images/introduction/seijisoldier.webp" alt="SeijiSoldier" loading="lazy" />
+
+Image source: [SeijiSoldier (Twitch)](https://twitch.tv/SeijiSoldier)
+
+> ### What are your thoughts on co-working streams?
+
+> I'm not saying I dislike them, but I just want to understand how people enjoy these streams. It's mostly just the streamer doing their work while their cam is facing in front of them. There's nothing much to watch as it's not display captured (understandable since work is confidential).
+> 
+> Sometimes, when I chat with them they don't even reply back. They usually have a timer in their overlay and after the timer ends they talk to chat again.
+> 
+> Maybe I'm a boomer, but can anyone shed light on why these streams are a thing on Twitch?
+
+Source: [Archived Reddit post](https://www.reddit.com/r/Twitch/comments/t66g15/what_are_your_thoughts_on_coworking_streams/)
+
+Although might seem unconventional to watch someone else work, there are several reasons why viewers enjoy these streams:
+
+- **Accountability and Focus**
+
+    Working from home can be isolating and lead to procrastination. Co-working streams provide a virtual study buddy or colleague, fostering a sense of accountability that viewers can leverage to stay on task. Seeing the streamer working diligently can motivate viewers to do the same.
+
+- **Community and Support**
+
+    The chat function in these streams creates a sense of community. Viewers can discuss their work, ask questions, or simply enjoy the company of others while working. This social interaction can be a welcome change from the solitary nature of remote work.
+
+- **Background Noise and Ambience**
+
+    Some viewers find background noise, like music or light chatter, helpful for concentration. Co-working streams can provide this calming ambience without the distractions of traditional co-working spaces.
+
+- **Learning and Inspiration**
+
+    By watching a streamer work, viewers might pick up new productivity techniques or software shortcuts. Seeing someone else tackle similar tasks can be inspiring and motivating.
+
+It's understandable that the lack of direct interaction or display capture might be unfamiliar. Streamers typically prioritize focusing on their work during these periods, addressing chat messages during breaks or using timers to dedicate time for interaction.
+
+Ultimately, co-working streams cater to a specific need for some viewers. They offer a unique blend of productivity, community, and a supportive atmosphere that traditional work environments might lack.
+
+---
+
+## What is a task widget?
+
+<a href="../guide/stream-widgets#task-widgets" class="no-target-blank"><img src="/images/widgets/multitask.webp" alt="Multi Task Widget" loading="lazy"></a>
+
+If you want to add a task widget to your own stream, check it out in the <a href="../guide/stream-widgets#task-widgets" class="no-target-blank">Widgets section</a>!
+
+A task widget is a widget where users can use commands such as:
+- !task [current task]
+- !todo [current task]
+
+in chat to add their task(s) to the widget, to remind themselves about what they need to focus on at the moment.
+
+Task widgets offer an extra layer of accountability for the streamer and chatters to focus on their current task(s).
+
+---
+
+## How can I find these streams?
+
+The recommended way of searching for coworking streams are using the tags! 
+
+- [Coworking tag](https://www.twitch.tv/directory/all/tags/coworking)
+- ["Study with me" tag](https://www.twitch.tv/directory/all/tags/studywithme)
+
+### [Coworking category petition 🔗](https://twitch.uservoice.com/forums/310210-discover/suggestions/46004791-coworking)
+
+<img src="/images/introduction/petition.webp" alt="Coworking and Study category petition" loading="lazy" />
+
+As of March 2024, there isn't an official category. So we want YOU to [SIGN THE PETITION](https://twitch.uservoice.com/forums/310210-discover/suggestions/46004791-coworking) for a "Coworking and Study" category! 
+
+An official coworking category will be beneficial for the community in the following ways:
+
+- Allow coworking and study streamers to stream away from Just Chatting and stream in a less saturated category.
+- Improve discoverability of productivity streamers (big and small creators!)
+- Improve the algorithm to recommend more productivity related streams to users who are interested.
+
+---

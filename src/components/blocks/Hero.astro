@@ -1,0 +1,53 @@
+---
+import { HoverEffect } from "../ui/card-hover-effect";
+import HeroTitle from "../ui/HeroTitle.astro";
+
+const items = [
+	{
+		title: "Introduction",
+		description:
+			"What is Coworking? What are study streams? What's the purpose of it?",
+		link: "/get-started/introduction",
+	},
+	{
+		title: "Tips",
+		description:
+			"Learn some tips to enhance your stream and attract more viewers!",
+		link: "/guide/general-tips",
+	},
+	{
+		title: "Music and Audio",
+		description:
+			"Check out non-copyrighted playlists, non-music background audio and many more!",
+		link: "/guide/music-and-audio",
+	},
+	{
+		title: "Groups",
+		description:
+			"Check out some awesome communities related to coworking, studying and self-improvement!",
+		link: "/groups",
+	},
+	{
+		title: "Blog",
+		description:
+			"Take a look at some blog posts regarding the coworking community!",
+		link: "/blog",
+	},
+	{
+		title: "Credits",
+		description:
+			"Support the people behind this website! Drop them a follow and show some support 🙌",
+		link: "/credits",
+	},
+];
+---
+
+<div class="relative w-fit mt-20 z-50" data-pagefind-ignore>
+	<HeroTitle />
+
+	<div class="max-w-5xl mx-auto px-8 pt-10">
+		<HoverEffect items={items} client:load />
+	</div>
+</div>
+
+<style></style>

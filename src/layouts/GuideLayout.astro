@@ -1,0 +1,42 @@
+---
+import Layout from "./Layout.astro";
+import TableOfContent from "../components/blocks/TableOfContent.astro";
+import VerticalNav from "../components/blocks/verticalNav.astro";
+import "../assets/styles/remark-callout-directives.css";
+
+const { frontmatter, headings } = Astro.props;
+---
+
+<Layout title={frontmatter.title} description={frontmatter.description}>
+	<div class="mx-auto px-6 max-w-7xl">
+		<div class="flex flex-col lg:grid lg:grid-cols-10">
+			<!-- vertical navbar -->
+			<div class="lg:col-span-2" transition:name="vertical-navbar">
+				<aside
+					class="hidden lg:translate-x-0 overflow-y-auto z-30 lg:block lg:sticky py-8 lg:px-4 lg:-mx-4 lg:max-h-[calc(100vh-var(--header-height))] lg:top-[--header-height]"
+				>
+					<VerticalNav />
+				</aside>
+			</div>
+			<div class="lg:col-span-8">
+				<div class="flex flex-col lg:grid lg:grid-cols-10">
+					<div class="col-span-8 pr-10 pb-10 pt-8">
+						<slot />
+					</div>
+					<div
+						class="hidden col-span-2 pt-8 lg:block lg:sticky lg:px-4 lg:-mx-4 lg:max-h-[calc(100vh-var(--header-height))] lg:top-[--header-height]"
+					>
+						<!-- TOC -->
+						<TableOfContent headings={headings} />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script is:inline>
+		// make all <a> attributes have target="_blank" except for Table of Contents
+		document.querySelectorAll("a:not(.no-target-blank)").forEach((el) => {
+			el.setAttribute("target", "_blank");
+		});
+	</script>
+</Layout>

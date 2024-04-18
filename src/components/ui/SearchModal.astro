@@ -1,0 +1,55 @@
+---
+const { id } = Astro.props;
+---
+
+<style>
+	dialog::backdrop {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		background: rgba(0, 0, 0, 0.5);
+	}
+</style>
+
+<button
+	onclick={`window.${id}.showModal()`}
+	class="text-sm flex bg-[#101010] w-60 px-2 py-2 border border-gray-600 border-solid text-left rounded-lg group"
+>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 20 20"
+		fill="currentColor"
+		class="w-5 h-5"
+	>
+		<path
+			fill-rule="evenodd"
+			d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+			clip-rule="evenodd"></path>
+	</svg>
+	<span class="ml-3 text-gray-400 group-hover:text-white">Search...</span>
+</button>
+
+<dialog
+	id=`${id}`
+	class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#202020] border-2 border-solid border-[#505050] text-white rounded-lg w-1/2 h-5/6 px-10 py-10 animate-fadeIn"
+>
+	<form method="dialog">
+		<button class="absolute top-3 right-3"
+			><svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 24 24"
+				fill="currentColor"
+				class="w-6 h-6"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+					clip-rule="evenodd"></path>
+			</svg>
+		</button>
+	</form>
+	<div id="search" class="mt-2" transition:name="search" transition:persist>
+	</div>
+</dialog>

@@ -1,0 +1,39 @@
+---
+import CommunityLinks from "./CommunityLinks.astro";
+
+type Heading = {
+	depth: number;
+	text: string;
+	slug: string;
+};
+
+const { headings } = Astro.props;
+---
+
+<h3 class="text-lg font-bold mb-2 mt-0" transition:name="Table of Content">
+	Table of Contents
+</h3>
+<ul class="text-sm list-none">
+	{
+		headings.map((heading: Heading, index: number) => {
+			// if (heading.depth === 1) return;
+			const margin = `${heading.depth - 0.8}rem`;
+			return (
+				<li
+					style={{ marginLeft: margin }}
+					class="mb-2 pl-0"
+					data-pagefind-ignore
+				>
+					<a
+						href={`#${heading.slug}`}
+						class="no-target-blank text-white hover:no-underline hover:text-blue-400 transition-colors duration-150 line-clamp-1"
+					>
+						{heading.text.replace("🔗", "")}
+					</a>
+				</li>
+			);
+		})
+	}
+</ul>
+<hr class="my-4" />
+<CommunityLinks />

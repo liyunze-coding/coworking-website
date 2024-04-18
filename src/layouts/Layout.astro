@@ -1,5 +1,5 @@
 ---
-import NavBar from "../components/navBar.astro";
+import NavBar from "../components/blocks/navBar.astro";
 import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
@@ -10,108 +10,40 @@ export interface Props {
 const { title, description } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="keywords" content="coworking, study, streams" />
-		<meta name="author" content="RyanPython" />
+		<meta name="author" content="RythonDev" />
 		<meta name="theme-color" content="#2B2D31" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<script defer src="/_vercel/insights/script.js"></script>
+		<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+		<script src="/pagefind/pagefind-ui.js" is:inline></script>
+		<script is:inline src="/_vercel/insights/script.js"></script>
 		<ViewTransitions />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
-		<NavBar />
-		<slot />
+		<div class="pt-[var(--header-height)]">
+			<NavBar />
+			<slot />
+		</div>
+		<script>
+			// make all <a> attributes have target="_blank" except for Table of Contents
+			document
+				.querySelectorAll("a:not(.no-target-blank)")
+				.forEach((el) => {
+					el.setAttribute("target", "_blank");
+				});
+		</script>
 
 		<style is:global>
-			@font-face {
-				font-family: "Fredoka";
-				src: url("/fonts/Fredoka-Bold.ttf") format("truetype");
-				font-weight: bold;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Fredoka";
-				src: url("/fonts/Fredoka-Light.ttf") format("truetype");
-				font-weight: normal;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Fredoka";
-				src: url("/fonts/Fredoka-Medium.ttf") format("truetype");
-				font-weight: 500;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Fredoka";
-				src: url("/fonts/Fredoka-Regular.ttf") format("truetype");
-				font-weight: normal;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
-				font-weight: bold;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-Light.ttf") format("truetype");
-				font-weight: 300;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
-				font-weight: 500;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
-				font-weight: normal;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Montserrat";
-				src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
-				font-weight: 600;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Poppins";
-				src: url("/fonts/Poppins-Light.ttf") format("truetype");
-				font-weight: 300;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Poppins";
-				src: url("/fonts/Poppins-Medium.ttf") format("truetype");
-				font-weight: 500;
-				font-style: normal;
-			}
-
-			@font-face {
-				font-family: "Poppins";
-				src: url("/fonts/Poppins-Regular.ttf") format("truetype");
-				font-weight: normal;
-				font-style: normal;
+			:root {
+				--header-height: 3.5rem;
 			}
 
 			* {
@@ -121,28 +53,33 @@ const { title, description } = Astro.props;
 			}
 
 			html {
-				font-family: "Montserrat", system-ui, sans-serif;
-				background-color: #29233f;
+				font-family: system-ui, sans-serif;
+				background-color: #171717;
+				color: rgb(255 255 255);
 			}
 
 			html,
 			body {
 				min-height: 100%;
-			}
-
-			body {
-				height: 100vh;
-				font-family: "Montserrat", system-ui, sans-serif;
+				/* smooth scroll */
+				scroll-behavior: smooth;
+				font-family: system-ui;
 			}
 
 			code {
-				font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-					DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+				font-family:
+					Menlo,
+					Monaco,
+					Lucida Console,
+					Liberation Mono,
+					DejaVu Sans Mono,
+					Bitstream Vera Sans Mono,
+					Courier New,
 					monospace;
 			}
 
 			nav {
-				font-family: "Montserrat", system-ui, sans-serif;
+				font-family: system-ui, sans-serif;
 				font-weight: 500;
 			}
 
@@ -154,11 +91,67 @@ const { title, description } = Astro.props;
 				text-decoration: none;
 			}
 
-			p code {
-				word-break: break-all; /* This will allow the URL to break at any character */
-				display: block; /* Ensures the entire URL is on its own line */
-				width: 100%; /* Make sure the code element takes up the full width of its container */
-				overflow-x: auto;
+			blockquote {
+				@apply my-4 border-l-4 border-gray-500 pl-4;
+			}
+
+			a {
+				@apply inline-block text-blue-400 hover:underline;
+			}
+
+			h1 {
+				@apply mb-2 text-4xl font-bold;
+			}
+
+			h2 {
+				@apply mb-2 mt-5 scroll-mt-[calc(20px+var(--header-height))] text-3xl font-bold;
+			}
+
+			h3 {
+				@apply mb-2 mt-5 scroll-mt-[calc(17px+var(--header-height))] text-2xl font-bold;
+			}
+
+			h4 {
+				@apply mb-2 mt-5 scroll-mt-[calc(14px+var(--header-height))] text-xl font-bold;
+			}
+
+			p {
+				@apply mb-2 mt-2 font-[system-ui] leading-6;
+			}
+
+			hr {
+				@apply my-10 border-gray-500;
+			}
+
+			ul {
+				@apply list-outside list-disc leading-7;
+			}
+
+			code {
+				@apply rounded-md bg-[#323232] px-1 py-1 font-["Lucida_Console",monospace,courier-new] text-sm;
+			}
+
+			ul,
+			ol {
+				@apply list-outside  leading-7;
+			}
+
+			ul {
+				@apply list-disc;
+			}
+
+			ul ul,
+			ol ul {
+				@apply mb-2 ml-5 list-[circle];
+			}
+
+			ul li,
+			ol li {
+				@apply mb-1 ml-5;
+			}
+
+			ol {
+				@apply ml-5 list-outside list-decimal leading-7;
 			}
 		</style>
 	</body>

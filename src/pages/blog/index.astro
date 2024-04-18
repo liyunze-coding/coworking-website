@@ -1,0 +1,26 @@
+---
+import BlogsLayout from "../../layouts/BlogsLayout.astro";
+import BlogPost from "../../components/blocks/BlogPostPreview.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("posts");
+---
+
+<BlogsLayout
+	title="Blog Posts"
+	description="A collection of blog posts, related to coworking, studying, streaming and many more!"
+>
+	<h1 class="mb-5">Blog Posts</h1>
+	<div>
+		{
+			allPosts.map((post) => (
+				<BlogPost
+					url={`/blog/posts/${post.slug}/`}
+					title={post.data.heading}
+					tagline={post.data.subheading}
+					pubDate={post.data.pubDate}
+				/>
+			))
+		}
+	</div>
+</BlogsLayout>

@@ -1,0 +1,141 @@
+---
+import VerticalNav from "./verticalNav.astro";
+import SearchModal from "../ui/SearchModal.astro";
+---
+
+<div
+	class="w-full backdrop-blur fixed top-0 text-white bg-secondary/75 z-[60] text-lg py-3 h-[var(--header-height)]"
+	data-pagefind-ignore
+>
+	<div
+		class="mx-auto relative px-3 lg:px-8 max-w-7xl flex flex-row justify-between items-center gap-3"
+	>
+		<!-- Hamburger Icon -->
+		<div
+			class="lg:hidden flex items-center fixed z-30"
+			transition:name="hamburger"
+		>
+			<button
+				id="menu-toggle"
+				type="button"
+				class="text-white"
+				transition:persist
+			>
+				<svg
+					viewBox="0 0 100 80"
+					width="30"
+					height="30"
+					fill="currentColor"
+				>
+					<rect width="100" height="15" rx="6" ry="6"></rect>
+					<rect y="30" width="100" height="15" rx="6" ry="6"></rect>
+					<rect y="60" width="100" height="15" rx="6" ry="6"></rect>
+				</svg>
+			</button>
+		</div>
+		<!-- Logo -->
+		<div
+			class="flex-1 flex items-center text-xl select-none ml-10 lg:ml-0"
+			transition:name="cowo-logo"
+			transition:persist
+		>
+			<a
+				href="/"
+				class="no-target-blank no-underline text-white hover:no-underline"
+			>
+				Coworking <span class="font-bold">Guide</span>
+			</a>
+		</div>
+		<!-- Navigation Links -->
+		<div
+			class="hidden lg:flex items-center gap-8"
+			id="navbar-links"
+			transition:persist
+			transition:name="navbar"
+		>
+			<a
+				class="no-target-blank hover:text-black hover:bg-white rounded-md transition-colors duration-300 px-2 py-1 text-white hover:no-underline"
+				href="/get-started/introduction">Get started</a
+			>
+			<a
+				class="no-target-blank hover:text-black hover:bg-white rounded-md transition-colors duration-300 px-2 py-1 text-white hover:no-underline"
+				href="/guide/general-tips">Guide</a
+			>
+			<a
+				class="no-target-blank hover:text-black hover:bg-white rounded-md transition-colors duration-300 px-2 py-1 text-white hover:no-underline"
+				href="/groups">Groups</a
+			>
+			<a
+				class="no-target-blank hover:text-black hover:bg-white rounded-md transition-colors duration-300 px-2 py-1 text-white hover:no-underline"
+				href="/blog">Blog</a
+			>
+			<a
+				class="no-target-blank hover:text-black hover:bg-white rounded-md transition-colors duration-300 px-2 py-1 text-white hover:no-underline"
+				href="/credits">Credits</a
+			>
+		</div>
+		<!-- Search bar -->
+		<div class="flex lg:flex-1 justify-end relative">
+			<SearchModal id="dialog" open="Open modal" />
+		</div>
+	</div>
+</div>
+<aside
+	id="vertical-navbar"
+	class="fixed block overflow-y-auto -translate-x-[200%] transition-transform duration-300 z-30 lg:hidden bg-[#151515] py-8 px-8 h-[calc(100vh-var(--header-height))] top-[--header-height]"
+	transition:persist="vertical-nav-from-left"
+>
+	<VerticalNav showHome={true} />
+</aside>
+
+<style is:global>
+	:root {
+		--pagefind-ui-scale: 1;
+		--pagefind-ui-primary: #fff;
+		--pagefind-ui-text: #fff;
+		--pagefind-ui-background: #272727;
+		--pagefind-ui-border: #505050;
+		--pagefind-ui-tag: #fff;
+		--pagefind-ui-border-width: 1px;
+		--pagefind-ui-border-radius: 10px;
+		--pagefind-ui-image-border-radius: 2px;
+		--pagefind-ui-image-box-ratio: 2 / 1;
+		--pagefind-ui-font: system-ui;
+	}
+</style>
+
+<script>
+	// JavaScript for toggling the menu
+	document.addEventListener("DOMContentLoaded", function () {
+		const menuToggle = document.querySelector("#menu-toggle");
+		const verticalNavBar = document.querySelector("#vertical-navbar");
+		if (menuToggle) {
+			menuToggle.addEventListener("click", function () {
+				if (verticalNavBar)
+					verticalNavBar.classList.toggle("-translate-x-[200%]");
+			});
+		}
+
+		// Close the menu when a link is clicked
+		const navbarLinks = document.querySelectorAll("#vertical-navbar a");
+		navbarLinks.forEach((link) => {
+			link.addEventListener("click", function () {
+				if (verticalNavBar)
+					verticalNavBar.classList.add("-translate-x-[200%]");
+			});
+		});
+	});
+
+	// comment this out if you don't want the search modal
+	window.addEventListener("DOMContentLoaded", (event) => {
+		// @ts-ignore
+		new PagefindUI({
+			element: "#search",
+			showSubResults: false,
+			showEmptyFilters: false,
+			debounceTimeoutMs: 0,
+			showImages: false,
+			autofocus: false,
+		});
+	});
+</script>

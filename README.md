@@ -1,6 +1,22 @@
+<div align="center">
+
 # Coworking Guide
 
-![Coworking website](public/assets/cowo.webp)
+[![Coworking website](public/assets/coworking-website-preview.webp)](https://coworking-guide.vercel.app/)
+
+</div>
+
+<div align="center">
+
+  ![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=for-the-badge)
+  ![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge)
+  ![React Badge](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=for-the-badge)
+  ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=for-the-badge)
+  ![remark Badge](https://img.shields.io/badge/remark-000?logo=remark&logoColor=fff&style=for-the-badge)
+
+</div>
+
+
 
 ---
 
@@ -8,51 +24,93 @@
 
 - [Coworking Guide](#coworking-guide)
   - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [How I made this website](#how-i-made-this-website)
-    - [Frameworks and Tools](#frameworks-and-tools)
-    - [Deployment](#deployment)
-  - [References and Credits](#references-and-credits)
+  - [Contributing](#contributing)
+  - [Directive Components](#directive-components)
+  - [Frontmatter](#frontmatter)
+    - [Guide Content](#guide-content)
+    - [Independent Pages](#independent-pages)
+    - [Blog Post](#blog-post)
 
 ---
 
-## Introduction
+## Contributing
 
-This guide is intended to help you get started with the coworking streams! Whether you're a new or existing coworking streamer, we hope you find this guide useful.
-
-I am a coworking streamer myself and I also made several open source widgets for the coworking streams. 
-
-Please feel free to drop by my <a href="https://www.twitch.tv/RyanPython" target="_blank">stream</a>!
+Guidelines: TBA
 
 ---
 
-## How I made this website
+## Directive Components
 
-### Frameworks and Tools
+```
+:::warn
+This is a warning!
+:::
 
-- Astro (https://astro.build)
+:::note
+Note this down
+:::
 
-    Astro is a static site generator that supports server-side rendering. It supports Markdown which I used for most of the content on this website.
+:::success
+this was successful! 
+:::
 
-- Tailwind CSS (https://tailwindcss.com)
+:::danger
+It could go very wrong
+:::
 
-    Tailwind CSS is a utility-first CSS framework. It's very easy to use and it's very powerful. I used it to style this website on top of Astro, including the Markdown content!
+:::tip
+This is a cool tip!
+:::
+```
 
-- Markdown (https://www.markdownguide.org)
+## Frontmatter
 
-    Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. I used Markdown to write most of the content on this website.
+### Guide Content
 
-### Deployment
+```
+---
+title: 
+layout: "../../layouts/GuideLayout.astro"
+description: 
+order: 0
+---
+```
 
-This website is deployed on <a href="https://vercel.com/">Vercel</a>, which is a cloud platform for static sites and serverless functions. It automatically updates the website whenever I push changes to the GitHub repository.
+- `title`: Page title
+- `layout`: Path to layout file
+- `description`: Description of the content
+- `order`: The order in which it displays on the left bar
+
+### Independent Pages
+
+```
+---
+title: 
+layout: "../../layouts/GuideLayout.astro"
+description: 
+---
+```
+
+- `title`: Page title
+- `layout`: Path to layout file
+- `description`: Description of the content
+
+### Blog Post
+
+```
+---
+heading: 
+subheading: 
+author: 
+slug: spirit-city 
+pubDate: 1970-01-01T0:00:00
+---
+```
+
+- `heading`: the main title
+- `subheading`: the tagline of the blog post
+- `author`: name / username of author
+- `slug`: desired URL slug
+- `pubDate`: Published date (ISO 8601)
 
 ---
-
-## References and Credits
-
-<ul>
-  <li><a href="https://www.twitch.tv/team/coworkingcrew">Coworking Crew</a> for providing resources</li>
-  <li><a href="https://third-stinger-20a.notion.site/A-Coworking-Streamer-Cheat-Sheet-01ee1e5ff006410d84c339069ea6546c" target="_blank">A Coworking Streamer Cheat Sheet</a> as an amazing resource</li>
-  <li><a href="https://www.twitch.tv/MohFocus">MohFocus</a> for the resources (bots and widgets)</li> 
-  <li><a href="https://www.twitch.tv/ryanpython">RyanPython</a> for building the website</li> 
-</ul>
