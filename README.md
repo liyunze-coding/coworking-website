@@ -6,7 +6,7 @@
 
 </div>
 
-<div style="display:flex; gap: 0 0.3em;justify-content:center;align-items:center;flex-direction:row;margin-top:1em;width:100%;">
+<div align="center">
 
 ![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=for-the-badge)
 
