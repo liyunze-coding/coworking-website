@@ -127,15 +127,15 @@ import SearchModal from "../ui/SearchModal.astro";
 	});
 
 	// comment this out if you don't want the search modal
-	// window.addEventListener("DOMContentLoaded", (event) => {
-	// 	// @ts-ignore
-	// 	new PagefindUI({
-	// 		element: "#search",
-	// 		showSubResults: false,
-	// 		showEmptyFilters: false,
-	// 		debounceTimeoutMs: 0,
-	// 		showImages: false,
-	// 		autofocus: false,
-	// 	});
-	// });
+	window.addEventListener("DOMContentLoaded", (event) => {
+		// @ts-ignore
+		new PagefindUI({
+			element: "#search",
+			showSubResults: false,
+			showEmptyFilters: false,
+			debounceTimeoutMs: 0,
+			showImages: false,
+			autofocus: false,
+		});
+	});
 </script>

@@ -16,8 +16,8 @@ const { headings } = Astro.props;
 <ul class="text-sm list-none">
 	{
 		headings.map((heading: Heading, index: number) => {
-			if (heading.depth === 1) return;
-			const margin = `${heading.depth - 1.5}rem`;
+			// if (heading.depth === 1) return;
+			const margin = `${heading.depth - 0.8}rem`;
 			return (
 				<li
 					style={{ marginLeft: margin }}

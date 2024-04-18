@@ -44,6 +44,7 @@ html {
     padding: 0.5rem 1rem;
     color: inherit;
     background-color: var(--callout-bg);
+    margin: 2rem 0;
 }
 
 .callout-indicator {

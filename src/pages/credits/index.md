@@ -28,6 +28,14 @@ Main developer of the project
 
 </div>
 
+## Coworking Crew Cheat Sheet
+
+![Coworking Crew](/images/groups/coworkingcrew.webp)
+
+An amazing resource for this guide!
+
+[![Website](https://img.shields.io/badge/Website-fc626f?logoColor=000&style=for-the-badge)](https://third-stinger-20a.notion.site/A-Coworking-Streamer-Cheat-Sheet-01ee1e5ff006410d84c339069ea6546c/)
+
 <!-- REFERENCES FOR BADGES/ICONS -->
 <!-- https://badges.pages.dev/ -->
 <!-- https://shields.io/badges -->
