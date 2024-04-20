@@ -11,32 +11,23 @@ import SearchModal from "../ui/SearchModal.astro";
 		class="mx-auto relative px-3 lg:px-8 max-w-7xl flex flex-row justify-between items-center gap-3"
 	>
 		<!-- Hamburger Icon -->
-		<div
-			class="lg:hidden flex items-center fixed z-30"
-			transition:name="hamburger"
-			transition:persist
+		<label
+			class="hamburger-menu flex lg:hidden top-2 left-5"
+			aria-label="Menu"
 		>
-			<button
-				id="menu-toggle"
-				type="button"
-				class="text-white"
-				transition:persist
-			>
-				<svg
-					viewBox="0 0 100 80"
-					width="30"
-					height="30"
-					fill="currentColor"
-				>
-					<rect width="100" height="15" rx="6" ry="6"></rect>
-					<rect y="30" width="100" height="15" rx="6" ry="6"></rect>
-					<rect y="60" width="100" height="15" rx="6" ry="6"></rect>
-				</svg>
-			</button>
-		</div>
+			<input type="checkbox" aria-controls="navigation" />
+		</label>
+		<!-- Vertical Navbar -->
+		<aside
+			id="vertical-navbar"
+			class="sidebar fixed block overflow-y-auto duration-300 z-[60] lg:hidden bg-[#151515] py-8 px-8 h-[calc(100vh-var(--header-height))] top-[--header-height] left-0"
+			transition:persist="vertical-nav-from-left"
+		>
+			<VerticalNav showHome={true} />
+		</aside>
 		<!-- Logo -->
 		<div
-			class="lg:flex-1 flex items-center text-lg sm:text-3xl lg:text-xl select-none mx-auto lg:mx-0"
+			class="lg:flex-1 flex items-center text-lg sm:text-3xl lg:text-xl select-none mx-auto lg:mx-0 my-auto"
 			transition:name="cowo-logo"
 			transition:persist
 		>
@@ -81,13 +72,6 @@ import SearchModal from "../ui/SearchModal.astro";
 		</div>
 	</div>
 </div>
-<aside
-	id="vertical-navbar"
-	class="fixed block overflow-y-auto -translate-x-[200%] transition-transform duration-300 z-[60] lg:hidden bg-[#151515] py-8 px-8 h-[calc(100vh-var(--header-height))] top-[--header-height]"
-	transition:persist="vertical-nav-from-left"
->
-	<VerticalNav showHome={true} />
-</aside>
 
 <style is:global>
 	:root {
@@ -102,21 +86,96 @@ import SearchModal from "../ui/SearchModal.astro";
 		--pagefind-ui-image-border-radius: 2px;
 		--pagefind-ui-image-box-ratio: 2 / 1;
 		--pagefind-ui-font: system-ui;
+
+		--bar-width: 30px;
+		--bar-height: 4px;
+		--hamburger-gap: 6px;
+		--foreground: white;
+		--background: white;
+		--animation-timing: 200ms ease-in-out;
+		--hamburger-height: calc(
+			var(--bar-height) * 3 + var(--hamburger-gap) * 2
+		);
+	}
+
+	.hamburger-menu {
+		--x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+		flex-direction: column;
+		gap: var(--hamburger-gap);
+		width: max-content;
+		position: absolute;
+		z-index: 2;
+		cursor: pointer;
+	}
+
+	.hamburger-menu:has(input:checked) {
+		--foreground: white;
+		--background: #333;
+	}
+
+	.hamburger-menu:has(input:focus-visible)::before,
+	.hamburger-menu:has(input:focus-visible)::after,
+	.hamburger-menu input:focus-visible {
+		border: 1px solid var(--background);
+		box-shadow: 0 0 0 1px var(--foreground);
+	}
+
+	.hamburger-menu::before,
+	.hamburger-menu::after,
+	.hamburger-menu input {
+		content: "";
+		width: var(--bar-width);
+		height: var(--bar-height);
+		background-color: var(--foreground);
+		border-radius: 9999px;
+		transform-origin: left center;
+		transition:
+			opacity var(--animation-timing),
+			width var(--animation-timing),
+			rotate var(--animation-timing),
+			translate var(--animation-timing),
+			background-color var(--animation-timing);
+	}
+
+	.hamburger-menu input {
+		appearance: none;
+		padding: 0;
+		margin: 0;
+		outline: none;
+		pointer-events: none;
+	}
+
+	.hamburger-menu:has(input:checked)::before {
+		rotate: 45deg;
+		width: var(--x-width);
+		translate: 0 calc(var(--bar-height) / -2);
+	}
+
+	.hamburger-menu:has(input:checked)::after {
+		rotate: -45deg;
+		width: var(--x-width);
+		translate: 0 calc(var(--bar-height) / 2);
+	}
+
+	.hamburger-menu input:checked {
+		opacity: 0;
+		width: 0;
+	}
+
+	.sidebar {
+		translate: -200%;
+		margin: 0;
+	}
+
+	.hamburger-menu:has(input:checked) + #vertical-navbar {
+		translate: 0;
 	}
 </style>
 
-<script>
+<script is:inline>
 	// JavaScript for toggling the menu
 	document.addEventListener("DOMContentLoaded", function () {
-		const menuToggle = document.querySelector("#menu-toggle");
-		const verticalNavBar = document.querySelector("#vertical-navbar");
-		if (menuToggle) {
-			menuToggle.addEventListener("click", function () {
-				if (verticalNavBar)
-					verticalNavBar.classList.toggle("-translate-x-[200%]");
-			});
-		}
-
 		// Close the menu when a link is clicked
 		const navbarLinks = document.querySelectorAll("#vertical-navbar a");
 		navbarLinks.forEach((link) => {

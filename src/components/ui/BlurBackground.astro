@@ -1,5 +1,6 @@
 <div
-	class="bg-[white] h-[50vh] aspect-video md:aspect-square absolute rounded-full bg-[linear-gradient(to_right,#88D47D,#3F84D8)] animate-[rotate_20s_infinite] opacity-20 md:opacity-80 origin-center left-1/2 top-1/2"
+	id="background"
+	class="bg-[white] h-screen md:h-[50vh] aspect-square absolute rounded-full bg-[linear-gradient(to_right,#88D47D,#3F84D8)] animate-[rotate_20s_infinite] opacity-20 md:opacity-80 origin-center"
 >
 </div>
 <div
@@ -8,6 +9,11 @@
 </div>
 
 <style>
+	#background {
+		top: 50%;
+		left: 50%;
+	}
+
 	@keyframes rotate {
 		from {
 			rotate: 0deg;
