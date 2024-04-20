@@ -35,7 +35,7 @@ import SearchModal from "../ui/SearchModal.astro";
 		</div>
 		<!-- Logo -->
 		<div
-			class="flex-1 flex items-center text-xl select-none ml-10 lg:ml-0"
+			class="lg:flex-1 flex items-center text-3xl lg:text-xl select-none mx-auto lg:mx-0"
 			transition:name="cowo-logo"
 			transition:persist
 		>
@@ -75,8 +75,8 @@ import SearchModal from "../ui/SearchModal.astro";
 			>
 		</div>
 		<!-- Search bar -->
-		<div class="flex lg:flex-1 justify-end relative">
-			<SearchModal id="dialog" open="Open modal" />
+		<div class="hidden lg:flex lg:flex-1 justify-end relative">
+			<SearchModal id="searchModal" open="Open modal" />
 		</div>
 	</div>
 </div>
@@ -130,7 +130,7 @@ import SearchModal from "../ui/SearchModal.astro";
 	window.addEventListener("DOMContentLoaded", (event) => {
 		// @ts-ignore
 		new PagefindUI({
-			element: "#search",
+			element: "#searchModal-search",
 			showSubResults: false,
 			showEmptyFilters: false,
 			debounceTimeoutMs: 0,

@@ -1,4 +1,6 @@
 ---
+import SearchModal from "../ui/SearchModal.astro";
+
 type Navigation = Record<
 	string,
 	{ title: string; url: string; order: number }[]
@@ -69,6 +71,14 @@ const { showHome } = Astro.props;
 
 <div class="relative">
 	<nav id="vertical-nav-component" class="flex flex-col" data-pagefind-ignore>
+		{
+			showHome && (
+				<div class="mb-5">
+					<SearchModal id="vertical" open="Open modal" />
+				</div>
+			)
+		}
+
 		{
 			showHome && (
 				<div class="mb-2">
@@ -153,6 +163,18 @@ const { showHome } = Astro.props;
 				link.classList.remove("text-white");
 				link.classList.add("text-gray-400");
 			}
+		});
+	});
+
+	window.addEventListener("DOMContentLoaded", (event) => {
+		// @ts-ignore
+		new PagefindUI({
+			element: "#vertical-search",
+			showSubResults: false,
+			showEmptyFilters: false,
+			debounceTimeoutMs: 0,
+			showImages: false,
+			autofocus: false,
 		});
 	});
 </script>
