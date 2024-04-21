@@ -12,24 +12,21 @@
 	#background {
 		top: 50%;
 		left: 50%;
+
+		translate: -50% -50%;
 	}
 
 	@keyframes rotate {
 		from {
-			rotate: 0deg;
-			translate: -50% -50%;
-			scale: 1.5 1;
+			transform: rotate(0deg) scale(1.5, 1);
 		}
 
 		50% {
-			scale: 1 1.5;
-			translate: -50% -50%;
+			transform: rotate(180deg) scale(1, 1.5);
 		}
 
 		to {
-			rotate: 360deg;
-			translate: -50% -50%;
-			scale: 1.5 1;
+			transform: rotate(360deg) scale(1.5, 1);
 		}
 	}
 </style>
