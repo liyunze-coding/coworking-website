@@ -14,6 +14,7 @@ import SearchModal from "../ui/SearchModal.astro";
 		<label
 			class="hamburger-menu flex lg:hidden top-2 left-5"
 			aria-label="Menu"
+			transition:persist="hamburger-menu"
 		>
 			<input type="checkbox" aria-controls="navigation" />
 		</label>
@@ -174,20 +175,22 @@ import SearchModal from "../ui/SearchModal.astro";
 </style>
 
 <script is:inline>
+	const verticalNavBar = document.getElementById("vertical-navbar");
+	const hamburgerMenu = document.querySelector(".hamburger-menu input");
+
 	// JavaScript for toggling the menu
 	document.addEventListener("DOMContentLoaded", function () {
 		// Close the menu when a link is clicked
 		const navbarLinks = document.querySelectorAll("#vertical-navbar a");
+
 		navbarLinks.forEach((link) => {
 			link.addEventListener("click", function () {
-				if (verticalNavBar)
-					verticalNavBar.classList.add("-translate-x-[200%]");
+				if (verticalNavBar) hamburgerMenu.checked = false;
 			});
 		});
 	});
 
-	// comment this out if you don't want the search modal
-	window.addEventListener("DOMContentLoaded", (event) => {
+	document.addEventListener("astro:page-load", () => {
 		// @ts-ignore
 		new PagefindUI({
 			element: "#searchModal-search",
@@ -197,5 +200,7 @@ import SearchModal from "../ui/SearchModal.astro";
 			showImages: false,
 			autofocus: false,
 		});
+
+		if (hamburgerMenu) hamburgerMenu.checked = false;
 	});
 </script>

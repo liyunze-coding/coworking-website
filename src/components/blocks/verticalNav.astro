@@ -164,17 +164,22 @@ const { showHome } = Astro.props;
 				link.classList.add("text-gray-400");
 			}
 		});
+
+		// close dialog
+		const dialog = document.querySelector("dialog");
+
+		if (dialog) {
+			dialog.close();
+		}
 	});
 
-	window.addEventListener("DOMContentLoaded", (event) => {
-		// @ts-ignore
-		new PagefindUI({
-			element: "#vertical-search",
-			showSubResults: false,
-			showEmptyFilters: false,
-			debounceTimeoutMs: 0,
-			showImages: false,
-			autofocus: false,
-		});
+	// @ts-ignore
+	new PagefindUI({
+		element: "#vertical-search",
+		showSubResults: false,
+		showEmptyFilters: false,
+		debounceTimeoutMs: 0,
+		showImages: false,
+		autofocus: false,
 	});
 </script>
