@@ -9,7 +9,7 @@ order: 6
 
 ---
 
-## Moderation
+## Moderation Team
 
 Having a good moderation team is important for coworking streamers, since most of the time we are focused on our own work and not chat! This is why it's particularly important to have a good moderation team to help you out so you don't get distracted. 
 
@@ -62,3 +62,59 @@ As with any social media platform, you may encounter trolls and bots while you s
     <img src="/images/moderation-and-trolls/donation-settings.webp" alt="Donation settings" loading="lazy" />
 
 ---
+
+## How to moderate streams
+
+Here's some tips for streamers and moderators who want to effectively moderate streams.
+
+- ### Get familiarized with Mod View
+    To enter moderator view for a stream you're able to moderate, click on the sword icon next to the chat or open `https://twitch.tv/moderator/[username]`. Get familiar with icons including Unban Requests, Predictions, Activity Feed etc.
+
+- ### Turn on Show Mod Icons
+    Showing Mod Icons can allow you to quickly ban, timeout or delete message sent by a user in chat. To activate "Show Mod Icons":
+    1. Open any chat on Twitch (For example, open `https://twitch.tv/RythonDev/chat`)
+    2. Click on Chat Settings (Gear icon)
+    3. Find "Show Mod Icons" then switch it on
+
+- ### Learn useful slash commands
+    Here are some useful slash commands! 
+    - `/ban [user] (reason)` 
+        
+        Example: `/ban JohnDoeTTV suspicious account`
+        
+        Bans users, reason is optional.
+
+    - `/timeout [user] [duration] (reason)`
+        
+        Example: `/timeout JohnDoeTTV 100 inappropriate comments`
+        
+        Times out users for a certain duration (default: seconds), reason is optional.
+
+    - `/followers (duration)`
+        
+        Example: `/followers 1h`
+        
+        Turns on followers-only mode in chat. Do `/followers` to allow chatters to speak immediately after they follow the channel.
+    
+    - `/shield`
+        
+        Activates Shield Mode on chat. Only activate it when you're getting harassed by bots or spammers. [Learn more 
+        about Shield Mode](https://safety.twitch.tv/s/article/Protect-your-channel-with-Shield-Mode?language=en_US).
+
+    - `/slow [duration]`
+        
+        Example: `/slow 3s`
+
+        Activates Slow Mode for a specified duration.
+
+    - `/pin [message]`
+        
+        Example: `/pin This is a coworking stream. !pomo and !about for more info`
+        
+        Pins a message in chat.
+
+    - `/poll, /prediction`
+        
+        Opens a setup menu to create a poll/prediction.
+
+
