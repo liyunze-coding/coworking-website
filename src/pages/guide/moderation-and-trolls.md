@@ -117,4 +117,6 @@ Here's some tips for streamers and moderators who want to effectively moderate s
         
         Opens a setup menu to create a poll/prediction.
 
+    - `/shoutout [user]`
 
+        Give a shoutout to someone (preferably someone who streams).
