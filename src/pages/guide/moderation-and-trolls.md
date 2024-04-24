@@ -120,3 +120,7 @@ Here's some tips for streamers and moderators who want to effectively moderate s
     - `/shoutout [user]`
 
         Give a shoutout to someone (preferably someone who streams).
+
+:::note
+The parameters enclosed within `[]` means required, whereas the parameters enclosed within `()` means optional.
+:::

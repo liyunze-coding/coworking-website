@@ -7,7 +7,42 @@ order: 1
 
 # Music and Audio
 
-The vibe of a coworking stream is determined by the background music or audio!
+Enhance your stream audio!
+
+---
+
+## Microphone quality
+
+Having awful microphone quality on stream would negatively affect the viewer experience. Here's a few tips on how to improve your microphone quality on OBS, using filters!
+
+:::note
+To open Filters for your microphone on OBS:
+1. Open OBS
+2. Find Mic/Aux in your Audio Mixer
+3. Click on the 3 dots  &#65049;
+4. Select "Filters"
+5. On the bottom right, you should see a plus `+` button. Click it to add a new filter.
+:::
+
+- ### Noise Suppression
+
+  The Noise suppression filter OBS helps you easily suppression background noise! You have 2 methods to choose from:
+
+  - **RNNoise** (recommended)
+    
+    Enhances your microphone quality effectively, however has higher CPU usage.
+
+  - **Speex**
+    
+    Lower CPU usage, low quality, however you can adjust the threshold and may be a better option if you do ASMR such as keyboard ASMR.
+
+- ### Compressor
+
+  Is your microphone at maximum volume yet your viewers can't hear you very well? A compressor filter is used even out the volume levels of your microphone input. It works by reducing the dynamic range of the audio signal, making quieter sounds louder and louder sounds quieter.
+
+  Here's a straightforward [VIDEO](https://youtu.be/ZvX7Ys0ghG4) on how to use the compressor filter.
+
+Be sure to test your audio by recording using your streaming software then listening to it.
 
 ---
 
