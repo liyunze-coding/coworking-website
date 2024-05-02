@@ -54,6 +54,15 @@ module.exports = {
                 "primary-green": "#88D47D",
                 "primary-blue": "#3F84D8",
             },
+            spacing: {
+                auto: "auto",
+            },
+            fontSize: {
+                initial: "initial",
+            },
+            fontWeight: {
+                initial: "initial",
+            },
         },
     },
     variants: {
@@ -61,5 +70,83 @@ module.exports = {
             backgroundImage: ["responsive", "hover", "focus", "active"],
         },
     },
-    plugins: [],
+    plugins: [
+        function ({ addBase, config }) {
+            addBase({
+                blockquote: {
+                    margin: "1rem 0",
+                    borderLeft: "4px solid #718096",
+                    paddingLeft: "1rem",
+                },
+                a: {
+                    display: "inline-block",
+                    color: "#4299e1",
+                    textDecoration: "none",
+                },
+                "a:hover": {
+                    textDecoration: "underline",
+                },
+                h1: {
+                    marginBottom: "0.5rem",
+                    fontSize: "2.25rem",
+                    fontWeight: "bold",
+                },
+                h2: {
+                    marginBottom: "0.5rem",
+                    marginTop: "1.25rem",
+                    fontSize: "1.875rem",
+                    fontWeight: "bold",
+                },
+                h3: {
+                    marginBottom: "0.5rem",
+                    marginTop: "1.25rem",
+                    fontSize: "1.5rem",
+                    fontWeight: "bold",
+                },
+                h4: {
+                    marginBottom: "0.5rem",
+                    marginTop: "1.25rem",
+                    fontSize: "1.25rem",
+                    fontWeight: "bold",
+                },
+                p: {
+                    marginBottom: "0.5rem",
+                    marginTop: "0.5rem",
+                    fontFamily: "system-ui",
+                    lineHeight: "1.75rem",
+                },
+                hr: {
+                    margin: "2.5rem 0",
+                    borderColor: "#718096",
+                },
+                "ul, ol": {
+                    listStylePosition: "outside",
+                    lineHeight: "1.75rem",
+                },
+                ul: {
+                    listStyleType: "disc",
+                },
+                "ul ul, ol ul": {
+                    marginBottom: "0.5rem",
+                    marginLeft: "1.25rem",
+                    listStyleType: "circle",
+                },
+                "ul li, ol li": {
+                    marginBottom: "0.25rem",
+                    marginLeft: "1.25rem",
+                },
+                ol: {
+                    marginLeft: "1.25rem",
+                    listStyleType: "decimal",
+                },
+                code: {
+                    borderRadius: "0.375rem",
+                    backgroundColor: "#323232",
+                    padding: "0.25rem 0.5rem",
+                    fontFamily: "monospace, courier-new",
+                    fontSize: "0.875rem",
+                },
+            });
+        },
+    ],
 };
