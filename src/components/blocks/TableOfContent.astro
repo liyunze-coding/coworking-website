@@ -13,7 +13,7 @@ const { headings } = Astro.props;
 <h3 class="text-lg font-bold mb-2 mt-0" transition:name="Table of Content">
 	Table of Contents
 </h3>
-<ul class="text-sm list-none">
+<ul class="text-sm list-none toc-scrollbar">
 	{
 		headings.map((heading: Heading, index: number) => {
 			// if (heading.depth === 1) return;

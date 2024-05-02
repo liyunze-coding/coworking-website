@@ -117,6 +117,16 @@ const { title, description } = Astro.props;
 			a.preview {
 				text-decoration: none;
 			}
+
+			.toc-scrollbar {
+				overflow-y: auto;
+				max-height: 60vh;
+
+				/* scroll bar */
+				scrollbar-width: thin;
+				scrollbar-color: #4a4a4a #2b2d31;
+				scrollbar-gutter: 10px;
+			}
 		</style>
 	</body>
 </html>
