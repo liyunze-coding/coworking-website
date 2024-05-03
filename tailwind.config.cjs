@@ -90,24 +90,28 @@ module.exports = {
                     marginBottom: "0.5rem",
                     fontSize: "2.25rem",
                     fontWeight: "bold",
+                    scrollMarginTop: "3.7rem",
                 },
                 h2: {
                     marginBottom: "0.5rem",
                     marginTop: "1.25rem",
                     fontSize: "1.875rem",
                     fontWeight: "bold",
+                    scrollMarginTop: "3.7rem",
                 },
                 h3: {
                     marginBottom: "0.5rem",
                     marginTop: "1.25rem",
                     fontSize: "1.5rem",
                     fontWeight: "bold",
+                    scrollMarginTop: "3.7rem",
                 },
                 h4: {
                     marginBottom: "0.5rem",
                     marginTop: "1.25rem",
                     fontSize: "1.25rem",
                     fontWeight: "bold",
+                    scrollMarginTop: "3.7rem",
                 },
                 p: {
                     marginBottom: "0.5rem",
