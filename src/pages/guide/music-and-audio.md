@@ -73,6 +73,10 @@ Non-copyrighted music playlists for you to listen on stream!
 
 - [YouTube (playlist)](https://youtu.be/VBSP75pr2bg?list=PL2LwrpMfls5K1DVyG5ii_mEGKqzK9EGlr)
 
+:::note
+Streaming audio from Spotify to streaming services such as Twitch is against Spotify's Terms of Service (but rarely enforced) so please do so at your own risk! 
+:::
+
 ---
 
 ## How to Display 'Now Playing'
