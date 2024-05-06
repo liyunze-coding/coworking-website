@@ -61,7 +61,7 @@ A task list widget is a great way to keep track of your tasks along with your ch
 
 <a href="https://ko-fi.com/s/94e7e8dc81"><img src="/images/widgets/multitask.webp" alt="Multi Task Widget" loading="lazy" /></a>
 
-- $50 USD on ko-fi
+- $30 USD on ko-fi
 - Easy to use, setup and customize
 - Several versions to choose from:
   - Original version
