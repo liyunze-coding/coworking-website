@@ -19,18 +19,23 @@ export function formatTitle(title: string): string {
 
 export async function setup() {
 	// setup navigation
+
+	// Define the order of categories
+	let categoryOrder = ["Get Started", "Guide", "Tutorials"];
+
 	const getStartedFiles = await Astro.glob("../../pages/get-started/*");
 	const guideFiles = await Astro.glob("../../pages/guide/*");
+	const tutorialFiles = await Astro.glob("../../pages/tutorials/*");
 
-	const markdownFiles = [...getStartedFiles, ...guideFiles];
-	const navigation: Navigation = {};
+	let markdownFiles = [...getStartedFiles, ...guideFiles, ...tutorialFiles];
+	let navigation: Navigation = {};
 
 	for (const file of markdownFiles) {
-		const filePath = file.url;
-		const [_, category] = filePath!.split("/");
-		const formattedCategory = formatTitle(category);
-		const formattedTitle = file.frontmatter.title;
-		const order = file.frontmatter.order ?? 0;
+		let filePath = file.url;
+		let [_, category] = filePath!.split("/");
+		let formattedCategory = formatTitle(category).toLowerCase();
+		let formattedTitle = file.frontmatter.title;
+		let order = file.frontmatter.order ?? 0;
 
 		if (!navigation[formattedCategory]) {
 			navigation[formattedCategory] = [];
@@ -43,18 +48,18 @@ export async function setup() {
 		});
 	}
 
-	// sort by "order"
-	const sortedNavigation: Navigation = {};
-	Object.keys(navigation)
-		.sort()
-		.forEach((key) => {
-			sortedNavigation[key] = navigation[key].sort(
-				(a, b) => a.order - b.order
-			);
-		});
+	// Create a new navigation object with the desired order
+	let orderedNavigation: Navigation = {};
+	for (let category of categoryOrder) {
+		if (navigation[category.toLowerCase()]) {
+			orderedNavigation[category] = navigation[
+				category.toLowerCase()
+			].sort((a, b) => a.order - b.order);
+		}
+	}
 
 	return {
-		navigation: sortedNavigation,
+		navigation: orderedNavigation,
 	};
 }
 
@@ -84,7 +89,7 @@ const { showHome } = Astro.props;
 				<div class="mb-2">
 					<a
 						href="/"
-						class={`no-target-blank hover:no-underline hover:text-white text-lg mt-0
+						class={`no-target-blank px-2 rounded-md w-full hover:no-underline hover:text-white text-lg mt-0
                                 ${isCurrentUrl("/") ? "text-white" : "text-gray-400"}`}
 					>
 						Home
@@ -96,7 +101,7 @@ const { showHome } = Astro.props;
 		{
 			Object.entries(navigation).map(([category, links]) => (
 				<div class="mb-2">
-					<div class="category no-target-blank text-lg font-bold mb-1 mt-0 text-white">
+					<div class="category no-target-blank rounded-md text-lg font-bold mb-1 mt-0 text-white">
 						{category}
 					</div>
 					<ul class="list-disc list-outside font-normal">
@@ -104,7 +109,7 @@ const { showHome } = Astro.props;
 							<li class="mb-1 pl-0">
 								<a
 									href={link.url}
-									class={`no-target-blank transition-colors duration-150 hover:no-underline hover:text-white ${isCurrentUrl(link.url) ? "text-white" : "text-gray-400"}`}
+									class={`no-target-blank px-2 rounded-md w-full transition-colors duration-150 hover:no-underline hover:text-white ${isCurrentUrl(link.url) ? "text-black bg-primary-green" : "text-gray-400 bg-none"}`}
 								>
 									{link.title}
 								</a>
@@ -117,8 +122,8 @@ const { showHome } = Astro.props;
 		<div class="mb-2">
 			<a
 				href="/groups"
-				class={`no-target-blank transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
-                    ${isCurrentUrl("/groups") ? "text-white" : "text-gray-400"}`}
+				class={`no-target-blank px-2 rounded-md w-full transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
+                    ${isCurrentUrl("/groups") ? "text-black bg-primary-green" : "text-gray-400"}`}
 			>
 				Groups
 			</a>
@@ -126,8 +131,8 @@ const { showHome } = Astro.props;
 		<div class="mb-2">
 			<a
 				href="/blog"
-				class={`no-target-blank transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
-                    ${isCurrentUrl("/blog") ? "text-white" : "text-gray-400"}`}
+				class={`no-target-blank px-2 rounded-md w-full transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
+                    ${isCurrentUrl("/blog") ? "text-black bg-primary-green" : "text-gray-400"}`}
 			>
 				Blog
 			</a>
@@ -135,8 +140,8 @@ const { showHome } = Astro.props;
 		<div class="mb-2">
 			<a
 				href="/credits"
-				class={`no-target-blank transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
-                    ${isCurrentUrl("/credits") ? "text-white" : "text-gray-400"}`}
+				class={`no-target-blank px-2 rounded-md w-full transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
+                    ${isCurrentUrl("/credits") ? "text-black bg-primary-green" : "text-gray-400"}`}
 			>
 				Credits
 			</a>
@@ -157,11 +162,19 @@ const { showHome } = Astro.props;
 		// add active class to current url
 		links.forEach((link) => {
 			if (isCurrentUrl(link.getAttribute("href")!)) {
-				link.classList.add("text-white");
-				link.classList.remove("text-gray-400");
+				link.classList.add("text-black", "bg-primary-green");
+				link.classList.remove(
+					"text-gray-400",
+					"bg-none",
+					"hover:text-white"
+				);
 			} else {
-				link.classList.remove("text-white");
-				link.classList.add("text-gray-400");
+				link.classList.remove("text-black", "bg-primary-green");
+				link.classList.add(
+					"text-gray-400",
+					"bg-none",
+					"hover:text-white"
+				);
 			}
 		});
 

@@ -27,6 +27,8 @@ Sery Bot is a moderation bot providing anti-hate raid and anti-follow bot protec
 
 ### [MohCitrus 🔗](https://www.twitch.tv/MohCitrus/about)
 
+![MohCitrus](./_images/bots/mohcitrus.webp)
+
 <div class="flex flex-row gap-2">
 
 Available on:
@@ -36,7 +38,6 @@ Available on:
 
 
 MohCitrus is a translator bot made by [MohFocus (Twitch)](https://twitch.tv/MohFocus)! It can translate messages of viewers to any language via commands!
-![MohCitrus](/images/bots/mohcitrus.webp)
 
 ### [Nightbot 🔗](https://nightbot.tv/)
 

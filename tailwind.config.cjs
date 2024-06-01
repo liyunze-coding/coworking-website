@@ -5,7 +5,14 @@ module.exports = {
         extend: {
             backgroundImage: (theme) => ({
                 "hero-gradient":
-                    "linear-gradient(to right, #3F84D8, aquamarine, #C65BCF)",
+                    "linear-gradient(to right, #3F84D8, aquamarine)",
+                "cowo-pink": "#FF7782",
+                secondary: "#171717",
+                primary: "#fafafa",
+                "primary-green": "#8DECB4",
+                "dark-green": "#45513f",
+                "primary-blue": "#3F84D8",
+                "light-blue": "#B3C6F9",
             }),
             keyframes: {
                 rotate: {
@@ -51,8 +58,10 @@ module.exports = {
                 "cowo-pink": "#FF7782",
                 secondary: "#171717",
                 primary: "#fafafa",
-                "primary-green": "#88D47D",
+                "primary-green": "#8DECB4",
+                "dark-green": "#45513f",
                 "primary-blue": "#3F84D8",
+                "light-blue": "#B3C6F9",
             },
             spacing: {
                 auto: "auto",
@@ -88,13 +97,13 @@ module.exports = {
                 },
                 h1: {
                     marginBottom: "0.5rem",
-                    fontSize: "2.25rem",
+                    fontSize: "2.75rem",
                     fontWeight: "bold",
                     scrollMarginTop: "3.7rem",
                 },
                 h2: {
                     marginBottom: "0.5rem",
-                    marginTop: "1.25rem",
+                    marginTop: "1.5rem",
                     fontSize: "1.875rem",
                     fontWeight: "bold",
                     scrollMarginTop: "3.7rem",
@@ -117,11 +126,12 @@ module.exports = {
                     marginBottom: "0.5rem",
                     marginTop: "0.5rem",
                     fontFamily: "system-ui",
+                    fontSize: "1rem",
                     lineHeight: "1.75rem",
                 },
                 hr: {
                     margin: "2.5rem 0",
-                    borderColor: "#718096",
+                    // borderColor: "#add19c",
                 },
                 "ul, ol": {
                     listStylePosition: "outside",
@@ -146,8 +156,8 @@ module.exports = {
                 code: {
                     borderRadius: "0.375rem",
                     backgroundColor: "#323232",
-                    padding: "0.25rem 0.5rem",
-                    fontFamily: "monospace, courier-new",
+                    padding: "0.5rem 0.5rem",
+                    fontFamily: "monospace",
                     fontSize: "0.875rem",
                 },
             });

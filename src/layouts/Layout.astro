@@ -55,7 +55,7 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="pt-[var(--header-height)]">
+		<div class="pt-[var(--header-height)] bg-none">
 			<NavBar />
 			<slot />
 		</div>
@@ -127,6 +127,28 @@ const { title, description } = Astro.props;
 				scrollbar-color: #4a4a4a #2b2d31;
 				scrollbar-gutter: 10px;
 			}
+			aside {
+				/* scrollbar customize */
+				scrollbar-width: thin;
+				scrollbar-color: #31343d transparent;
+				overflow-y: auto;
+				padding-left: 0.5rem;
+				padding-right: 0.5rem;
+
+				border-radius: 0.375rem;
+			}
 		</style>
+		<script>
+			console.log(
+				"%cstop%c if you don't know what you're doing",
+				"color: red; font-weight: bold; font-size:2rem; ",
+				"color: inherit; font-size: 1.5rem"
+			);
+
+			console.log(
+				"%cHowever, if you do know what you're doing, you are welcomed to make the website better here! \n\nhttps://github.com/liyunze-coding/coworking-website",
+				"font-size: 1.2rem; margin-top: 1rem;"
+			);
+		</script>
 	</body>
 </html>

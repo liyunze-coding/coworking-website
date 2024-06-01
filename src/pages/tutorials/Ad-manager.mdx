@@ -1,0 +1,31 @@
+---
+title: Ad manager
+layout: "../../layouts/GuideLayout.astro"
+description: Add an ad manager to your OBS dock!
+order: 2
+---
+import { Image } from 'astro:assets';
+import DocksToCustomDocks from "./_images/ad-manager/Docks-to-Custom-Docks.webp";
+
+# Ad Manager
+
+You can add an Ad Manager to your OBS dock to easily manage your ads. This is especially useful to keep track of your ad breaks and to be able to run an ad break with a single click.
+
+---
+
+## How to setup an Ad Manager
+
+1. Open OBS and go to the dock where you want to add the Ad Manager.\
+    <Image src={DocksToCustomDocks} alt="Docks to Custom Docks" loading="eager" />
+
+2. Under "Dock Name", enter "Ad Manager" or any other name you want.
+
+3. Under URL, enter the following URL: 
+
+    `https://dashboard.twitch.tv/popout/u/YOUR_USERNAME_HERE/stream-manager/quick-actions`
+
+    Replace `YOUR_USERNAME_HERE` with your Twitch username.
+
+4. Click "Apply".
+
+5. Under "Docks", you can now see the Ad Manager dock. Click it to open the Ad Manager dock.

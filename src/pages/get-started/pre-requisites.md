@@ -11,13 +11,14 @@ Get ready for coworking streams!
 
 ---
 
-## Pre-requisites (Computer)
+## Computer
 
 Pre-requisites for starting coworking streams on your desktop computer or laptop.
 
 ### Software
 
-- [OBS](https://obsproject.com/) : Free and open source software for video recording and live streaming.
+#### [OBS 🔗](https://obsproject.com/)
+Free and open source software for video recording and live streaming.
 
 ### Hardware
 
@@ -37,7 +38,7 @@ Pre-requisites for starting coworking streams on your desktop computer or laptop
 
 ---
 
-## Pre-requisites (Mobile)
+## Mobile
 
 Usually, streamers who stream from their phone would use their laptop device to interact with chat!
 

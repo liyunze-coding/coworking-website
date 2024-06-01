@@ -4,6 +4,10 @@ layout: "../../layouts/GuideLayout.astro"
 description: Learn how to add music or audio for your coworking streams!
 order: 1
 ---
+import { Image } from 'astro:assets';
+import SixKLabs from "./_images/music-and-audio/6klabs.webp";
+import PixelChat from "./_images/music-and-audio/pixelchat.webp";
+import AudioSettings from "./_images/music-and-audio/audio_settings.webp";
 
 # Music and Audio
 
@@ -83,7 +87,9 @@ Streaming audio from Spotify to streaming services such as Twitch is against Spo
 
 ### [6K Labs 🔗](https://6klabs.com/)
 
-<a href="https://6klabs.com/"><img src="/images/music-and-audio/6klabs.webp" alt="6K Labs widget" loading="lazy" /></a>
+<a href="https://6klabs.com/">
+  <Image src={SixKLabs} alt="6K Labs widget" loading="lazy" />
+</a>
 
 - Easy to implement
 - Available for YouTube Music and Spotify
@@ -98,7 +104,7 @@ Streaming audio from Spotify to streaming services such as Twitch is against Spo
 
 ### [Pixel Chat 🔗](https://pixelchat.tv/)
 
-<a href="https://pixelchat.tv/"><img src="/images/music-and-audio/pixelchat.webp" alt="Pixel Chat widget" loading="lazy" /></a>
+<a href="https://pixelchat.tv/"><Image src={PixelChat} alt="Pixel Chat widget" loading="lazy" /></a>
 
 - Shows what you're playing via Spotify, Apple Music etc.
 - Includes other widgets for shoutouts, captions and counters
@@ -147,7 +153,7 @@ If you’re streaming on Twitch using OBS, you can easily avoid getting your VOD
 
 ### Easy way (have two different outputs)
 
-<img src="/images/music-and-audio/audio_settings.webp" alt="Audio settings" loading="lazy" />
+<Image src={AudioSettings} alt="Audio settings" loading="lazy" />
 
 To do this, you'll need to have two different audio outputs (i.e. two headphones/speakers). For windows users, go to sound settings --> advance sound options --> app volume device preferences (or if you can't find it, search "sound mixer options" in your start) then you should see this:
 
