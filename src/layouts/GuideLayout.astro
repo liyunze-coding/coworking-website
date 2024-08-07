@@ -30,7 +30,10 @@ const { frontmatter, headings } = Astro.props;
 						class="hidden col-span-2 pt-8 lg:block lg:sticky lg:px-4 lg:-mx-4 lg:max-h-[calc(100vh-var(--header-height))] lg:top-[--header-height]"
 					>
 						<!-- TOC -->
-						<TableOfContent headings={headings} />
+						<TableOfContent
+							headings={headings}
+							path={frontmatter.path}
+						/>
 					</div>
 				</div>
 			</div>

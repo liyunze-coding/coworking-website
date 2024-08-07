@@ -2,6 +2,7 @@
 title: General Tips
 layout: "../../layouts/GuideLayout.astro"
 description: General tips for your coworking streams!
+path: "/src/pages/guide/general-tips.md"
 order: 0
 ---
 
@@ -42,6 +43,10 @@ Closed captions open your stream to a wider audience by including viewers who ar
     A regular stream schedule lets your viewers know exactly when to expect you to go live. When viewers can anticipate your streams, they are more likely to make time to watch, increasing the chances of them tuning in and engaging with your content.
 
     Regularly scheduled streams also help you attract and retain viewers. When new viewers find your stream, they are more likely to follow if they see a consistent schedule. Additionally, existing followers are more likely to continue watching if they know when to catch your streams.
+
+    Some recommendations for a stream schedule:
+    - At least 4 hours per stream
+    - At least 2-3 days per week
 
 - ### Social Media Marketing
 

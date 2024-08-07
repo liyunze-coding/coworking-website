@@ -2,6 +2,7 @@
 title: Stream groups
 layout: "../../layouts/GuideLayout.astro"
 description: Groups you should definitely checkout!
+path: "/src/pages/groups/index.md"
 order: 0
 ---
 

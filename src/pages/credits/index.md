@@ -2,6 +2,7 @@
 title: Credits
 layout: "../../layouts/GuideLayout.astro"
 description: Credits to the people behind this website!
+path: "/src/pages/credits/index.md"
 ---
 
 # Credits

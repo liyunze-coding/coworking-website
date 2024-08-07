@@ -2,6 +2,7 @@
 title: Pre-requisites
 layout: "../../layouts/GuideLayout.astro"
 description: Pre-requisites for coworking streams!
+path: "/src/pages/get-started/pre-requisites.md"
 order: 1
 ---
 
