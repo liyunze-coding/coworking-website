@@ -29,7 +29,6 @@
   - [Frontmatter](#frontmatter)
     - [Guide Content](#guide-content)
     - [Independent Pages](#independent-pages)
-    - [Blog Post](#blog-post)
 
 ---
 
@@ -95,22 +94,3 @@ description:
 - `layout`: Path to layout file
 - `description`: Description of the content
 
-### Blog Post
-
-```
----
-heading: 
-subheading: 
-author: 
-slug: spirit-city 
-pubDate: 1970-01-01T0:00:00
----
-```
-
-- `heading`: the main title
-- `subheading`: the tagline of the blog post
-- `author`: name / username of author
-- `slug`: desired URL slug
-- `pubDate`: Published date (ISO 8601)
-
----

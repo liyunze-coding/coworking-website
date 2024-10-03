@@ -4,6 +4,8 @@ layout: "../../layouts/GuideLayout.astro"
 description: Credits to the people behind this website!
 path: "/src/pages/credits/index.md"
 ---
+import { Image } from 'astro:assets';
+import RythonDev from "./_images/rythondev.webp"
 
 # Credits
 
@@ -11,7 +13,7 @@ Credits to the wonderful team of people behind this guide!
 
 ---
 
-<img src="/images/credits/rythondev.webp" alt="RythonDev" class="rounded-lg" width="300" />
+<Image src={RythonDev} alt="RythonDev" width="200" height="200" />
 
 ## RythonDev
 
@@ -37,6 +39,3 @@ An amazing resource for this guide!
 
 [![Website](https://img.shields.io/badge/Website-fc626f?logoColor=000&style=for-the-badge)](https://third-stinger-20a.notion.site/A-Coworking-Streamer-Cheat-Sheet-01ee1e5ff006410d84c339069ea6546c/)
 
-<!-- REFERENCES FOR BADGES/ICONS -->
-<!-- https://badges.pages.dev/ -->
-<!-- https://shields.io/badges -->

@@ -5,6 +5,9 @@ description: Learn how to moderate your coworking streams!
 path: "/src/pages/guide/moderation-and-trolls.md"
 order: 6
 ---
+import { Image } from 'astro:assets';
+import DonationSettings from "./_images/moderation-and-trolls/donation-settings.webp";
+import DonationTroll from "./_images/moderation-and-trolls/donation-troll.webp";
 
 # Moderation and Trolls
 
@@ -55,12 +58,12 @@ As with any social media platform, you may encounter trolls and bots while you s
 
     Go to your [donation page](https://streamlabs.com/dashboard#/donations). There should be a list of names and donations:
 
-    <img src="/images/moderation-and-trolls/donation-troll.webp" alt="Donation troll" loading="lazy" />
+    <Image src={DonationTroll} alt="Donation troll" width="720" height="344" loading="lazy" />
 
-    <br> 
+    <br /> 
     Also in Settings > Donation settings, make sure you've ticked "Login Required":
 
-    <img src="/images/moderation-and-trolls/donation-settings.webp" alt="Donation settings" loading="lazy" />
+    <Image src={DonationSettings} alt="Donation settings" loading="lazy" width="720" height="344"  />
 
 ---
 
