@@ -10,7 +10,7 @@
         "astro": "astro"
     },
     "dependencies": {
-        "@astrojs/mdx": "^2.1.1",
+        "@astrojs/mdx": "^2.3.1",
         "@astrojs/react": "^3.1.0",
         "@astrojs/tailwind": "^5.1.0",
         "@astrojs/ts-plugin": "^1.5.3",
