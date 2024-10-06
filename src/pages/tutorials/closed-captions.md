@@ -3,7 +3,7 @@ title: Closed Captions
 layout: "../../layouts/GuideLayout.astro"
 description: Add Closed Captions to your streams!
 path: "/src/pages/tutorials/closed-captions.md"
-order: 1
+order: 6
 ---
 
 # Closed Captions (OBS Plugin)
