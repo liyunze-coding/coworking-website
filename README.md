@@ -25,6 +25,7 @@
 - [Coworking Guide](#coworking-guide)
   - [Table of Contents](#table-of-contents)
   - [Contributing](#contributing)
+    - [Badges](#badges)
   - [Directive Components](#directive-components)
   - [Frontmatter](#frontmatter)
     - [Guide Content](#guide-content)
@@ -35,6 +36,12 @@
 ## Contributing
 
 Guidelines: TBA
+
+### Badges
+
+Use https://badges.pages.dev/ to get badges such as
+
+![Twitch Badge](https://img.shields.io/badge/Twitch-9146FF?logo=twitch&logoColor=fff&style=for-the-badge)
 
 ---
 

@@ -21,7 +21,7 @@ import SearchModal from "../ui/SearchModal.astro";
 		<!-- Vertical Navbar -->
 		<aside
 			id="vertical-navbar"
-			class="sidebar fixed block overflow-y-auto duration-300 z-[60] lg:hidden bg-[#151515] py-8 px-8 h-[calc(100vh-var(--header-height))] top-[--header-height] left-0"
+			class="sidebar fixed block overflow-y-auto duration-300 z-[60] lg:hidden bg-[#151515] py-8 px-8 h-[calc(100vh-var(--header-height))] top-[--header-height] left-0 w-full"
 			transition:persist="vertical-nav-from-left"
 		>
 			<VerticalNav showHome={true} />
@@ -53,6 +53,10 @@ import SearchModal from "../ui/SearchModal.astro";
 			<a
 				class="no-target-blank hover:text-black hover:bg-white rounded-md transition-colors duration-300 px-2 py-1 text-white hover:no-underline"
 				href="/guide/general-tips">Guide</a
+			>
+			<a
+				class="no-target-blank hover:text-black hover:bg-white rounded-md transition-colors duration-300 px-2 py-1 text-white hover:no-underline"
+				href="/games">Games</a
 			>
 			<a
 				class="no-target-blank hover:text-black hover:bg-white rounded-md transition-colors duration-300 px-2 py-1 text-white hover:no-underline"
@@ -183,6 +187,15 @@ import SearchModal from "../ui/SearchModal.astro";
 			link.addEventListener("click", function () {
 				if (verticalNavBar) hamburgerMenu.checked = false;
 			});
+		});
+
+		// hamburger menu listen for checked
+		hamburgerMenu.addEventListener("change", function () {
+			if (verticalNavBar) {
+				document.body.style.overflow = hamburgerMenu.checked
+					? "hidden"
+					: "auto";
+			}
 		});
 	});
 

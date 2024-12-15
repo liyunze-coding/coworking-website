@@ -121,6 +121,15 @@ const { showHome } = Astro.props;
 		}
 		<div class="mb-2">
 			<a
+				href="/games"
+				class={`no-target-blank px-2 rounded-md w-full transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
+                    ${isCurrentUrl("/games") ? "text-black bg-primary-green" : "text-gray-400"}`}
+			>
+				Games
+			</a>
+		</div>
+		<div class="mb-2">
+			<a
 				href="/groups"
 				class={`no-target-blank px-2 rounded-md w-full transition-colors duration-150 hover:no-underline hover:text-white text-lg mt-0
                     ${isCurrentUrl("/groups") ? "text-black bg-primary-green" : "text-gray-400"}`}
