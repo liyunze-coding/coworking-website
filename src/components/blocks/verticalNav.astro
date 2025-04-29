@@ -6,6 +6,17 @@ type Navigation = Record<
 	{ title: string; url: string; order: number }[]
 >;
 
+interface MarkdownFile {
+	frontmatter: Record<string, any>; // Adjust the type if you know the exact structure of frontmatter
+	getHeadings?: () => Array<{ depth: number; slug: string; text: string }>; // Optional, based on the structure of headings
+	url: string;
+	file: string;
+	rawContent?: string; // Optional, as not all entries have it
+	compiledContent?: string; // Optional, as not all entries have it
+	Content: () => Promise<any>; // Function that returns a component or content
+	default: any; // Default export, adjust type if needed
+}
+
 const currentUrl = Astro.url.pathname;
 
 const isCurrentUrl = (url: string) => currentUrl === url;
@@ -23,24 +34,29 @@ export async function setup() {
 	// Define the order of categories
 	let categoryOrder = ["Get Started", "Guide", "Tutorials"];
 
-	const getStartedFiles = await Astro.glob("../../pages/get-started/*");
-	const guideFiles = await Astro.glob("../../pages/guide/*");
-	const tutorialFiles = await Astro.glob("../../pages/tutorials/*");
-
-	let markdownFiles = [...getStartedFiles, ...guideFiles, ...tutorialFiles];
+	const getStartedFiles = Object.values(import.meta.glob("../../pages/get-started/*", { eager: true }));
+	const guideFiles = Object.values(import.meta.glob("../../pages/guide/*", { eager: true }));
+	const tutorialFiles = Object.values(import.meta.glob("../../pages/tutorials/*", { eager: true }));
+	
+	let markdownFiles: MarkdownFile[] = [
+		...(getStartedFiles as MarkdownFile[]),
+		...(guideFiles as MarkdownFile[]),
+		...(tutorialFiles as MarkdownFile[])
+	];
 	let navigation: Navigation = {};
-
+	
 	for (const file of markdownFiles) {
 		let filePath = file.url;
+
 		let [_, category] = filePath!.split("/");
 		let formattedCategory = formatTitle(category).toLowerCase();
 		let formattedTitle = file.frontmatter.title;
 		let order = file.frontmatter.order ?? 0;
-
+	
 		if (!navigation[formattedCategory]) {
 			navigation[formattedCategory] = [];
 		}
-
+	
 		navigation[formattedCategory].push({
 			title: formattedTitle,
 			url: filePath || "",
