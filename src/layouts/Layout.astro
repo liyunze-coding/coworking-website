@@ -1,6 +1,6 @@
 ---
-import NavBar from "../components/blocks/navBar.astro";
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
+import "@/styles/global.css";
 
 export interface Props {
 	title: string;
@@ -50,13 +50,12 @@ const { title, description } = Astro.props;
 		<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
 		<script src="/pagefind/pagefind-ui.js" is:inline></script>
 		<script is:inline src="/_vercel/insights/script.js"></script>
-		<ViewTransitions />
+		<ClientRouter />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="pt-[var(--header-height)] bg-none">
-			<NavBar />
+		<div class="bg-none">
 			<slot />
 		</div>
 		<script>
@@ -71,12 +70,6 @@ const { title, description } = Astro.props;
 		<style is:global>
 			:root {
 				--header-height: 3.5rem;
-			}
-
-			* {
-				box-sizing: border-box;
-				margin: 0;
-				padding: 0;
 			}
 
 			html {

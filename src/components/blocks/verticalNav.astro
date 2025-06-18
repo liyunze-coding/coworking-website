@@ -34,17 +34,23 @@ export async function setup() {
 	// Define the order of categories
 	let categoryOrder = ["Get Started", "Guide", "Tutorials"];
 
-	const getStartedFiles = Object.values(import.meta.glob("../../pages/get-started/*", { eager: true }));
-	const guideFiles = Object.values(import.meta.glob("../../pages/guide/*", { eager: true }));
-	const tutorialFiles = Object.values(import.meta.glob("../../pages/tutorials/*", { eager: true }));
-	
+	const getStartedFiles = Object.values(
+		import.meta.glob("../../pages/get-started/*", { eager: true })
+	);
+	const guideFiles = Object.values(
+		import.meta.glob("../../pages/guide/*", { eager: true })
+	);
+	const tutorialFiles = Object.values(
+		import.meta.glob("../../pages/tutorials/*", { eager: true })
+	);
+
 	let markdownFiles: MarkdownFile[] = [
 		...(getStartedFiles as MarkdownFile[]),
 		...(guideFiles as MarkdownFile[]),
-		...(tutorialFiles as MarkdownFile[])
+		...(tutorialFiles as MarkdownFile[]),
 	];
 	let navigation: Navigation = {};
-	
+
 	for (const file of markdownFiles) {
 		let filePath = file.url;
 
@@ -52,11 +58,11 @@ export async function setup() {
 		let formattedCategory = formatTitle(category).toLowerCase();
 		let formattedTitle = file.frontmatter.title;
 		let order = file.frontmatter.order ?? 0;
-	
+
 		if (!navigation[formattedCategory]) {
 			navigation[formattedCategory] = [];
 		}
-	
+
 		navigation[formattedCategory].push({
 			title: formattedTitle,
 			url: filePath || "",
@@ -122,10 +128,10 @@ const { showHome } = Astro.props;
 					</div>
 					<ul class="list-disc list-outside font-normal">
 						{links.map((link) => (
-							<li class="mb-1 pl-0">
+							<li class="mb-1 pl-0 ml-5">
 								<a
 									href={link.url}
-									class={`no-target-blank px-2 rounded-md w-full transition-colors duration-150 hover:no-underline hover:text-white ${isCurrentUrl(link.url) ? "text-black bg-primary-green" : "text-gray-400 bg-none"}`}
+									class={`no-target-blank w-full inline-block px-2 py-1 rounded-md transition-colors duration-150 hover:no-underline hover:text-white ${isCurrentUrl(link.url) ? "text-black bg-primary-green" : "text-gray-400 bg-none"}`}
 								>
 									{link.title}
 								</a>
