@@ -2,13 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/blocks/Hero.astro";
 import BlurBackground from "../components/ui/BlurBackground.astro";
+import NavBar from "@/components/blocks/navBar.astro";
 ---
 
 <Layout
 	title="Coworking Stream Guide"
 	description="A guide for new and existing coworking streamers!"
 >
-	<div class="relative overflow-hidden h-fit min-h-screen w-full">
+	<NavBar />
+	<div
+		class="relative overflow-hidden h-fit min-h-screen w-full pt-[var(--header-height)]"
+	>
 		<BlurBackground />
 		<div class="flex justify-center items-start pb-10">
 			<Hero />

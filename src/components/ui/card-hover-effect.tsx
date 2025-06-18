@@ -1,5 +1,5 @@
-import { cn } from "../../../utils/cn";
-import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "@/utils/cn";
+import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -87,7 +87,7 @@ export const CardTitle = ({
     return (
         <h4
             className={cn(
-                "mt-4 font-bold tracking-wide text-zinc-100",
+                "mt-4 font-bold tracking-wide text-zinc-100 text-xl",
                 className,
             )}
         >
