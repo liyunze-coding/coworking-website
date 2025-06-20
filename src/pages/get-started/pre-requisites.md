@@ -19,16 +19,16 @@ Pre-requisites for starting coworking streams on your desktop computer or laptop
 ### Software
 
 #### [OBS 🔗](https://obsproject.com/)
-Free and open source software for video recording and live streaming.
+Free and open-source software for video recording and live streaming.
 
 ### Hardware
 
 - **Internet Capacity (bitrate)**
-  - There are some online calculators you can use to determine the ideal bitrate based off your computer specs and preferred output (screen resolution, frames per second).
-  - Check out this [in depth guide from Reddit](https://www.reddit.com/r/Twitch/comments/2dz7ru/bitrates_resolutions_and_quality/) to learn more!
+  - There are some online calculators you can use to determine the ideal bitrate based on your computer specs and preferred output (screen resolution, frames per second).
+  - Check out this [in-depth guide from Reddit](https://www.reddit.com/r/Twitch/comments/2dz7ru/bitrates_resolutions_and_quality/) to learn more!
 - **RAM**
   - The more RAM a computer has, the better it is at multitasking.
-  - Minimum 8GB, 16GB or more is recommended.
+  - A minimum 8GB, 16GB or more is recommended.
 - **CPU**
   - The better the CPU, the faster the computer can process data and instructions.
   - clock speed of 3.0 GHz or higher, such as an Intel Core i5 or AMD Ryzen 5.
@@ -46,7 +46,7 @@ Usually, streamers who stream from their phone would use their laptop device to 
 ### Hardware
 
 - **Camera**
-  - Having a camera pointed towards your direction is effective for accountability!
+  - Having a camera pointed toward your direction is effective for accountability!
 
 ### Software
 

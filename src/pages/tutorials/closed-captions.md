@@ -8,9 +8,9 @@ order: 6
 
 # Closed Captions (OBS Plugin)
 
-Did you know? Captions can greatly improve engagement, as [80% of viewers prefer video subtitles](https://www.kapwing.com/resources/subtitle-statistics/). 
+Did you know? Captions can significantly improve engagement, as [80% of viewers prefer video subtitles](https://www.kapwing.com/resources/subtitle-statistics/). 
 
-Add some captions to your stream to improve accessibility and engagement for your streams! 
+Add captions to your stream to improve accessibility and engagement for your streams! 
 
 ---
 
