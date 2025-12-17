@@ -10,14 +10,14 @@
         "astro": "astro"
     },
     "dependencies": {
-        "@astrojs/mdx": "^4.2.5",
-        "@astrojs/react": "^3.6.2",
-        "@astrojs/ts-plugin": "^1.10.4",
+        "@astrojs/mdx": "^4.3.13",
+        "@astrojs/react": "^4.4.2",
+        "@astrojs/ts-plugin": "^1.10.6",
         "@tailwindcss/vite": "^4.1.10",
         "@types/react": "^18.2.65",
         "@types/react-dom": "^18.2.22",
         "@vercel/analytics": "^1.0.1",
-        "astro": "^5.7.8",
+        "astro": "^5.16.6",
         "astro-expressive-code": "^0.41.2",
         "clsx": "^2.1.0",
         "framer-motion": "^11.0.12",
