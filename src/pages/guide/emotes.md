@@ -27,6 +27,6 @@ Don’t understand when your chat says in ‘KEKW’? It’s a common third part
 
 You won’t run into any issues using all three extensions at once!
 
-However, if you only want to use one Emote extension, [FrankerFaceZ](https://www.frankerfacez.com/) is probably the best one to go for! It is stable, has special addons through the extension itself for BTTV and 7TV emotes, and has the best customization for twitch as a site!
+However, if you only want to use one Emote extension, [FrankerFaceZ](https://www.frankerfacez.com/) is probably the best one to go for! It is stable, has special addons through the extension itself for BTTV and 7TV emotes, and has the best customization for Twitch as a site!
 
 ---
